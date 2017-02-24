@@ -146,6 +146,7 @@ header{
   height: 100%;
   overflow: hidden;
   background-color: #112130;
+  //margin-top: 62px;
   nav{
     width: 208px;
     height: 100%;
@@ -156,7 +157,6 @@ header{
     left:0;
     float: left;
     .nav-left{
-      z-index: 1000;
       li{
         width: 240px;
         height: 120px;
@@ -208,14 +208,14 @@ footer{
   text-align: center;
   margin-left: 240px;
   .footer{
-    width: 950px;
+    width: 900px;
     height: auto;
     text-align: center;
     overflow: hidden;
     margin: 10px auto;
     li{
       text-align: center;
-      width: 190px;
+      width: 180px;
       float: left;
       a{
         font-size: 12px;
