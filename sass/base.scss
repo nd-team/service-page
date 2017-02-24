@@ -22,7 +22,9 @@ html, body {
   font-size: 16px;
   font-family:"Microsoft YaHei";
 }
-
+body{
+  background-color: #112130;
+}
 ol, ul {
   list-style: none;
 }
@@ -200,7 +202,38 @@ header{
 
 
 
-
+//footer style
+footer{
+  height: auto;
+  text-align: center;
+  margin-left: 240px;
+  .footer{
+    width: 950px;
+    height: auto;
+    text-align: center;
+    overflow: hidden;
+    margin: 10px auto;
+    li{
+      text-align: center;
+      width: 190px;
+      float: left;
+      a{
+        font-size: 12px;
+        line-height: 30px;
+        display: block;
+        color: #666;
+      }
+    }
+  }
+  p{
+    font-size: 12px;
+    text-align: center;
+    color: #666;
+    span{
+      padding-left: 40px;
+    }
+  }
+}
 
 
 
