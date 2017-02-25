@@ -88,22 +88,26 @@
 .right-content{
   float: left;
   width: 100%;
-  height: 1590px;
+  height: auto;
   background-color: #f1f4f8;
-  margin-top: 62px;
-  margin-left: 418px;
   padding:{
     left: 60px;
     top: 35px;
+    bottom: 400px;
+  }
+  margin: {
+    top: 62px;
+    left: 418px;
   }
   .management{
-    width: 1068px;
+    width: 70%;
     height: 60px;
     line-height: 60px;
     background: #fff;
-    border:1px solid #ccc;
+    border:1px solid #dadce0;
     border-radius: 10px 10px 0 0;
-    li{
+    margin-bottom: 15px;
+    .management-left{
       float: left;
       width: 179px;
       a{
@@ -117,6 +121,171 @@
         width: 1px;
         background-color: #d3dce2;
         vertical-align: middle;
+      }
+    }
+    .management-right{
+      float: right;
+      a{
+        display: inline-block;
+        width: 76px;
+        height: 30px;
+        line-height: 30px;
+        background-color: #46dbcd;
+        text-align: center;
+        color: #fff;
+        font-size: 14px;
+        margin-right: 20px;
+      }
+    }
+  }
+  .tab-content{
+    width: 70%;
+    height:auto;
+    .detail{
+      height: auto;
+      background-color: #fff;
+      border: 1px solid #dddddf;
+      margin-bottom: 15px;
+      .tab-one{
+        width: 30%;
+        float: left;
+        padding:27px 30px 18px;
+        li{
+          font-size: 14px;
+          p{
+            color: #666;
+          }
+          &:first-child{
+            height: 34px;
+            p{
+              color: #666;
+              span{
+                color: #4f8d57;
+                &.red-name{
+                  color: #dd4614;
+                }
+                &.get-red{
+                  color: #dd4614;
+                }
+                &.purpose-name{
+                  color: #423d87;
+                }
+                &.get-purpose{
+                  color: #423d87;
+                }
+                &.yellow-name{
+                  color: #aeac2c;
+                }
+                &.get-yellow{
+                  color: #aeac2c;
+                }
+              }
+              &.name-user{
+                float: left;
+              }
+              &.status{
+                float: right;
+                padding-right: 60px;
+              }
+            }
+          }
+          .remarks{
+            display: block;
+            color: #999;
+            margin-bottom: 40px;
+          }
+          .position{
+            line-height: 28px;
+          }
+          .server{
+            color: #4f8d57;
+            a{
+              @extend .server;
+            }
+          }
+          .server-red{
+            color: #dd4614;
+            a{
+              @extend .server-red;
+            }
+          }
+          .server-purpose{
+            color: #423d87;
+            a{
+              @extend .server-purpose;
+            }
+          }
+          .server-yellow{
+            color: #aeac2c;
+            a{
+              @extend .server-yellow;
+            }
+          }
+        }
+      }
+      .data-right{
+        float: left;
+        height: 204px;
+        width: 65%;
+        li{
+          width: 13%;
+          height: 154px;
+          float: left;
+          border-left:1px solid #d3dce2;
+          text-align: left;
+          padding-top: 50px;
+          padding-left: 5px;
+          span{
+            display: block;
+            font-size: 12px;
+            line-height: 20px;
+            &.time{
+              color: #4f8d57;
+            }
+            &.time-red{
+              color: #dd4614;
+            }
+            &.time-purpose{
+              color: #423d87;
+            }
+            &.time-yellow{
+              color: #aeac2c;
+            }
+            &.text{
+              color: #666;
+            }
+          }
+        }
+      }
+      //bottom
+      .same-bottom{
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+        p{
+          color: #fff;
+          font-size: 14px;
+          &.bottom_l{
+            float: left;
+            padding-left: 30px;
+          }
+          &.bottom_r{
+            float: right;
+            padding-right: 30px;
+          }
+        }
+      }
+      .green-bottom{
+        background-color: #508c56;
+      }
+      .red-bottom{
+        background-color: #dd4614;
+      }
+      .purpose-bottom{
+        background-color: #423d87;
+      }
+      .yellow-bottom{
+        background-color: #aeac2c;
       }
     }
   }
