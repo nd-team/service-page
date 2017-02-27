@@ -27,7 +27,7 @@ function getFilenames (dir, regexp, recursive) {
 var html="<ul id='list'>";
 getFilenames(__dirname+'/pages', /.html$/, true).forEach((file) => {
     var fileName = path.basename(file);
-    var fileHref = file.split('issp-page')[1]
+    var fileHref = file.split(__dirname)[1]
 
      html +=`<li><a href="${fileHref}">${fileName}</a></li>`;
 
