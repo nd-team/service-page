@@ -1,95 +1,11 @@
-@import "base";
+@import "../base";
 
 //company plan nav
-.nav-left{
-
-  li{
-    &:first-child{
-      width: 370px !important;
-      //z-index: 100;
-      background-color: #47dbcd;
-      text-align: left !important;
-      padding-left: 80px;
-    }
-
-  }
-
-}
-.company-nav{
-  float: left;
-  width: 210px;
-  height: auto;
-  margin-top: 62px;
-  margin-left: 208px;
-  background-color: #47dbcd;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  padding-top: 55px;
-  li{
-    text-align: center;
-    &:last-child{
-      padding-top: 30px;
-    }
-    a{
-      line-height: 40px;
-      color: #fff;
-
-    }
-    .plan-pic{
-      height: 27px;
-      background-image: url("/images/img.png");
-      background-position: -20px 0;
-      background-repeat: no-repeat;
-      vertical-align: -5px;
-      padding: 5px 18px;
-
-     }
-    .project-pic{
-      height: 27px;
-      background-image: url("/images/img.png");
-      background-position: 0 0;
-      background-repeat: no-repeat;
-      vertical-align: -8px;
-      padding: 5px 12px;
-
-     }
-    &.company-first{
-      .vertical{
-        width: 6px;
-        height: 40px;
-        display: inline-block;
-        background-color: #fff;
-        vertical-align: middle;
-        margin-right: 10px;
-      }
-      .company-type{
-        padding-left: 32px;
-        p{
-          //width: 82px;
-          height: 22px;
-          margin: 10px 0 30px;
-          .first-vertical{
-            padding: 0 10px;
-            border:{
-              left: 2px;
-              right: 2px;
-              style: solid;
-              color: #fff;
-            }
-          }
-
-        }
-      }
-
-    }
-  }
-}
 .right-content{
   float: left;
   width: 100%;
   height: auto;
-  background-color: #f1f4f8;
+  background-color: #f0f1f5;
   padding:{
     left: 60px;
     top: 35px;
@@ -97,7 +13,7 @@
   }
   margin: {
     top: 62px;
-    left: 418px;
+    left: 208px;
   }
   .management{
     width: 70%;
@@ -298,5 +214,5 @@
 }
 
 footer{
-  margin-left: 384px;
+  margin-left: 208px;
 }
