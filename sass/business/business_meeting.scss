@@ -7,7 +7,7 @@
   height: auto;
   background-color: #f0f1f5;
   padding:{
-    left: 60px;
+    left: 80px;
     top: 35px;
     bottom: 400px;
   }
@@ -16,7 +16,8 @@
     left: 208px;
   }
   .management{
-    width: 70%;
+    display: flex;
+    width: 75%;
     height: 60px;
     line-height: 60px;
     background: #fff;
@@ -24,29 +25,37 @@
     border-radius: 10px 10px 0 0;
     margin-bottom: 15px;
     .management-left{
-      float: left;
-      width: 179px;
-      a{
-        font-size:14px;
-        padding: 0 42px;
-        color: #252525;
+      display: flex;
+        li{
+          width: 179px;
+          a{
+            font-size:14px;
+            padding: 0 42px;
+            color: #252525;
+            display: inline-block;
+            height: 57px;
+          }
+          span{
+            display: inline-block;
+            height: 26px;
+            width: 1px;
+            background-color: #d3dce2;
+            vertical-align: middle;
+          }
+          &.current{
+            a{
+              border-bottom:3px solid #066cc0;
+            }
+
+          }
+        }
       }
-      span{
-        display: inline-block;
-        height: 26px;
-        width: 1px;
-        background-color: #d3dce2;
-        vertical-align: middle;
-      }
-    }
-    .current{
-      a{
-        display: inline-block;
-        border-bottom:3px solid #43dac9;
-      }
-    }
+
     .management-right{
-      float: right;
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
       a{
         display: inline-block;
         width: 76px;
@@ -61,7 +70,7 @@
     }
   }
   .tab-content{
-    width: 70%;
+    width: 75%;
     height:auto;
     .detail{
       height: auto;
