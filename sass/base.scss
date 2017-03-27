@@ -53,7 +53,7 @@ input,textarea{
   outline: none;
 }
 
-i {
+i{
   font-style: normal;
 }
 
@@ -85,6 +85,7 @@ header{
   background-color: #fff;
   box-shadow: 0 0 20px 10px #f5f5f5;
   position: fixed;
+  z-index: 1;
   .logo-left{
     float: left;
     .logo{
