@@ -22,7 +22,7 @@
     background: #fff;
     border:1px solid #dadce0;
     border-radius: 10px 10px 0 0;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     .management-left{
       display: flex;
         li{
@@ -117,6 +117,19 @@
 
     }
   }
+  .so{
+    display: flex;
+    width: 75%;
+    justify-content: flex-end;
+    .under-search{
+      background: url("/images/business/search.png") no-repeat center;
+      width: 26px;
+      height: 27px;
+      margin-bottom: 20px;
+      display: block;
+    }
+  }
+
   .article{
     .all-module{
       display: flex;
