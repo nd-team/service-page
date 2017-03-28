@@ -162,18 +162,96 @@ header{
         height: 120px;
         line-height: 120px;
         text-align: center;
-        background-color: #46dbcd;
         margin-top: 62px;
         position: relative;
+        &:hover{
+          transition:all 5s;
+          >.nav-hover{
+            transition:all 5s;
+            display: block;
+          }
+        }
+        &.active{
+          background-color: #47dbcd;
+        }
         &.red-nav{
           background-color: #f32f4e;
         }
         &.blue-nav{
           background-color: #066dc2;
         }
-        &:hover{
-          .nav-hover{
-            display: block;
+        .nav-hover{
+          width: 240px;
+          position: absolute;
+          left: 208px;
+          bottom: 0;
+          top: 0;
+          background-color: #47dbcd;
+          z-index: 20;
+          display: none;
+          transition:all .5s;
+          .company-nav{
+            width: 210px;
+            position: fixed;
+            top: 62px;
+            bottom: 0;
+            background-color: #47dbcd;
+            .company-plan{
+
+              &:last-child{
+                padding-top: 20px;
+              }
+              .plan-title{
+                height: 50px;
+                .vertical{
+                  width: 6px;
+                  height: 40px;
+                  display: inline-block;
+                  background-color: #fff;
+                  vertical-align: middle;
+                  margin-right: 10px;
+                }
+              }
+              .company-type{
+                padding-left: 32px;
+                p{
+                  height: 25px;
+                  text-align: center;
+                  margin: 10px 0 30px;
+                  .first-vertical{
+                    padding: 0 8px;
+                    border:{
+                      left: 2px;
+                      right: 2px;
+                      style: solid;
+                      color: #fff;
+                    }
+                  }
+                }
+              }
+              a{
+                line-height: 40px;
+                color: #fff;
+              }
+              .plan-pic{
+                height: 27px;
+                background-image: url("/images/img.png");
+                background-position: -20px 0;
+                background-repeat: no-repeat;
+                vertical-align: -5px;
+                padding: 5px 18px;
+
+              }
+              .project-pic{
+                height: 27px;
+                background-image: url("/images/img.png");
+                background-position: 0 0;
+                background-repeat: no-repeat;
+                vertical-align: -8px;
+                padding: 5px 12px;
+
+              }
+            }
           }
         }
         span{
@@ -198,14 +276,13 @@ header{
           color: #fff;
           font-size: 16px;
         }
+
       }
     }
   }
 }
 
 //left nav end
-
-
 
 //footer style
 footer{
