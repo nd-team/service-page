@@ -23,7 +23,7 @@ html, body {
   font-family:"Microsoft YaHei";
 }
 body{
-  background-color: #112130;
+  background-color: #f1f4f9;
 }
 ol, ul {
   list-style: none;
@@ -144,10 +144,8 @@ header{
 //left nav start
 .content{
   width: 100%;
-  height: 100%;
+  height: auto;
   overflow: hidden;
-  background-color: #112130;
-  //margin-top: 62px;
   nav{
     width: 208px;
     height: 100%;
@@ -167,11 +165,16 @@ header{
         background-color: #46dbcd;
         margin-top: 62px;
         position: relative;
-        &:nth-of-type(2){
+        &.red-nav{
           background-color: #f32f4e;
         }
-        &:last-child{
+        &.blue-nav{
           background-color: #066dc2;
+        }
+        &:hover{
+          .nav-hover{
+            display: block;
+          }
         }
         span{
           position: absolute;
@@ -208,7 +211,9 @@ header{
 footer{
   height: auto;
   text-align: center;
-  margin-left: 240px;
+  margin-left: 208px;
+  background-color: #102131;
+  padding-top: 5px;
   .footer{
     width: 900px;
     height: auto;
