@@ -1,8 +1,8 @@
 $(function () {
-    // $(".management-right .line-list").on('mouseover',function () {
-    //     $(".management-right li .right-list").show();
-    // });
-    // $(".management-right .line-list").on('mouseout', function () {
+    $(".management-right li").on('mouseover',function () {
+        $(".management-right li .right-list").show();
+    });
+    // $(".management-right li").on('mouseout', function () {
     //     $(".management-right li .right-list").hide();
     // });
 
