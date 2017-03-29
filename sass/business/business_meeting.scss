@@ -8,7 +8,6 @@
     width: 80%;
     height: auto;
     margin-top: 140px;
-    z-index: 100;
     .so{
       width: 100%;
       position: relative;
@@ -75,7 +74,7 @@
         height: auto;
         li{
           float: left;
-          width: 48%;
+          width: 47.5%;
           background-color: #fff;
           margin:{
             bottom: 50px;
@@ -85,6 +84,9 @@
           border-radius: 5px;
           &:nth-of-type(even){
             margin-right: 0;
+          }
+          &:nth-of-type(odd){
+            margin-left: 20px;
           }
           @media screen and (max-width: 1578px){
             width: 46%;
