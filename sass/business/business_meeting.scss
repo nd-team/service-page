@@ -1,10 +1,10 @@
 @import "../base";
 
-//company plan nav
+//右边内容
 .right-content{
   float: left;
   width: 100%;
-  height: auto;
+  height: 100%;
   background-color: #f0f1f5;
   padding:{
     left: 80px;
@@ -14,6 +14,7 @@
     //top: 62px;
     left: 208px;
   }
+  //头部列表
   .top-fix{
     width: 100%;
     position: fixed;
@@ -130,10 +131,12 @@
     }
   }
 
+  //主体详细内容
   .tab-content{
     width: 80%;
     height: auto;
     margin-top: 140px;
+    z-index: 100;
     .so{
       width: 100%;
       position: relative;
@@ -193,8 +196,11 @@
     }
     .article{
       width: 100%;
+      height: auto;
+      margin-bottom: 50px;
       .all-module{
         float: left;
+        height: auto;
         li{
           float: left;
           width: 48%;

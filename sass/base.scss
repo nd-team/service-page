@@ -286,9 +286,12 @@ header{
 
 //footer style
 footer{
-  height: auto;
+  height: 178px;
   text-align: center;
-  margin-left: 208px;
+  width: 100%;
+  position: relative;
+  bottom:0;
+  left: 0;
   background-color: #102131;
   padding-top: 5px;
   .footer{

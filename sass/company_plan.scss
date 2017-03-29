@@ -1,89 +1,6 @@
 @import "base";
 
-//company plan nav
-//.nav-left{
-//
-//  li{
-//    position: relative;
-//    &.active{
-//      background-color: #47dbcd;
-//      position: relative;
-//      .nav-hover{
-//        width: 240px;
-//        position: absolute;
-//        left: 208px;
-//        bottom: 0;
-//        top: 0;
-//        background-color: #47dbcd;
-//        z-index: 20;
-//        display: none;
-//        .company-nav{
-//          width: 210px;
-//          position: fixed;
-//          top: 62px;
-//          bottom: 0;
-//          background-color: #47dbcd;
-//          .company-plan{
-//
-//            &:last-child{
-//              padding-top: 20px;
-//            }
-//            .plan-title{
-//              height: 50px;
-//              .vertical{
-//                width: 6px;
-//                height: 40px;
-//                display: inline-block;
-//                background-color: #fff;
-//                vertical-align: middle;
-//                margin-right: 10px;
-//              }
-//            }
-//            .company-type{
-//              padding-left: 32px;
-//              p{
-//                height: 25px;
-//                text-align: center;
-//                margin: 10px 0 30px;
-//                .first-vertical{
-//                  padding: 0 8px;
-//                  border:{
-//                    left: 2px;
-//                    right: 2px;
-//                    style: solid;
-//                    color: #fff;
-//                  }
-//                }
-//              }
-//            }
-//            a{
-//              line-height: 40px;
-//              color: #fff;
-//            }
-//            .plan-pic{
-//              height: 27px;
-//              background-image: url("/images/img.png");
-//              background-position: -20px 0;
-//              background-repeat: no-repeat;
-//              vertical-align: -5px;
-//              padding: 5px 18px;
-//
-//            }
-//            .project-pic{
-//              height: 27px;
-//              background-image: url("/images/img.png");
-//              background-position: 0 0;
-//              background-repeat: no-repeat;
-//              vertical-align: -8px;
-//              padding: 5px 12px;
-//
-//            }
-//          }
-//        }
-//      }
-//    }
-//  }
-//}
+//right content
 
 .right-content{
   float: left;
@@ -93,60 +10,78 @@
   padding:{
     left: 60px;
     top: 35px;
-    bottom: 400px;
+    //bottom: 400px;
   }
   margin: {
     top: 62px;
     left: 208px;
+    bottom: 30px;
   }
-  .management{
-    width: 80%;
-    height: 60px;
-    line-height: 60px;
-    background: #fff;
-    border:1px solid #dadce0;
-    border-radius: 10px 10px 0 0;
-    margin-bottom: 15px;
-    .management-left{
-      float: left;
-      width: 179px;
-      a{
-        font-size:14px;
-        padding: 0 42px;
-        color: #252525;
+  .top-fix{
+    width: 100%;
+    position: fixed;
+    top: 62px;
+    z-index: 1;
+    background-color: #f0f1f5;
+    .management{
+      width: 80%;
+      height: 60px;
+      line-height: 60px;
+      background: #fff;
+      border:1px solid #dadce0;
+      border-radius: 10px 10px 0 0;
+      margin:{
+        top: 35px;
       }
-      span{
-        display: inline-block;
-        height: 26px;
-        width: 1px;
-        background-color: #d3dce2;
-        vertical-align: middle;
+      .management-left{
+
+
+        li{
+          float: left;
+          width: 202px;
+          &.current{
+            a{
+              display: inline-block;
+              border-bottom:3px solid #43dac9;
+              height: 56px;
+            }
+          }
+          a{
+            font-size:14px;
+            padding: 0 42px;
+            color: #252525;
+          }
+          span{
+            display: inline-block;
+            height: 26px;
+            width: 1px;
+            background-color: #d3dce2;
+            vertical-align: middle;
+          }
+        }
       }
-    }
-    .current{
-      a{
-        display: inline-block;
-        border-bottom:3px solid #43dac9;
-      }
-    }
-    .management-right{
-      float: right;
-      a{
-        display: inline-block;
-        width: 76px;
-        height: 30px;
-        line-height: 30px;
-        background-color: #46dbcd;
-        text-align: center;
-        color: #fff;
-        font-size: 14px;
-        margin-right: 20px;
+
+      .management-right{
+        float: right;
+        a{
+          display: inline-block;
+          width: 76px;
+          height: 30px;
+          line-height: 30px;
+          background-color: #46dbcd;
+          text-align: center;
+          color: #fff;
+          font-size: 14px;
+          margin-right: 20px;
+        }
       }
     }
   }
+
   .tab-content{
     width: 80%;
     height:auto;
+    margin-top: 80px;
     .detail{
       height: auto;
       background-color: #fff;
