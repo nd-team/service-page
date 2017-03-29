@@ -280,6 +280,136 @@ header{
       }
     }
   }
+
+  .right-content{
+    float: left;
+    width: 100%;
+    height: 100%;
+    background-color: #f0f1f5;
+    padding:{
+      left: 80px;
+      top: 35px;
+    }
+    margin: {
+      left: 208px;
+    }
+    //头部列表
+    .top-fix{
+      width: 100%;
+      position: fixed;
+      top: 63px;
+      z-index: 1;
+      background-color: #f0f1f5;
+      .management{
+        width: 80%;
+        height: 60px;
+        line-height: 60px;
+        background: #fff;
+        border:1px solid #dadce0;
+        border-radius: 10px 10px 0 0;
+        margin:{
+          top: 35px;
+        }
+        overflow: hidden;
+        .management-left{
+          float: left;
+          width: 50%;
+          height: 62px;
+          li{
+            float: left;
+            width: 150px;
+            height: 100%;
+            a{
+              font-size:14px;
+              padding: 0  35px 0 30px;
+              color: #252525;
+              display: inline-block;
+              height: 26px;
+              border-right: 1px solid #d3dce2;
+              vertical-align: middle;
+              line-height: 28px;
+            }
+            &.current{
+              height: 57px;
+              border-bottom:3px solid #066cc0;
+            }
+          }
+        }
+        .management-right{
+          float: right;
+          li{
+            float: left;
+            position: relative;
+            &:first-child{
+              height: 30px;
+              vertical-align: middle;
+            }
+            vertical-align: middle;
+            .selected{
+              height: 30px;
+              color: #066dc2;
+              font-size: 16px;
+              border: 0 none;
+              line-height: 30px;
+            }
+            .span-line{
+              display: inline-block;
+              width: 1px;
+              height: 28px;
+              background-color: #d3dce3;
+              margin-left: 20px;
+              vertical-align: middle;
+            }
+            .line-list{
+              display: inline-block;
+              width: 20px;
+              height: 17px;
+              background: url("/images/business/line.png") no-repeat center;
+              padding: 0 25px 30px;
+              vertical-align: middle;
+            }
+            .right-list{
+              display: none;
+              .list-text{
+                position: absolute;
+                width: 115px;
+                background: #f0f6fa;
+                border: 1px solid #98b2c7;
+                border-radius: 5px;
+                left: 20%;
+                top: 25px;
+                text-align: center;
+                padding: {
+                  left: 10px;
+                  right: 10px;
+                }
+                a{
+                  display: block;
+                  border-bottom:1px solid #98b2c7;
+                  font-size: 14px;
+                  color: #666;
+                  &:last-child{
+                    border-bottom: 0;
+                    border: {
+                      left: 1px;
+                      style: solid;
+                      color: #d6dadd;
+                    }
+                  }
+                  &:hover{
+                    color: #066dc2;
+                  }
+                }
+              }
+
+            }
+          }
+
+        }
+      }
+    }
+  }
+
 }
 
 //left nav end

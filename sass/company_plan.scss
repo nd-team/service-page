@@ -10,7 +10,6 @@
   padding:{
     left: 60px;
     top: 35px;
-    //bottom: 400px;
   }
   margin: {
     top: 62px;
@@ -23,7 +22,7 @@
     top: 62px;
     z-index: 1;
     background-color: #f0f1f5;
-    .management{
+    .plan{
       width: 80%;
       height: 60px;
       line-height: 60px;
@@ -33,9 +32,7 @@
       margin:{
         top: 35px;
       }
-      .management-left{
-
-
+      .plan-left{
         li{
           float: left;
           width: 202px;
@@ -61,7 +58,7 @@
         }
       }
 
-      .management-right{
+      .plan-right{
         float: right;
         a{
           display: inline-block;
