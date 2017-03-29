@@ -23,7 +23,7 @@ html, body {
   font-family:"Microsoft YaHei";
 }
 body{
-  background-color: #112130;
+  background-color: #f1f4f9;
 }
 ol, ul {
   list-style: none;
@@ -53,7 +53,7 @@ input,textarea{
   outline: none;
 }
 
-i {
+i{
   font-style: normal;
 }
 
@@ -85,6 +85,7 @@ header{
   background-color: #fff;
   box-shadow: 0 0 20px 10px #f5f5f5;
   position: fixed;
+  z-index: 1;
   .logo-left{
     float: left;
     .logo{
@@ -143,10 +144,8 @@ header{
 //left nav start
 .content{
   width: 100%;
-  height: 100%;
+  height: auto;
   overflow: hidden;
-  background-color: #112130;
-  //margin-top: 62px;
   nav{
     width: 208px;
     height: 100%;
@@ -156,20 +155,104 @@ header{
     top: 62px;
     left:0;
     float: left;
+    z-index: 2;
     .nav-left{
       li{
         width: 240px;
         height: 120px;
         line-height: 120px;
         text-align: center;
-        background-color: #46dbcd;
         margin-top: 62px;
         position: relative;
-        &:nth-of-type(2){
+        &:hover{
+          transition:all 5s;
+          >.nav-hover{
+            transition:all 5s;
+            display: block;
+          }
+        }
+        &.active{
+          background-color: #47dbcd;
+        }
+        &.red-nav{
           background-color: #f32f4e;
         }
-        &:last-child{
+        &.blue-nav{
           background-color: #066dc2;
+        }
+        .nav-hover{
+          width: 240px;
+          position: absolute;
+          left: 208px;
+          bottom: 0;
+          top: 0;
+          background-color: #47dbcd;
+          z-index: 20;
+          display: none;
+          transition:all .5s;
+          .company-nav{
+            width: 210px;
+            position: fixed;
+            top: 62px;
+            bottom: 0;
+            background-color: #47dbcd;
+            .company-plan{
+
+              &:last-child{
+                padding-top: 20px;
+              }
+              .plan-title{
+                height: 50px;
+                .vertical{
+                  width: 6px;
+                  height: 40px;
+                  display: inline-block;
+                  background-color: #fff;
+                  vertical-align: middle;
+                  margin-right: 10px;
+                }
+              }
+              .company-type{
+                padding-left: 32px;
+                p{
+                  height: 25px;
+                  text-align: center;
+                  margin: 10px 0 30px;
+                  .first-vertical{
+                    padding: 0 8px;
+                    border:{
+                      left: 2px;
+                      right: 2px;
+                      style: solid;
+                      color: #fff;
+                    }
+                  }
+                }
+              }
+              a{
+                line-height: 40px;
+                color: #fff;
+              }
+              .plan-pic{
+                height: 27px;
+                background-image: url("/images/img.png");
+                background-position: -20px 0;
+                background-repeat: no-repeat;
+                vertical-align: -5px;
+                padding: 5px 18px;
+
+              }
+              .project-pic{
+                height: 27px;
+                background-image: url("/images/img.png");
+                background-position: 0 0;
+                background-repeat: no-repeat;
+                vertical-align: -8px;
+                padding: 5px 12px;
+
+              }
+            }
+          }
         }
         span{
           position: absolute;
@@ -193,6 +276,7 @@ header{
           color: #fff;
           font-size: 16px;
         }
+
       }
     }
   }
@@ -200,13 +284,13 @@ header{
 
 //left nav end
 
-
-
 //footer style
 footer{
   height: auto;
   text-align: center;
-  margin-left: 240px;
+  margin-left: 208px;
+  background-color: #102131;
+  padding-top: 5px;
   .footer{
     width: 900px;
     height: auto;
