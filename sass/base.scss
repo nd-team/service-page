@@ -17,10 +17,10 @@ time, mark, audio, video {
   border: 0;
   vertical-align: baseline;
 }
-
+$font:"Microsoft YaHei";
 html, body {
   font-size: 16px;
-  font-family:"Microsoft YaHei";
+  font-family:$font;
 }
 body{
   background-color: #f1f4f9;
@@ -297,13 +297,13 @@ header{
     }
     //头部列表
     .top-fix{
-      width: 100%;
+      width: 80%;
       position: fixed;
       top: 63px;
       z-index: 1;
       background-color: #f0f1f5;
       .management{
-        width: 80%;
+        width: 100%;
         height: 60px;
         line-height: 60px;
         background: #fff;
@@ -312,7 +312,6 @@ header{
         margin:{
           top: 35px;
         }
-        overflow: hidden;
         .management-left{
           float: left;
           width: 50%;
@@ -339,6 +338,7 @@ header{
         }
         .management-right{
           float: right;
+          position: relative;
           li{
             float: left;
             position: relative;
@@ -353,6 +353,7 @@ header{
               font-size: 16px;
               border: 0 none;
               line-height: 30px;
+              font-family: $font;
             }
             .span-line{
               display: inline-block;
@@ -369,6 +370,7 @@ header{
               background: url("/images/business/line.png") no-repeat center;
               padding: 0 25px 30px;
               vertical-align: middle;
+              cursor: pointer;
             }
             .right-list{
               display: none;
@@ -378,8 +380,8 @@ header{
                 background: #f0f6fa;
                 border: 1px solid #98b2c7;
                 border-radius: 5px;
-                left: 20%;
-                top: 25px;
+                left: 15%;
+                top: 48px;
                 text-align: center;
                 padding: {
                   left: 10px;
@@ -392,11 +394,6 @@ header{
                   color: #666;
                   &:last-child{
                     border-bottom: 0;
-                    border: {
-                      left: 1px;
-                      style: solid;
-                      color: #d6dadd;
-                    }
                   }
                   &:hover{
                     color: #066dc2;
@@ -421,9 +418,6 @@ footer{
   height: 178px;
   text-align: center;
   width: 100%;
-  position: relative;
-  bottom:0;
-  left: 0;
   background-color: #102131;
   padding-top: 5px;
   .footer{

@@ -2,157 +2,17 @@
 
 //company plan nav
 .right-content{
-  float: left;
-  width: 100%;
-  height: auto;
-  background-color: #f0f1f5;
-  padding:{
-    left: 80px;
-    top: 35px;
-  }
-  margin: {
-    left: 208px;
-  }
-  //头部列表
-  .top-fix{
-    width: 100%;
-    position: fixed;
-    top: 63px;
-    z-index: 1;
-    background-color: #f0f1f5;
-    .management{
-      width: 80%;
-      height: 60px;
-      line-height: 60px;
-      background: #fff;
-      border:1px solid #dadce0;
-      border-radius: 10px 10px 0 0;
-      margin:{
-        top: 35px;
-      }
-      overflow: hidden;
-      .management-left{
-        float: left;
-        width: 50%;
-        height: 62px;
-        li{
-          float: left;
-          width: 150px;
-          height: 100%;
-          a{
-            font-size:14px;
-            padding: 0  35px 0 30px;
-            color: #252525;
-            display: inline-block;
-            height: 26px;
-            border-right: 1px solid #d3dce2;
-            vertical-align: middle;
-            line-height: 28px;
-          }
-          &.current{
-            margin: 0 5px;
-            height: 57px;
-            border-bottom:3px solid #066cc0;
-          }
-        }
-      }
-      .management-right{
-        float: right;
-        li{
-          float: left;
-          position: relative;
-          &:first-child{
-            height: 30px;
-            vertical-align: middle;
-          }
-          vertical-align: middle;
-          .selected{
-            height: 30px;
-            color: #066dc2;
-            font-size: 16px;
-            border: 0 none;
-            line-height: 30px;
-          }
-          .span-line{
-            display: inline-block;
-            width: 1px;
-            height: 28px;
-            background-color: #d3dce3;
-            margin-left: 20px;
-            vertical-align: middle;
-          }
-          .line-list{
-            display: inline-block;
-            width: 20px;
-            height: 17px;
-            background: url("/images/business/line.png") no-repeat center;
-            padding: 0 25px 30px;
-            vertical-align: middle;
-          }
-          .right-list{
-            display: none;
-            .list-text{
-              position: absolute;
-              width: 115px;
-              background: #f0f6fa;
-              border: 1px solid #98b2c7;
-              border-radius: 5px;
-              left: 20%;
-              top: 25px;
-              text-align: center;
-              padding: {
-                left: 10px;
-                right: 10px;
-              }
-              a{
-                display: block;
-                border-bottom:1px solid #98b2c7;
-                font-size: 14px;
-                color: #666;
-                &:last-child{
-                  border-bottom: 0;
-                  border: {
-                    left: 1px;
-                    style: solid;
-                    color: #d6dadd;
-                  }
-                }
-                &:hover{
-                  color: #066dc2;
-                }
-              }
-            }
-
-          }
-        }
-
-      }
-    }
-  }
-  .so{
-    display: flex;
-    width: 75%;
-    justify-content: flex-end;
-    .under-search{
-      background: url("/images/business/search.png") no-repeat center;
-      width: 26px;
-      height: 27px;
-      margin-bottom: 20px;
-      display: block;
-    }
-  }
-
   .article{
-    width: 75%;
-    margin-bottom: 30px;
+    width: 80%;
+    height: auto;
+    margin-top: 140px;
     .file-name{
-      display: flex;
-      align-items: center;
       line-height: 35px;
       border-bottom: 1px solid #dadada;
       .name-left{
-        flex: 1;
+        float: left;
         span{
+          vertical-align: middle;
           font-size: 18px;
           color: #333;
           padding-right: 10px;
@@ -181,9 +41,11 @@
         }
       }
       .file-position{
+        float: right;
         p{
           font-size: 12px;
           a{
+            font-size: 12px;
             &.cur{
               color: #046cc1;
             }
@@ -192,6 +54,7 @@
       }
     }
     .file-order{
+      width: 100%;
       min-height:500px;
       //overflow: hidden;
       .file-list{
@@ -199,19 +62,18 @@
         li{
           height: 60px;
           background-color: #fff;
-          display: flex;
-          align-items: center;
           box-shadow: 0 2px 6px rgba(0,0,0,.1);
           margin-bottom: 15px;
           &:hover{
             box-shadow:0 0 10px 5px #d2dfec;
           }
+          line-height: 60px;
           span{
-            display: flex;
-            flex: 0 0 26px;
+            display: inline-block;
+            width: 26px;
             height: 18px;
-            justify-content: center;
-            align-items: center;
+            text-align: center;
+            line-height: 18px;
             color: #fff;
             font:{
               size: 10px;
@@ -230,8 +92,6 @@
             }
           }
           .icon-text{
-            display: flex;
-            align-items: center;
             font-size: 16px;
             color: #333;
             padding-left: 45px;
@@ -251,10 +111,11 @@
         }
       }
       .list-change{
-        display: flex;
-        flex-wrap: wrap;
+        height: auto;
+        overflow: hidden;
         li{
-          flex: 0 0 185px;
+          float: left;
+          width: 185px;
           height: 150px;
           margin-right: 30px;
           display: flex;
@@ -270,22 +131,21 @@
             border-radius: 0;
           }
           .icon-text{
-            flex: 1;
-            flex-direction: column;
-            align-self: center;
+            width: 100%;
+            display: block;
+            text-align: center;
             padding:{
               left: 0;
             }
             .icon-second{
-              display: inline-block;
+              display: block;
               width: 85px;
               height: 77px;
               background: url("/images/business/big_file.png") no-repeat center;
+              margin: 15px auto 0;
             }
             text{
-              padding: {
-                top: 10px;
-              }
+              text-align: center;
             }
           }
         }
@@ -296,4 +156,3 @@
     }
   }
 }
-
