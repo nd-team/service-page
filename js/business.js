@@ -10,4 +10,11 @@ $(function () {
         $(this).attr({"id":"checked"+i});
         $(this).next("label").attr("for","checked"+i);
     })
+
+    $(".so").on('click','.under-search',function () {
+        $('.search-module').show();
+    })
+    $(".search-module .right-btn").on('click','.cancel',function () {
+        $('.search-module').hide();
+    })
 });

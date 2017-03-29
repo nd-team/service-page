@@ -49,10 +49,12 @@ img {
   max-width: 100%;
 }
 
-input,textarea{
+input,textarea,button{
   outline: none;
 }
-
+button{
+  border: 0 none;
+}
 i{
   font-style: normal;
 }
@@ -376,7 +378,7 @@ header{
               display: none;
               .list-text{
                 position: absolute;
-                width: 115px;
+                width: 90px;
                 background: #f0f6fa;
                 border: 1px solid #98b2c7;
                 border-radius: 5px;
