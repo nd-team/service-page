@@ -208,6 +208,9 @@
           &:nth-of-type(even){
             margin-right: 0;
           }
+          @media screen and (max-width: 1578px){
+            width: 46%;
+          }
           .top{
             width: 100%;
             .number{
