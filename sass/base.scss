@@ -296,20 +296,20 @@ header{
     background-color: #f0f1f5;
     padding:{
       left: 80px;
-      top: 35px;
+      top: 60px;
     }
     margin: {
-      left: 208px;
+      left: 195px;
     }
     //头部列表
     .top-fix{
-      width: 100%;
+      width: 84%;
       position: fixed;
       top: 58px;
       z-index: 5;
       background-color: #f0f1f5;
       .management{
-        width: 83%;
+        width: 100%;
         height: 60px;
         line-height: 60px;
         background: #fff;
@@ -320,7 +320,6 @@ header{
         }
         .management-left{
           float: left;
-          width: 50%;
           height: 62px;
           li{
             float: left;

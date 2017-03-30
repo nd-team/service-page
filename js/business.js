@@ -24,23 +24,34 @@ $(function () {
     });
     //切换菜单栏
     $('.management-right .line-btn .right-list').on("click",".list-text",function(){
+
         var listTitle = $(this).attr("data-title");
         console.log(listTitle);
-        if(listTitle=="delete"){
-            $('.all-main').children('.delete').show();
-            $("#modalbg").show();
-        }else if(listTitle=="review"){
-            $('.all-main').children('.review').show();
-            $("#modalbg").show();
-        }else {
-            $('.all-main').children("."+listTitle).show().siblings().hide();
-        }
+        // console.log(listTitle);
+        // if(listTitle=="delete"){
+        //     $('.all-main').children('.delete').show();
+        //     $("#modalbg").show();
+        // }else if(listTitle=="review"){
+        //     $('.all-main').children('.review').show();
+        //     $("#modalbg").show();
+        // }else {
+        //     $('.all-main').children("."+listTitle).show().siblings().hide();
+        // }
+        $('.list').find('.'+listTitle).show().siblings().not('.article,.so').hide();
+        $("#modulebg").show();
+        //  if(listTitle=="edit"){
+        //     $('.list').find('.edit .edit-box').show();
+        //     $("#modulebg").show();
+        // } else if(listTitle=="add"){
+        //
+        //  } else {
+        //     return
+        // }
     });
-    //删除框
-    $('.content').on("click",".delete button,.review button",function(){
-        $('.delete').hide();
-        $('.review').hide();
-        $("#modalbg").hide()
+    //编辑框
+    $('.edit-box').on("click",".close",function(){
+        $('.edit-box').hide();
+        $("#modulebg").hide()
     });
 
     // 文件切换
@@ -55,15 +66,20 @@ $(function () {
                 $(setting.parent).children(".file-list").eq($index).show().siblings().hide();//切换标签对应的内容
 
 
-            })
+            });
             //判断进入页面显示那个标签样式和内容
             if(setting.index==null){
-                $(this).find('.file-pic').eq(0).click();
+                $(this).find('li').eq(0).click();
             }else{
-                $(this).find('.file-pic').eq(options.index).click();
+                $(this).find('li').eq(options.index).click();
             }
         }
-    })(jQuery)
+    })(jQuery);
 
     $(".file-name").myTab({parent:".file-order",index:0});
+
+    // 点击汇总
+    $(".hui-btn").on('click','.and-btn',function(){
+        $(".summary-list").show();
+    });
 });
