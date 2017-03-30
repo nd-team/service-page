@@ -5,13 +5,12 @@
 
   //主体详细内容
   .tab-content{
-    width: 80%;
+    width: 83.5%;
     height: auto;
     margin-top: 140px;
     .so{
       width: 100%;
       position: relative;
-      overflow: hidden;
       .under-search{
         background: url("/images/business/search.png") no-repeat center;
         width: 26px;
@@ -21,35 +20,43 @@
         float: right;
       }
       .search-module{
-        width: 50%;
-        //height: 240px;
+        width: 45%;
         border:2px solid #066dc2;
         background-color: #fff;
         display: none;
+        position: absolute;
+        right: 0;
+        top: 30px;
+        padding: 0 25px;
         .search-input{
-          display: flex;
-          padding: 0 25px;
-          flex-wrap: wrap;
+          width: 100%;
+          overflow: hidden;
+
           li{
-            flex: 0 0 46%;
-            display: flex;
-            align-items: center;
+            width: 310px;
+            float: left;
             border-bottom:1px solid #ddd;
-            //padding: 20px 0 0 20px;
+            @media screen and (min-width: 1280px) and (max-width: 1680px){
+              width: 600px;
+            }
             margin:{
               top: 2px;
               right: 50px;
             }
             height: 65px;
-            &:last-child{
+            line-height: 65px;
+            &:nth-of-type(even){
               margin-right: 0;
             }
             label{
+              display: inline-block;
               height: 40px;
               line-height:40px;
               font-size: 14px;
               color: #666;
               border-right:1px solid #ededed;
+              text-align: left;
+              width: 56px;
               padding: {
                 left: 10px;
                 right: 30px;
@@ -57,11 +64,31 @@
             }
             input{
               width: 60%;
-              padding-left: 20px;
+              padding-left: 10px;
               font-size: 16px;
             }
           }
 
+        }
+        .right-btn{
+          margin: 30px 0;
+          float: right;
+          .btn{
+            width: 120px;
+            height: 40px;
+            font-size: 16px;
+            cursor: pointer;
+            font-family: $font;
+          }
+          .cancel{
+            background-color: #fff;
+            border:1px solid #066dc2;
+            color: #066dc2;
+          }
+          .summary{
+            background: #066dc2;
+            color: #fff;
+          }
         }
       }
     }
@@ -114,7 +141,7 @@
               }
             }
             .number-name{
-              width: 80%;
+              width: 83.5%;
               margin: 10px auto;
               p{
                 float: left;

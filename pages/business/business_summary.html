@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>业务市场化平台商务洽谈</title>
-    <meta name="keywords" content="查看附件">
-    <link rel="stylesheet" href="/css/business/business_file.css">
+    <meta name="keywords" content="汇总">
+    <link rel="stylesheet" href="/css/business/business_summary.css">
 </head>
 <body>
     <header class="clearfix">
@@ -113,89 +113,36 @@
             </div>
             <div class="article">
                 <div class="file-name clearfix">
-                    <div class="name-left">
-                        <span>文件名：</span>
-                        <a href="javascript:void(0)" class="file-pic current">
-                            <svg role="img" class="put">
-                                <use xlink:href="#put"></use>
-                            </svg>
-                        </a>
-                        <a href="javascript:void(0)" class="file-pic">
-                            <svg role="img" class="file">
-                                <use xlink:href="#file"></use>
-                            </svg>
-                        </a>
-                    </div>
                     <div class="file-position">
                         <p>
                             您的位置：<a href="javascript:void(0)">商务洽谈</a>><a href="javascript:void(0)">项目承包管理</a>>
-                            <a href="javascript:void(0)">项目承包洽谈</a>><a href="javascript:void(0)" class="cur">查看洽谈附件</a>
+                            <a href="javascript:void(0)">项目承包洽谈</a>><a href="javascript:void(0)" class="cur">汇总</a>
                         </p>
                     </div>
                 </div>
-                <div class="file-order">
-                    <ul class="file-list">
+                <div class="tab-summary">
+                    <ul class="summary-input clearfix">
                         <li>
-                            <span class="first">1</span>
-                            <a href="javascript:void(0)" class="icon-text">
-                                <i class="pic-file"></i>
-                                项目承包管理<small>.PNG</small>
-                            </a>
+                            <label>内部项目名称</label>
+                            <select class="select-number">
+                                <option value="0">必填数额</option>
+                                <option value="0">1</option>
+                                <option value="0">2</option>
+                            </select>
                         </li>
                         <li>
-                            <span class="second">2</span>
-                            <a href="javascript:void(0)" class="icon-text">
-                                <i class="pic-file"></i>
-                                转正审批表<small>.RAR</small>
-                            </a>
+                            <label>开始日期</label>
+                            <input type="text" class="icon-calendar" id="start" disabled>
                         </li>
                         <li>
-                            <span class="third">3</span>
-                            <a href="javascript:void(0)" class="icon-text">
-                                <i class="pic-file"></i>
-                                身份证<small>.JPEG</small>
-                            </a>
-                        </li>
-                        <li>
-                            <span class="first">4</span>
-                            <a href="javascript:void(0)" class="icon-text">
-                                <i class="pic-file"></i>
-                                资格证书<small>.JPEG</small>
-                            </a>
+                            <label>结束日期</label>
+                            <input type="text" class="icon-calendar" id="end" disabled>
                         </li>
                     </ul>
-                    <ul class="file-list list-change tab-item">
-                        <li>
-                            <span class="first">1</span>
-                            <a href="javascript:void(0)" class="icon-text">
-                                <i class="icon-second"></i>
-                                <text>项目承包管理<small>.PNG</small></text>
-                            </a>
-                        </li>
-                        <li>
-                            <span class="second">2</span>
-                            <a href="javascript:void(0)" class="icon-text">
-                                <i class="icon-second"></i>
-                                <text>转正审批表<small>.RAR</small></text>
-                            </a>
-                        </li>
-                        <li>
-                            <span class="third">3</span>
-                            <a href="javascript:void(0)" class="icon-text">
-                                <i class="icon-second"></i>
-                                <text>身份证<small>.JPEG</small></text>
-                            </a>
-                        </li>
-                        <li>
-                            <span class="first">4</span>
-                            <a href="javascript:void(0)" class="icon-text">
-                                <i class="icon-second"></i>
-                                <text>资格证书<small>.JPEG</small></text>
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="hui-btn clearfix">
+                        <button type="button" class="and-btn">汇总</button>
+                    </div>
                 </div>
-
             </div>
         </div>
     </div>
