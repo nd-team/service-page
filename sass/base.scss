@@ -58,7 +58,9 @@ button{
 i{
   font-style: normal;
 }
-
+select{
+  appearance: none;
+}
 a {
   color: #666;
   text-decoration: none;
@@ -357,6 +359,8 @@ header{
               border: 0 none;
               line-height: 30px;
               font-family: $font;
+              background:url("/images/business/select_down.png") no-repeat right center;
+              padding-right: 20px;
             }
             .span-line{
               display: inline-block;
@@ -383,8 +387,8 @@ header{
                 background: #f0f6fa;
                 border: 1px solid #98b2c7;
                 border-radius: 5px;
-                left: 15%;
                 top: 48px;
+                right: 0;
                 text-align: center;
                 padding: {
                   left: 10px;
@@ -395,6 +399,7 @@ header{
                   border-bottom:1px solid #98b2c7;
                   font-size: 14px;
                   color: #666;
+                  line-height: 35px;
                   &:last-child{
                     border-bottom: 0;
                   }
