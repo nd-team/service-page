@@ -326,10 +326,11 @@ header{
             width: 150px;
             height: 100%;
             a{
+              width: 100%;
               font-size:14px;
-              padding: 0  35px 0 30px;
               color: #252525;
               display: inline-block;
+              text-align: center;
               height: 26px;
               border-right: 1px solid #d3dce2;
               vertical-align: middle;
