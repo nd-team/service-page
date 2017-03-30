@@ -8,7 +8,7 @@ select{
 //right content
 .right-content{
   .article{
-    width: 83.5%;
+    width: 83%;
     min-height: 600px;
     margin-top: 140px;
     .file-name{
@@ -58,68 +58,71 @@ select{
         }
       }
     }
-    .tab-summary{
-      width: 100%;
-      height: auto;
-      overflow: hidden;
-      .summary-input{
+    .and-content{
+      .tab-summary{
+        width: 100%;
         height: auto;
-        li{
-          float: left;
-          width: 30%;
-          height: 50px;
-          line-height: 50px;
-          border-bottom: 1px solid #c6c6c6;
-          padding: 0 10px;
-          margin:{
-            right: 46px;
-            bottom: 35px;
-          }
-          &:nth-of-type(3){
-            margin-right: 0;
-          }
-          label{
+        overflow: hidden;
+        .summary-input{
+          height: auto;
+          li{
             float: left;
             width: 30%;
-            font-size: 14px;
-            color: #666;
-          }
-          .select-number{
-            float: left;
-            width: 70%;
-            text-align: center;
+            height: 50px;
             line-height: 50px;
-            font-size: 14px;
-            color: #999;
-            padding-left: 10px;
-            background:url("/images/business/down.png") no-repeat right 10px center;
-          }
-          input{
-            float: left;
-            width: 66%;
-            text-align: center;
-            line-height: 50px;
-            font-size: 14px;
-            color: #999;
-            padding-left: 10px;
-            &.icon-calendar{
-              background:url("/images/business/calendar.png") no-repeat right 10px center;
+            border-bottom: 1px solid #c6c6c6;
+            padding: 0 10px;
+            margin:{
+              right: 46px;
+              bottom: 35px;
+            }
+            &:nth-of-type(3){
+              margin-right: 0;
+            }
+            label{
+              float: left;
+              width: 30%;
+              font-size: 14px;
+              color: #666;
+            }
+            .select-number{
+              float: left;
+              width: 70%;
+              text-align: center;
+              line-height: 50px;
+              font-size: 14px;
+              color: #999;
+              padding-left: 10px;
+              background:url("/images/business/down.png") no-repeat right 10px center;
+            }
+            input{
+              float: left;
+              width: 66%;
+              text-align: center;
+              line-height: 50px;
+              font-size: 14px;
+              color: #999;
+              padding-left: 10px;
+              &.icon-calendar{
+                background:url("/images/business/calendar.png") no-repeat right 10px center;
+              }
             }
           }
         }
-      }
-      .hui-btn{
-        .and-btn{
-          float: right;
-          width: 120px;
-          height: 40px;
-          background-color: #066dc2;
-          line-height: 40px;
-          text-align: center;
-          font-size: 16px;
-          color: #fff;
+        .hui-btn{
+          .and-btn{
+            float: right;
+            width: 120px;
+            height: 40px;
+            background-color: #066dc2;
+            line-height: 40px;
+            text-align: center;
+            font-size: 16px;
+            color: #fff;
+          }
         }
       }
     }
+
   }
 }
