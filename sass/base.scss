@@ -88,7 +88,7 @@ header{
   background-color: #fff;
   box-shadow: 0 0 20px 10px #f5f5f5;
   position: fixed;
-  z-index: 1;
+  z-index: 6;
   .logo-left{
     float: left;
     .logo{
@@ -137,7 +137,7 @@ header{
       height: 45px;
       border-radius: 50%;
       float: right;
-      margin: 0 28px;
+      margin: 0 36px;
     }
 
   }
@@ -159,7 +159,7 @@ header{
     top: 62px;
     left:0;
     float: left;
-    z-index: 2;
+    z-index: 10;
     .nav-left{
       li{
         width: 240px;
@@ -191,7 +191,7 @@ header{
           bottom: 0;
           top: 0;
           background-color: #47dbcd;
-          z-index: 20;
+          z-index: 50;
           display: none;
           transition:all .5s;
           .company-nav{
@@ -300,13 +300,13 @@ header{
     }
     //头部列表
     .top-fix{
-      width: 80%;
+      width: 100%;
       position: fixed;
-      top: 63px;
-      z-index: 1;
+      top: 58px;
+      z-index: 5;
       background-color: #f0f1f5;
       .management{
-        width: 100%;
+        width: 83%;
         height: 60px;
         line-height: 60px;
         background: #fff;
