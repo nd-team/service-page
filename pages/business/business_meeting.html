@@ -7,6 +7,7 @@
     <title>业务市场化平台商务洽谈</title>
     <meta name="keywords" content="商务洽谈">
     <link rel="stylesheet" href="/css/business/business_meeting.css">
+    <!--<link rel="stylesheet" href="/css/business/business_file.css">-->
 </head>
 <body>
     <header class="clearfix">
@@ -94,297 +95,368 @@
                         <li class="line-btn">
                             <i class="line-list"></i>
                             <div class="right-list">
-                                <p class="list-text">
+                                <p class="list-text current" data-title="list">
                                     <a href="javascript:void(0)">列表</a>
+                                </p>
+                                <p data-title="add" class="list-text">
                                     <a href="javascript:void(0)">添加</a>
+                                </p>
+                                <p data-title="edit" class="list-text">
                                     <a href="javascript:void(0)">编辑</a>
+                                </p>
+                                <p data-title="deleted" class="list-text">
                                     <a href="javascript:void(0)">删除</a>
+                                </p>
+                                <p data-title="upload" class="list-text">
                                     <a href="javascript:void(0)">上传洽谈附件</a>
+                                </p>
+                                <p data-title="view" class="list-text">
                                     <a href="javascript:void(0)">查看洽谈附件</a>
+                                </p>
+                                <p data-title="import" class="list-text">
                                     <a href="javascript:void(0)">导入</a>
+                                </p>
+                                <p data-title="export" class="list-text">
                                     <a href="javascript:void(0)">导出</a>
+                                </p>
+                                <p data-title="send-custom" class="list-text">
                                     <a href="javascript:void(0)">汇总发送定制</a>
-                                    <a href="/pages/business/business_summary.html">汇总</a>
+                                </p>
+                                <p data-title="summary" class="list-text">
+                                    <a href="javascript:void(0)">汇总</a>
                                 </p>
                             </div>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="tab-content clearfix">
-                <div class="so">
-                    <a href="javascript:void(0)" class="under-search"></a>
-                    <div class="search-module clearfix">
-                        <ul class="search-input">
+            <div class="all-main">
+                <div class="tab-content clearfix list">
+                    <div class="so">
+                        <a href="javascript:void(0)" class="under-search"></a>
+                        <div class="search-module clearfix">
+                            <ul class="search-input">
+                                <li>
+                                    <label>洽谈人</label>
+                                    <input type="text">
+                                </li>
+                                <li>
+                                    <label>洽谈对象</label>
+                                    <input type="text">
+                                </li>
+                                <li>
+                                    <label>项目结果</label>
+                                    <input type="text">
+                                </li>
+                            </ul>
+                            <div class="right-btn">
+                                <button type="button" class="btn cancel">取消</button>
+                                <button type="button" class="btn summary">汇总</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="article clearfix">
+                        <ul class="all-module clearfix">
                             <li>
-                                <label>洽谈人</label>
-                                <input type="text">
+                                <div class="top">
+                                    <span class="number">1</span>
+                                    <div class="number-name clearfix">
+                                        <p>合同外部项目名称：<span>软件测试培训机构</span></p>
+                                        <p>内部部项目名称：<span>软件测试培训机构</span></p>
+                                        <p>合同外部编号：<span>SW2016022</span></p>
+                                        <p>内部项目编号：<span>GZ2016022</span></p>
+                                    </div>
+                                    <div class="input">
+                                        <input type="checkbox" checked="checked" class="checked-none" data-style="checked">
+                                        <label class="tick"></label>
+                                    </div>
+                                </div>
+                                <div class="center clearfix">
+                                    <p class="head-pic">
+                                        <a href="javascript:void(0)"><img src="/images/business/pic_head.png" alt=""></a>
+                                        <span>洽谈人：高令军</span>
+                                    </p>
+                                    <p class="mutual">
+                                        <a href="javascript:void(0)"><img src="/images/business/mutual.png" alt=""></a>
+                                        <span>(洽谈轮次：3)</span>
+                                    </p>
+                                    <p class="head-pic">
+                                        <a href="javascript:void(0)"><img src="/images/business/head_pic.png" alt=""></a>
+                                        <span>洽谈对象：郑金锁</span>
+                                    </p>
+                                </div>
+                                <div class="edit-input clearfix">
+                                    <p class="input-text">
+                                        <label>洽谈目的：</label>
+                                        <input type="text" value="传达文件精神">
+                                    </p>
+                                    <p class="input-text">
+                                        <label>洽谈内容：</label>
+                                        <input type="text">
+                                    </p>
+                                    <p class="input-text">
+                                        <label>费用预算：</label>
+                                        <input type="number" placeholder="15800￥">
+                                    </p>
+                                    <p class="input-text">
+                                        <label>项目结果：</label>
+                                        <input type="text">
+                                    </p>
+                                </div>
+                                <div class="other-thing">
+                                    <a href="javascript:void(0)" class="same-icon">
+                                        <i class="time-icon"></i>
+                                        <small>2017-03-22</small>
+                                    </a>
+                                    <a href="javascript:void(0)" class="same-icon">
+                                        <i class="address-icon"></i>
+                                        <small>广州</small>
+                                    </a>
+                                    <a href="javascript:void(0)" class="same-icon">
+                                        <i class="people-icon"></i>
+                                        <small>黄焕来</small>
+                                    </a>
+                                </div>
                             </li>
                             <li>
-                                <label>洽谈对象</label>
-                                <input type="text">
+                                <div class="top">
+                                    <span class="number">2</span>
+                                    <div class="number-name clearfix">
+                                        <p>合同外部项目名称：<span>软件测试培训机构</span></p>
+                                        <p>内部部项目名称：<span>软件测试培训机构</span></p>
+                                        <p>合同外部编号：<span>SW2016022</span></p>
+                                        <p>内部项目编号：<span>GZ2016022</span></p>
+                                    </div>
+                                    <div class="input">
+                                        <input type="checkbox" checked="checked" class="checked-none" data-style="checked">
+                                        <label class="tick"></label>
+                                    </div>
+                                </div>
+                                <div class="center clearfix">
+                                    <p class="head-pic">
+                                        <a href="javascript:void(0)"><img src="/images/business/pic_head.png" alt=""></a>
+                                        <span>洽谈人：高令军</span>
+                                    </p>
+                                    <p class="mutual">
+                                        <a href="javascript:void(0)"><img src="/images/business/mutual.png" alt=""></a>
+                                        <span>(洽谈轮次：3)</span>
+                                    </p>
+                                    <p class="head-pic">
+                                        <a href="javascript:void(0)"><img src="/images/business/head_pic.png" alt=""></a>
+                                        <span>洽谈对象：郑金锁</span>
+                                    </p>
+                                </div>
+                                <div class="edit-input clearfix">
+                                    <p class="input-text">
+                                        <label>洽谈目的：</label>
+                                        <input type="text" value="传达文件精神">
+                                    </p>
+                                    <p class="input-text">
+                                        <label>洽谈内容：</label>
+                                        <input type="text">
+                                    </p>
+                                    <p class="input-text">
+                                        <label>费用预算：</label>
+                                        <input type="number" placeholder="15800￥">
+                                    </p>
+                                    <p class="input-text">
+                                        <label>项目结果：</label>
+                                        <input type="text">
+                                    </p>
+                                </div>
+                                <div class="other-thing">
+                                    <a href="javascript:void(0)" class="same-icon">
+                                        <i class="time-icon"></i>
+                                        <small>2017-03-22</small>
+                                    </a>
+                                    <a href="javascript:void(0)" class="same-icon">
+                                        <i class="address-icon"></i>
+                                        <small>广州</small>
+                                    </a>
+                                    <a href="javascript:void(0)" class="same-icon">
+                                        <i class="people-icon"></i>
+                                        <small>黄焕来</small>
+                                    </a>
+                                </div>
                             </li>
                             <li>
-                                <label>项目结果</label>
-                                <input type="text">
+                                <div class="top">
+                                    <span class="number">3</span>
+                                    <div class="number-name clearfix">
+                                        <p>合同外部项目名称：<span>软件测试培训机构</span></p>
+                                        <p>内部部项目名称：<span>软件测试培训机构</span></p>
+                                        <p>合同外部编号：<span>SW2016022</span></p>
+                                        <p>内部项目编号：<span>GZ2016022</span></p>
+                                    </div>
+                                    <div class="input">
+                                        <input type="checkbox" checked="checked" class="checked-none" data-style="checked">
+                                        <label class="tick"></label>
+                                    </div>
+                                </div>
+                                <div class="center clearfix">
+                                    <p class="head-pic">
+                                        <a href="javascript:void(0)"><img src="/images/business/pic_head.png" alt=""></a>
+                                        <span>洽谈人：高令军</span>
+                                    </p>
+                                    <p class="mutual">
+                                        <a href="javascript:void(0)"><img src="/images/business/mutual.png" alt=""></a>
+                                        <span>(洽谈轮次：3)</span>
+                                    </p>
+                                    <p class="head-pic">
+                                        <a href="javascript:void(0)"><img src="/images/business/head_pic.png" alt=""></a>
+                                        <span>洽谈对象：郑金锁</span>
+                                    </p>
+                                </div>
+                                <div class="edit-input clearfix">
+                                    <p class="input-text">
+                                        <label>洽谈目的：</label>
+                                        <input type="text" value="传达文件精神">
+                                    </p>
+                                    <p class="input-text">
+                                        <label>洽谈内容：</label>
+                                        <input type="text">
+                                    </p>
+                                    <p class="input-text">
+                                        <label>费用预算：</label>
+                                        <input type="number" placeholder="15800￥">
+                                    </p>
+                                    <p class="input-text">
+                                        <label>项目结果：</label>
+                                        <input type="text">
+                                    </p>
+                                </div>
+                                <div class="other-thing">
+                                    <a href="javascript:void(0)" class="same-icon">
+                                        <i class="time-icon"></i>
+                                        <small>2017-03-22</small>
+                                    </a>
+                                    <a href="javascript:void(0)" class="same-icon">
+                                        <i class="address-icon"></i>
+                                        <small>广州</small>
+                                    </a>
+                                    <a href="javascript:void(0)" class="same-icon">
+                                        <i class="people-icon"></i>
+                                        <small>黄焕来</small>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top">
+                                    <span class="number">4</span>
+                                    <div class="number-name clearfix">
+                                        <p>合同外部项目名称：<span>软件测试培训机构</span></p>
+                                        <p>内部部项目名称：<span>软件测试培训机构</span></p>
+                                        <p>合同外部编号：<span>SW2016022</span></p>
+                                        <p>内部项目编号：<span>GZ2016022</span></p>
+                                    </div>
+                                    <div class="input">
+                                        <input type="checkbox" checked="checked" class="checked-none" data-style="checked">
+                                        <label class="tick"></label>
+                                    </div>
+                                </div>
+                                <div class="center clearfix">
+                                    <p class="head-pic">
+                                        <a href="javascript:void(0)"><img src="/images/business/pic_head.png" alt=""></a>
+                                        <span>洽谈人：高令军</span>
+                                    </p>
+                                    <p class="mutual">
+                                        <a href="javascript:void(0)"><img src="/images/business/mutual.png" alt=""></a>
+                                        <span>(洽谈轮次：3)</span>
+                                    </p>
+                                    <p class="head-pic">
+                                        <a href="javascript:void(0)"><img src="/images/business/head_pic.png" alt=""></a>
+                                        <span>洽谈对象：郑金锁</span>
+                                    </p>
+                                </div>
+                                <div class="edit-input clearfix">
+                                    <p class="input-text">
+                                        <label>洽谈目的：</label>
+                                        <input type="text" value="传达文件精神">
+                                    </p>
+                                    <p class="input-text">
+                                        <label>洽谈内容：</label>
+                                        <input type="text">
+                                    </p>
+                                    <p class="input-text">
+                                        <label>费用预算：</label>
+                                        <input type="number" placeholder="15800￥">
+                                    </p>
+                                    <p class="input-text">
+                                        <label>项目结果：</label>
+                                        <input type="text">
+                                    </p>
+                                </div>
+                                <div class="other-thing">
+                                    <a href="javascript:void(0)" class="same-icon">
+                                        <i class="time-icon"></i>
+                                        <small>2017-03-22</small>
+                                    </a>
+                                    <a href="javascript:void(0)" class="same-icon">
+                                        <i class="address-icon"></i>
+                                        <small>广州</small>
+                                    </a>
+                                    <a href="javascript:void(0)" class="same-icon">
+                                        <i class="people-icon"></i>
+                                        <small>黄焕来</small>
+                                    </a>
+                                </div>
                             </li>
                         </ul>
-                        <div class="right-btn">
-                            <button type="button" class="btn cancel">取消</button>
-                            <button type="button" class="btn summary">汇总</button>
+                    </div>
+                </div>
+                <div class="tab-content clearfix summary">
+                    <div class="article">
+                        <div class="file-name clearfix">
+                            <div class="file-position">
+                                <p>
+                                    您的位置：<a href="javascript:void(0)">商务洽谈</a>><a href="javascript:void(0)">项目承包管理</a>>
+                                    <a href="javascript:void(0)">项目承包洽谈</a>><a href="javascript:void(0)" class="cur">汇总</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="and-content">
+                            <div class="tab-summary">
+                                <ul class="summary-input clearfix">
+                                    <li>
+                                        <label>内部项目名称</label>
+                                        <select class="select-number">
+                                            <option value="0">必填数额</option>
+                                            <option value="0">1</option>
+                                            <option value="0">2</option>
+                                        </select>
+                                    </li>
+                                    <li>
+                                        <label>开始日期</label>
+                                        <input type="text" class="icon-calendar" id="start" disabled>
+                                    </li>
+                                    <li>
+                                        <label>结束日期</label>
+                                        <input type="text" class="icon-calendar" id="end" disabled>
+                                    </li>
+                                </ul>
+                                <div class="hui-btn clearfix">
+                                    <button type="button" class="and-btn">汇总</button>
+                                </div>
+                            </div>
+                            <ul class="summary-list">
+                                <li class="head-list">
+                                    <span>合同外部项目名称</span>
+                                    <span>洽谈人</span>
+                                    <span>项目合作</span>
+                                    <span>内部项目名称</span>
+                                    <span>洽谈对象</span>
+                                    <span>项目跟进</span>
+                                    <span>洽谈轮次</span>
+                                    <span>费用预算</span>
+                                    <span>项目丢弃</span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-
-                </div>
-                <div class="article clearfix">
-                    <ul class="all-module clearfix">
-                        <li>
-                            <div class="top">
-                                <span class="number">1</span>
-                                <div class="number-name clearfix">
-                                    <p>合同外部项目名称：<span>软件测试培训机构</span></p>
-                                    <p>内部部项目名称：<span>软件测试培训机构</span></p>
-                                    <p>合同外部编号：<span>SW2016022</span></p>
-                                    <p>内部项目编号：<span>GZ2016022</span></p>
-                                </div>
-                                <div class="input">
-                                    <input type="checkbox" checked="checked" class="checked-none" data-style="checked">
-                                    <label class="tick"></label>
-                                </div>
-                            </div>
-                            <div class="center clearfix">
-                                <p class="head-pic">
-                                    <a href="javascript:void(0)"><img src="/images/business/pic_head.png" alt=""></a>
-                                    <span>洽谈人：高令军</span>
-                                </p>
-                                <p class="mutual">
-                                    <a href="javascript:void(0)"><img src="/images/business/mutual.png" alt=""></a>
-                                    <span>(洽谈轮次：3)</span>
-                                </p>
-                                <p class="head-pic">
-                                    <a href="javascript:void(0)"><img src="/images/business/head_pic.png" alt=""></a>
-                                    <span>洽谈对象：郑金锁</span>
-                                </p>
-                            </div>
-                            <div class="edit-input clearfix">
-                                <p class="input-text">
-                                    <label>洽谈目的：</label>
-                                    <input type="text" value="传达文件精神">
-                                </p>
-                                <p class="input-text">
-                                    <label>洽谈内容：</label>
-                                    <input type="text">
-                                </p>
-                                <p class="input-text">
-                                    <label>费用预算：</label>
-                                    <input type="number" placeholder="15800￥">
-                                </p>
-                                <p class="input-text">
-                                    <label>项目结果：</label>
-                                    <input type="text">
-                                </p>
-                            </div>
-                            <div class="other-thing">
-                                <a href="javascript:void(0)" class="same-icon">
-                                    <i class="time-icon"></i>
-                                    <small>2017-03-22</small>
-                                </a>
-                                <a href="javascript:void(0)" class="same-icon">
-                                    <i class="address-icon"></i>
-                                    <small>广州</small>
-                                </a>
-                                <a href="javascript:void(0)" class="same-icon">
-                                    <i class="people-icon"></i>
-                                    <small>黄焕来</small>
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="top">
-                                <span class="number">2</span>
-                                <div class="number-name clearfix">
-                                    <p>合同外部项目名称：<span>软件测试培训机构</span></p>
-                                    <p>内部部项目名称：<span>软件测试培训机构</span></p>
-                                    <p>合同外部编号：<span>SW2016022</span></p>
-                                    <p>内部项目编号：<span>GZ2016022</span></p>
-                                </div>
-                                <div class="input">
-                                    <input type="checkbox" checked="checked" class="checked-none" data-style="checked">
-                                    <label class="tick"></label>
-                                </div>
-                            </div>
-                            <div class="center clearfix">
-                                <p class="head-pic">
-                                    <a href="javascript:void(0)"><img src="/images/business/pic_head.png" alt=""></a>
-                                    <span>洽谈人：高令军</span>
-                                </p>
-                                <p class="mutual">
-                                    <a href="javascript:void(0)"><img src="/images/business/mutual.png" alt=""></a>
-                                    <span>(洽谈轮次：3)</span>
-                                </p>
-                                <p class="head-pic">
-                                    <a href="javascript:void(0)"><img src="/images/business/head_pic.png" alt=""></a>
-                                    <span>洽谈对象：郑金锁</span>
-                                </p>
-                            </div>
-                            <div class="edit-input clearfix">
-                                <p class="input-text">
-                                    <label>洽谈目的：</label>
-                                    <input type="text" value="传达文件精神">
-                                </p>
-                                <p class="input-text">
-                                    <label>洽谈内容：</label>
-                                    <input type="text">
-                                </p>
-                                <p class="input-text">
-                                    <label>费用预算：</label>
-                                    <input type="number" placeholder="15800￥">
-                                </p>
-                                <p class="input-text">
-                                    <label>项目结果：</label>
-                                    <input type="text">
-                                </p>
-                            </div>
-                            <div class="other-thing">
-                                <a href="javascript:void(0)" class="same-icon">
-                                    <i class="time-icon"></i>
-                                    <small>2017-03-22</small>
-                                </a>
-                                <a href="javascript:void(0)" class="same-icon">
-                                    <i class="address-icon"></i>
-                                    <small>广州</small>
-                                </a>
-                                <a href="javascript:void(0)" class="same-icon">
-                                    <i class="people-icon"></i>
-                                    <small>黄焕来</small>
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="top">
-                                <span class="number">3</span>
-                                <div class="number-name clearfix">
-                                    <p>合同外部项目名称：<span>软件测试培训机构</span></p>
-                                    <p>内部部项目名称：<span>软件测试培训机构</span></p>
-                                    <p>合同外部编号：<span>SW2016022</span></p>
-                                    <p>内部项目编号：<span>GZ2016022</span></p>
-                                </div>
-                                <div class="input">
-                                    <input type="checkbox" checked="checked" class="checked-none" data-style="checked">
-                                    <label class="tick"></label>
-                                </div>
-                            </div>
-                            <div class="center clearfix">
-                                <p class="head-pic">
-                                    <a href="javascript:void(0)"><img src="/images/business/pic_head.png" alt=""></a>
-                                    <span>洽谈人：高令军</span>
-                                </p>
-                                <p class="mutual">
-                                    <a href="javascript:void(0)"><img src="/images/business/mutual.png" alt=""></a>
-                                    <span>(洽谈轮次：3)</span>
-                                </p>
-                                <p class="head-pic">
-                                    <a href="javascript:void(0)"><img src="/images/business/head_pic.png" alt=""></a>
-                                    <span>洽谈对象：郑金锁</span>
-                                </p>
-                            </div>
-                            <div class="edit-input clearfix">
-                                <p class="input-text">
-                                    <label>洽谈目的：</label>
-                                    <input type="text" value="传达文件精神">
-                                </p>
-                                <p class="input-text">
-                                    <label>洽谈内容：</label>
-                                    <input type="text">
-                                </p>
-                                <p class="input-text">
-                                    <label>费用预算：</label>
-                                    <input type="number" placeholder="15800￥">
-                                </p>
-                                <p class="input-text">
-                                    <label>项目结果：</label>
-                                    <input type="text">
-                                </p>
-                            </div>
-                            <div class="other-thing">
-                                <a href="javascript:void(0)" class="same-icon">
-                                    <i class="time-icon"></i>
-                                    <small>2017-03-22</small>
-                                </a>
-                                <a href="javascript:void(0)" class="same-icon">
-                                    <i class="address-icon"></i>
-                                    <small>广州</small>
-                                </a>
-                                <a href="javascript:void(0)" class="same-icon">
-                                    <i class="people-icon"></i>
-                                    <small>黄焕来</small>
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="top">
-                                <span class="number">4</span>
-                                <div class="number-name clearfix">
-                                    <p>合同外部项目名称：<span>软件测试培训机构</span></p>
-                                    <p>内部部项目名称：<span>软件测试培训机构</span></p>
-                                    <p>合同外部编号：<span>SW2016022</span></p>
-                                    <p>内部项目编号：<span>GZ2016022</span></p>
-                                </div>
-                                <div class="input">
-                                    <input type="checkbox" checked="checked" class="checked-none" data-style="checked">
-                                    <label class="tick"></label>
-                                </div>
-                            </div>
-                            <div class="center clearfix">
-                                <p class="head-pic">
-                                    <a href="javascript:void(0)"><img src="/images/business/pic_head.png" alt=""></a>
-                                    <span>洽谈人：高令军</span>
-                                </p>
-                                <p class="mutual">
-                                    <a href="javascript:void(0)"><img src="/images/business/mutual.png" alt=""></a>
-                                    <span>(洽谈轮次：3)</span>
-                                </p>
-                                <p class="head-pic">
-                                    <a href="javascript:void(0)"><img src="/images/business/head_pic.png" alt=""></a>
-                                    <span>洽谈对象：郑金锁</span>
-                                </p>
-                            </div>
-                            <div class="edit-input clearfix">
-                                <p class="input-text">
-                                    <label>洽谈目的：</label>
-                                    <input type="text" value="传达文件精神">
-                                </p>
-                                <p class="input-text">
-                                    <label>洽谈内容：</label>
-                                    <input type="text">
-                                </p>
-                                <p class="input-text">
-                                    <label>费用预算：</label>
-                                    <input type="number" placeholder="15800￥">
-                                </p>
-                                <p class="input-text">
-                                    <label>项目结果：</label>
-                                    <input type="text">
-                                </p>
-                            </div>
-                            <div class="other-thing">
-                                <a href="javascript:void(0)" class="same-icon">
-                                    <i class="time-icon"></i>
-                                    <small>2017-03-22</small>
-                                </a>
-                                <a href="javascript:void(0)" class="same-icon">
-                                    <i class="address-icon"></i>
-                                    <small>广州</small>
-                                </a>
-                                <a href="javascript:void(0)" class="same-icon">
-                                    <i class="people-icon"></i>
-                                    <small>黄焕来</small>
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
                 </div>
             </div>
+
         </div>
     </div>
     <footer>

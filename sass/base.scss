@@ -60,6 +60,7 @@ i{
 }
 select{
   appearance: none;
+  border:0 none;
 }
 a {
   color: #666;
@@ -381,31 +382,38 @@ header{
             }
             .right-list{
               display: none;
+              position: absolute;
+              width: 90px;
+              background: #f0f6fa;
+              border: 1px solid #98b2c7;
+              border-radius: 5px;
+              top: 48px;
+              right: 0;
+              text-align: center;
+              padding: {
+                left: 10px;
+                right: 10px;
+              }
               .list-text{
-                position: absolute;
-                width: 90px;
-                background: #f0f6fa;
-                border: 1px solid #98b2c7;
-                border-radius: 5px;
-                top: 48px;
-                right: 0;
-                text-align: center;
-                padding: {
-                  left: 10px;
-                  right: 10px;
+                border-bottom:1px solid #98b2c7;
+                line-height: 35px;
+                &:last-child{
+                  border-bottom: 0;
                 }
-                a{
-                  display: block;
-                  border-bottom:1px solid #98b2c7;
-                  font-size: 14px;
-                  color: #666;
-                  line-height: 35px;
-                  &:last-child{
-                    border-bottom: 0;
-                  }
-                  &:hover{
+                &.current{
+                  a{
                     color: #066dc2;
                   }
+
+                }
+                &:hover{
+                  a{
+                    color: #066dc2;
+                  }
+                }
+                a{
+                  font-size: 14px;
+                  color: #666;
                 }
               }
 
