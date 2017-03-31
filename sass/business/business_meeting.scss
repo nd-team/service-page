@@ -111,7 +111,7 @@
           height: auto;
           li{
             float: left;
-            width: 48%;
+            width: 47%;
             background-color: #fff;
             margin:{
               bottom: 45px;
@@ -417,33 +417,43 @@
         //查看洽谈文件
         .file-name{
           line-height: 35px;
+          overflow: hidden;
+          span{
+            font-size: 18px;
+            color: #333;
+            padding-right: 10px;
+            float: left;
+            margin-top: 4px;
+          }
           .name-left{
-            span{
-              vertical-align: middle;
-              font-size: 18px;
-              color: #333;
-              padding-right: 10px;
-            }
-            .file-pic{
-              vertical-align: middle;
-              padding: 0 5px 5px;
+            float: left;
+            li{
+              float: left;
+              text-align: center;
               margin-right: 10px;
-              svg{
-                width: 20px;
-                height: 20px;
-                fill: #757575;
-                vertical-align: middle;
-                text-align: center;
-                &.file{
-                  width: 25px;
-                  height: 25px;
+              &.current{
+                border-bottom:2px solid #046ec4;
+                .file-pic{
+                  svg{
+                    fill:#066dc2 ;
+                  }
                 }
+
               }
-            }
-            .current{
-              border-bottom:2px solid #046ec4;
-              svg{
-                fill:#066dc2 ;
+              .file-pic{
+                vertical-align: middle;
+                padding: 0 8px 5px;
+                text-align: center;
+                svg{
+                  width: 20px;
+                  height: 20px;
+                  fill: #757575;
+                  vertical-align: middle;
+                  &.file{
+                    width: 25px;
+                    height: 25px;
+                  }
+                }
               }
             }
           }

@@ -43,34 +43,37 @@ $(function () {
             $('.list').find('.'+listTitle).show().siblings().not('.article,.so').hide();
             $("#modulebg").show();
         }
-
-
-
-        //  if(listTitle=="edit"){
-        //     $('.list').find('.edit .edit-box').show();
-        //     $("#modulebg").show();
-        // } else if(listTitle=="add"){
-        //
-        //  } else {
-        //     return
-        // }
     });
     //编辑框
     $('.edit-box').on("click",".close",function(){
-        $('.edit').hide();
+        $('.same-hide').hide();
         $("#modulebg").hide()
     });
 
+    // 切换其它菜单栏
+    $(".right-list").find(".same-tab").on("click",function(){
+        var $this = $(this),
+            $index = $this.index();
+        $this.addClass("have").siblings().removeClass("have");
+
+        // if($this.hasClass('have')){
+        //     $(".all-main").find(".same-over").eq($index).show();
+        //     // $(".all-main").find(".list").hide();
+        // }else {
+        //     $this.removeClass("have");
+        //     $(".all-main").find(".same-over").eq($index).hide()
+        // }
+    });
     // 文件切换
     (function($){
         $.fn.myTab = function(options){//将对象作为参数传进去
             var defult = {parent:"",index:null},
                 setting =$.extend(defult,options);//extend方法合并两个对象，如果两个对象有相同属性，则后面的那个对象的属性覆盖前面那个对象的属性。
-            $(this).find(".file-pic").on("click",function(){
+            $(this).find("li").on("click",function(){
                 var $this=$(this),
                     $index =$this.index();
                 $this.addClass("current").siblings().removeClass("current");
-                $(setting.parent).children(".file-list").eq($index).show().siblings().hide();//切换标签对应的内容
+                $(setting.parent).children("ul").eq($index).show().siblings().hide();//切换标签对应的内容
 
 
             });
@@ -83,10 +86,19 @@ $(function () {
         }
     })(jQuery);
 
-    $(".file-name").myTab({parent:".file-order",index:0});
+    $(".name-left").myTab({parent:".file-order",index:0});
 
     // 点击汇总
     $(".hui-btn").on('click','.and-btn',function(){
         $(".summary-list").show();
+    });
+
+     // 点击select跳链接
+    $('#href_select').on('change', function () {
+        var href = $(this).val(); // get selected value
+        if (href) { // require a href
+            window.location = href; // redirect
+        }
+        return false;
     });
 });
