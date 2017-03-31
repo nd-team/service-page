@@ -37,8 +37,15 @@ $(function () {
         // }else {
         //     $('.all-main').children("."+listTitle).show().siblings().hide();
         // }
-        $('.list').find('.'+listTitle).show().siblings().not('.article,.so').hide();
-        $("#modulebg").show();
+        if(listTitle===undefined){
+            return
+        }else {
+            $('.list').find('.'+listTitle).show().siblings().not('.article,.so').hide();
+            $("#modulebg").show();
+        }
+
+
+
         //  if(listTitle=="edit"){
         //     $('.list').find('.edit .edit-box').show();
         //     $("#modulebg").show();
@@ -50,7 +57,7 @@ $(function () {
     });
     //编辑框
     $('.edit-box').on("click",".close",function(){
-        $('.edit-box').hide();
+        $('.edit').hide();
         $("#modulebg").hide()
     });
 
