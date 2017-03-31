@@ -55,6 +55,7 @@ $(function () {
         var $this = $(this),
             $index = $this.index();
         $this.addClass("have").siblings().removeClass("have");
+        $(".same-over").addClass("over-one").eq($index).show().siblings(".same-over").removeClass("over-one").hide();
 
         // if($this.hasClass('have')){
         //     $(".all-main").find(".same-over").eq($index).show();
