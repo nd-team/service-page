@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>业务市场化平台商务洽谈</title>
-    <meta name="keywords" content="商务分包管理">
+    <meta name="keywords" content="商务承包管理">
+    <link rel="stylesheet" href="/css/base.css">
     <link rel="stylesheet" href="/css/business/business_meeting.css">
 </head>
 <body>
@@ -31,31 +32,6 @@
                         <a href="javascript:void(0)">综合资源部</a>
                         <span class="green"></span>
                     </p>
-                    <div class="nav-hover">
-                        <div class="company-nav">
-                            <div class="company-plan">
-                                <div class="plan-title">
-                                    <i class="vertical"></i>
-                                    <i class="plan-pic"></i>
-                                    <a href="javascript:void(0)" class="plan">公司规划</a>
-                                </div>
-
-                                <div class="company-type">
-                                    <p>
-                                        <a href="javascript:void(0)" class="first-vertical">公司性质</a>
-                                    </p>
-                                    <p>
-                                        <a href="javascript:void(0)">公司简介</a>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="company-plan">
-                                <i class="project-pic"></i>
-                                <a href="javascript:void(0)" class="plan">项目提成</a>
-                            </div>
-                        </div>
-                        <span class="green"></span>
-                    </div>
                 </li>
                 <li class="red-nav">
                     <p>
@@ -68,6 +44,97 @@
                         <a href="javascript:void(0)">商务发展部</a>
                         <span class="blue"></span>
                     </p>
+                    <div class="nav-hover hover-blue">
+                        <div class="company-nav">
+                            <ul class="company-plan">
+                                <li class="same-width business-active">
+                                    <div class="plan-title">
+                                        <a class="plan-pic">
+                                            <svg role="img" class="custor">
+                                                <use xlink:href="#custor"></use>
+                                            </svg>
+                                        </a>
+                                        <a href="javascript:void(0)" class="plan">客户管理</a>
+                                        <i class="arrow">^</i>
+                                    </div>
+                                    <div class="company-type">
+                                        <p>
+                                            <a href="javascript:void(0)">市场活动管理</a>
+                                        </p>
+                                        <p class="text-cur">
+                                            <a href="javascript:void(0)" class="first-vertical">客户信息管理</a>
+                                        </p>
+                                        <p>
+                                            <a href="javascript:void(0)">竞争对手管理</a>
+                                        </p>
+                                        <p>
+                                            <a href="javascript:void(0)">供应商管理</a>
+                                        </p>
+                                        <p>
+                                            <a href="javascript:void(0)">市场能力展示</a>
+                                        </p>
+                                        <p>
+                                            <a href="javascript:void(0)">市场能力互动信息管理</a>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="same-width">
+                                    <div class="plan-title">
+                                        <a class="plan-pic">
+                                            <svg role="img" class="business-btn">
+                                                <use xlink:href="#business-btn"></use>
+                                            </svg>
+                                        </a>
+                                        <a href="javascript:void(0)" class="plan">业务管理</a>
+                                        <i class="arrow">^</i>
+                                    </div>
+                                    <div class="company-type">
+                                        <p>
+                                            <a href="javascript:void(0)">项目测算管理</a>
+                                        </p>
+                                        <p>
+                                            <a href="javascript:void(0)">招投标流程管理</a>
+                                        </p>
+                                        <p>
+                                            <a href="javascript:void(0)">商务洽谈</a>
+                                        </p>
+                                        <p>
+                                            <a href="javascript:void(0)">商务合同管理</a>
+                                        </p>
+                                        <p>
+                                            <a href="javascript:void(0)">商务评估管理</a>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="same-width">
+                                    <div class="plan-title">
+                                        <a class="plan-pic">
+                                            <svg role="img" class="come-btn">
+                                                <use xlink:href="#come-btn"></use>
+                                            </svg>
+                                        </a>
+                                        <a href="javascript:void(0)" class="plan">进度管理</a>
+                                        <i class="arrow">^</i>
+                                    </div>
+                                    <div class="company-type">
+                                        <p>
+                                            <a href="javascript:void(0)">市场开发计划进度管理</a>
+                                        </p>
+                                        <p>
+                                            <a href="javascript:void(0)">商务计划工作进度把控</a>
+                                        </p>
+                                        <p>
+                                            <a href="javascript:void(0)">项目验收签字结算进度管理</a>
+                                        </p>
+                                        <p>
+                                            <a href="javascript:void(0)">项目中问题受理和处理</a>
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <span class="blue"></span>
+                    </div>
                 </li>
             </ul>
 
@@ -76,18 +143,18 @@
             <div class="top-fix">
                 <div class="management clearfix">
                     <ul class="management-left">
-                        <li>
+                        <li class="current">
                             <a href="javascript:void(0)">项目承包管理</a>
                         </li>
-                        <li class="current">
+                        <li>
                             <a href="javascript:void(0)">项目分包管理</a>
                         </li>
                     </ul>
                     <ul class="management-right">
                         <li>
                             <select class="selected" id="href_select">
-                                <option value="/pages/business/business_meeting_contract.html">项目承包洽谈</option>
-                                <option value="">项目分包洽谈</option>
+                                <option value="">项目承包洽谈</option>
+                                <option value="/pages/business/business_meeting_sub.html">项目分包洽谈</option>
                             </select>
                             <span class="span-line"></span>
                         </li>
@@ -109,7 +176,7 @@
                                 <p data-title="upload" class="list-text">
                                     <a href="javascript:void(0)">上传洽谈附件</a>
                                 </p>
-                                <p class="list-text same-tab have">
+                                <p data-title="view" class="list-text">
                                     <a href="javascript:void(0)">查看洽谈附件</a>
                                 </p>
                                 <p data-title="import" class="list-text">
@@ -121,7 +188,7 @@
                                 <p data-title="send-custom" class="list-text">
                                     <a href="javascript:void(0)">汇总发送定制</a>
                                 </p>
-                                <p class="list-text same-tab">
+                                <p data-title="summary" class="list-text">
                                     <a href="javascript:void(0)">汇总</a>
                                 </p>
                             </div>
@@ -132,7 +199,10 @@
             <div class="all-main">
                 <div class="tab-content clearfix list">
                     <div class="so">
-                        <a href="javascript:void(0)" class="under-search"></a>
+                        <p>
+                            <input type="text" placeholder="搜索">
+                            <a href="javascript:void(0)" class="under-search"></a>
+                        </p>
                         <div class="search-module clearfix">
                             <ul class="search-input">
                                 <li>
@@ -153,7 +223,6 @@
                                 <button type="button" class="btn summary">汇总</button>
                             </div>
                         </div>
-
                     </div>
                     <div class="article clearfix">
                         <ul class="all-module clearfix">
@@ -165,6 +234,8 @@
                                         <p>内部部项目名称：<span>软件测试培训机构</span></p>
                                         <p>合同外部编号：<span>SW2016022</span></p>
                                         <p>内部项目编号：<span>GZ2016022</span></p>
+                                        <p>外包项目名称：<span>SW2016022</span></p>
+                                        <p>外包项目编号：<span>JM2016022</span></p>
                                     </div>
                                     <div class="input">
                                         <input type="checkbox" checked="checked" class="checked-none" data-style="checked">
@@ -177,31 +248,37 @@
                                         <span>洽谈人：高令军</span>
                                     </p>
                                     <p class="mutual">
-                                        <a href="javascript:void(0)"><img src="/images/business/mutual.png" alt=""></a>
                                         <span>(洽谈轮次：3)</span>
+                                        <a href="javascript:void(0)"><img src="/images/business/mutual.png" alt=""></a>
                                     </p>
                                     <p class="head-pic">
-                                        <a href="javascript:void(0)"><img src="/images/business/head_pic.png" alt=""></a>
                                         <span>洽谈对象：郑金锁</span>
+                                        <a href="javascript:void(0)"><img src="/images/business/head_pic.png" alt=""></a>
                                     </p>
                                 </div>
                                 <div class="edit-input clearfix">
-                                    <p class="input-text">
-                                        <label>洽谈目的：</label>
-                                        <input type="text" value="传达文件精神">
-                                    </p>
-                                    <p class="input-text">
-                                        <label>洽谈内容：</label>
-                                        <input type="text">
-                                    </p>
-                                    <p class="input-text">
-                                        <label>费用预算：</label>
-                                        <input type="number" placeholder="15800￥">
-                                    </p>
-                                    <p class="input-text">
-                                        <label>项目结果：</label>
-                                        <input type="text">
-                                    </p>
+                                    <div class="input-l">
+                                        <p class="input-text">
+                                            <label>洽谈目的：</label>
+                                            <input type="text" placeholder="传达文件精神">
+                                        </p>
+                                        <p class="input-text">
+                                            <label>洽谈内容：</label>
+                                            <input type="text" placeholder="传达文件精神">
+                                        </p>
+                                        <p class="input-text">
+                                            <label>费用预算：</label>
+                                            <input type="number" placeholder="15800￥">
+                                        </p>
+                                        <p class="input-text">
+                                            <label>项目结果：</label>
+                                            <input type="text" placeholder="完成">
+                                        </p>
+                                    </div>
+                                    <div class="input-r">
+                                        <textarea row="8" cos="5">项目外包信息：以结果目的营销平台，一站式招商外包解决方案</textarea>
+                                    </div>
+
                                 </div>
                                 <div class="other-thing">
                                     <a href="javascript:void(0)" class="same-icon">
@@ -226,6 +303,8 @@
                                         <p>内部部项目名称：<span>软件测试培训机构</span></p>
                                         <p>合同外部编号：<span>SW2016022</span></p>
                                         <p>内部项目编号：<span>GZ2016022</span></p>
+                                        <p>外包项目名称：<span>SW2016022</span></p>
+                                        <p>外包项目编号：<span>JM2016022</span></p>
                                     </div>
                                     <div class="input">
                                         <input type="checkbox" checked="checked" class="checked-none" data-style="checked">
@@ -238,31 +317,37 @@
                                         <span>洽谈人：高令军</span>
                                     </p>
                                     <p class="mutual">
-                                        <a href="javascript:void(0)"><img src="/images/business/mutual.png" alt=""></a>
                                         <span>(洽谈轮次：3)</span>
+                                        <a href="javascript:void(0)"><img src="/images/business/mutual.png" alt=""></a>
                                     </p>
                                     <p class="head-pic">
-                                        <a href="javascript:void(0)"><img src="/images/business/head_pic.png" alt=""></a>
                                         <span>洽谈对象：郑金锁</span>
+                                        <a href="javascript:void(0)"><img src="/images/business/head_pic.png" alt=""></a>
                                     </p>
                                 </div>
                                 <div class="edit-input clearfix">
-                                    <p class="input-text">
-                                        <label>洽谈目的：</label>
-                                        <input type="text" value="传达文件精神">
-                                    </p>
-                                    <p class="input-text">
-                                        <label>洽谈内容：</label>
-                                        <input type="text">
-                                    </p>
-                                    <p class="input-text">
-                                        <label>费用预算：</label>
-                                        <input type="number" placeholder="15800￥">
-                                    </p>
-                                    <p class="input-text">
-                                        <label>项目结果：</label>
-                                        <input type="text">
-                                    </p>
+                                    <div class="input-l">
+                                        <p class="input-text">
+                                            <label>洽谈目的：</label>
+                                            <input type="text" placeholder="传达文件精神">
+                                        </p>
+                                        <p class="input-text">
+                                            <label>洽谈内容：</label>
+                                            <input type="text">
+                                        </p>
+                                        <p class="input-text">
+                                            <label>费用预算：</label>
+                                            <input type="number" placeholder="15800￥">
+                                        </p>
+                                        <p class="input-text">
+                                            <label>项目结果：</label>
+                                            <input type="text" placeholder="完成">
+                                        </p>
+                                    </div>
+                                    <div class="input-r">
+                                        <textarea row="8" cos="5">项目外包信息：以结果目的营销平台，一站式招商外包解决方案</textarea>
+                                    </div>
+
                                 </div>
                                 <div class="other-thing">
                                     <a href="javascript:void(0)" class="same-icon">
@@ -287,6 +372,8 @@
                                         <p>内部部项目名称：<span>软件测试培训机构</span></p>
                                         <p>合同外部编号：<span>SW2016022</span></p>
                                         <p>内部项目编号：<span>GZ2016022</span></p>
+                                        <p>外包项目名称：<span>SW2016022</span></p>
+                                        <p>外包项目编号：<span>JM2016022</span></p>
                                     </div>
                                     <div class="input">
                                         <input type="checkbox" checked="checked" class="checked-none" data-style="checked">
@@ -299,31 +386,37 @@
                                         <span>洽谈人：高令军</span>
                                     </p>
                                     <p class="mutual">
-                                        <a href="javascript:void(0)"><img src="/images/business/mutual.png" alt=""></a>
                                         <span>(洽谈轮次：3)</span>
+                                        <a href="javascript:void(0)"><img src="/images/business/mutual.png" alt=""></a>
                                     </p>
                                     <p class="head-pic">
-                                        <a href="javascript:void(0)"><img src="/images/business/head_pic.png" alt=""></a>
                                         <span>洽谈对象：郑金锁</span>
+                                        <a href="javascript:void(0)"><img src="/images/business/head_pic.png" alt=""></a>
                                     </p>
                                 </div>
                                 <div class="edit-input clearfix">
-                                    <p class="input-text">
-                                        <label>洽谈目的：</label>
-                                        <input type="text" value="传达文件精神">
-                                    </p>
-                                    <p class="input-text">
-                                        <label>洽谈内容：</label>
-                                        <input type="text">
-                                    </p>
-                                    <p class="input-text">
-                                        <label>费用预算：</label>
-                                        <input type="number" placeholder="15800￥">
-                                    </p>
-                                    <p class="input-text">
-                                        <label>项目结果：</label>
-                                        <input type="text">
-                                    </p>
+                                    <div class="input-l">
+                                        <p class="input-text">
+                                            <label>洽谈目的：</label>
+                                            <input type="text" placeholder="传达文件精神">
+                                        </p>
+                                        <p class="input-text">
+                                            <label>洽谈内容：</label>
+                                            <input type="text">
+                                        </p>
+                                        <p class="input-text">
+                                            <label>费用预算：</label>
+                                            <input type="number" placeholder="15800￥">
+                                        </p>
+                                        <p class="input-text">
+                                            <label>项目结果：</label>
+                                            <input type="text" placeholder="完成">
+                                        </p>
+                                    </div>
+                                    <div class="input-r">
+                                        <textarea row="8" cos="5">项目外包信息：以结果目的营销平台，一站式招商外包解决方案</textarea>
+                                    </div>
+
                                 </div>
                                 <div class="other-thing">
                                     <a href="javascript:void(0)" class="same-icon">
@@ -348,6 +441,8 @@
                                         <p>内部部项目名称：<span>软件测试培训机构</span></p>
                                         <p>合同外部编号：<span>SW2016022</span></p>
                                         <p>内部项目编号：<span>GZ2016022</span></p>
+                                        <p>外包项目名称：<span>SW2016022</span></p>
+                                        <p>外包项目编号：<span>JM2016022</span></p>
                                     </div>
                                     <div class="input">
                                         <input type="checkbox" checked="checked" class="checked-none" data-style="checked">
@@ -360,31 +455,37 @@
                                         <span>洽谈人：高令军</span>
                                     </p>
                                     <p class="mutual">
-                                        <a href="javascript:void(0)"><img src="/images/business/mutual.png" alt=""></a>
                                         <span>(洽谈轮次：3)</span>
+                                        <a href="javascript:void(0)"><img src="/images/business/mutual.png" alt=""></a>
                                     </p>
                                     <p class="head-pic">
-                                        <a href="javascript:void(0)"><img src="/images/business/head_pic.png" alt=""></a>
                                         <span>洽谈对象：郑金锁</span>
+                                        <a href="javascript:void(0)"><img src="/images/business/head_pic.png" alt=""></a>
                                     </p>
                                 </div>
                                 <div class="edit-input clearfix">
-                                    <p class="input-text">
-                                        <label>洽谈目的：</label>
-                                        <input type="text" value="传达文件精神">
-                                    </p>
-                                    <p class="input-text">
-                                        <label>洽谈内容：</label>
-                                        <input type="text">
-                                    </p>
-                                    <p class="input-text">
-                                        <label>费用预算：</label>
-                                        <input type="number" placeholder="15800￥">
-                                    </p>
-                                    <p class="input-text">
-                                        <label>项目结果：</label>
-                                        <input type="text">
-                                    </p>
+                                    <div class="input-l">
+                                        <p class="input-text">
+                                            <label>洽谈目的：</label>
+                                            <input type="text" placeholder="传达文件精神">
+                                        </p>
+                                        <p class="input-text">
+                                            <label>洽谈内容：</label>
+                                            <input type="text">
+                                        </p>
+                                        <p class="input-text">
+                                            <label>费用预算：</label>
+                                            <input type="number" placeholder="15800￥">
+                                        </p>
+                                        <p class="input-text">
+                                            <label>项目结果：</label>
+                                            <input type="text" placeholder="完成">
+                                        </p>
+                                    </div>
+                                    <div class="input-r">
+                                        <textarea row="8" cos="5">项目外包信息：以结果目的营销平台，一站式招商外包解决方案</textarea>
+                                    </div>
+
                                 </div>
                                 <div class="other-thing">
                                     <a href="javascript:void(0)" class="same-icon">
@@ -420,7 +521,7 @@
                                     </li>
                                     <li>
                                         <label>合同外部编号</label>
-                                        <input type="text" placeholder="GZ2016622" class="edit-pt">
+                                        <input type="text" value="GZ2016622" class="edit-pt">
                                     </li>
                                     <li>
                                         <label>内部项目名称</label>
@@ -434,35 +535,35 @@
                                     </li>
                                     <li>
                                         <label>内部项目编号</label>
-                                        <input type="text" placeholder="BJ2016622" class="edit-pt">
+                                        <input type="text" value="BJ2016622" class="edit-pt">
                                     </li>
                                     <li>
                                         <label>外包项目名称</label>
-                                        <input type="text" placeholder="货物运输合同" class="edit-pt">
+                                        <input type="text" value="货物运输合同" class="edit-pt">
                                     </li>
                                     <li>
                                         <label>外包项目编号</label>
-                                        <input type="text" placeholder="JM2016622" class="edit-pt">
+                                        <input type="text" value="JM2016622" class="edit-pt">
                                     </li>
                                     <li>
                                         <label>项目外包信息</label>
-                                        <input type="text" placeholder="那申诉防护是否合适" class="edit-pt">
+                                        <input type="text" value="一站式招商外包解决方案" class="edit-pt">
                                     </li>
                                     <li>
                                         <label>洽谈目的</label>
-                                        <input type="text" placeholder="传达文件精神" class="edit-pt">
+                                        <input type="text" value="传达文件精神" class="edit-pt">
                                     </li>
                                     <li>
                                         <label>洽谈轮次</label>
-                                        <input type="text" placeholder="3次" class="edit-pt">
+                                        <input type="text" value="3次" class="edit-pt">
                                     </li>
                                     <li>
                                         <label>洽谈人</label>
-                                        <input type="text" placeholder="高令军" class="edit-pt">
+                                        <input type="text" value="高令军" class="edit-pt">
                                     </li>
                                     <li>
                                         <label>洽谈时间</label>
-                                        <input type="text" placeholder="2017/03/30" class="edit-pt icon-time">
+                                        <input type="text" value="2017/03/30" class="edit-pt icon-time">
                                     </li>
                                     <li>
                                         <label>洽谈对象</label>
@@ -476,23 +577,23 @@
                                     </li>
                                     <li>
                                         <label>洽谈地址</label>
-                                        <input type="text" placeholder="广州天河区" class="edit-pt">
+                                        <input type="text" value="广州天河区" class="edit-pt">
                                     </li>
                                     <li>
                                         <label>洽谈内容</label>
-                                        <input type="text" placeholder="公司致力于软件行业的项目外包" class="edit-pt">
+                                        <input type="text" value="公司致力于软件行业的项目外包" class="edit-pt">
                                     </li>
                                     <li>
                                         <label>费用预算</label>
-                                        <input type="number" placeholder="15800.36" class="edit-pt">
+                                        <input type="number" value="15800.36" class="edit-pt">
                                     </li>
                                     <li>
                                         <label>项目结果</label>
-                                        <input type="text" placeholder="良好" class="edit-pt">
+                                        <input type="text" value="良好" class="edit-pt">
                                     </li>
                                     <li>
                                         <label>记录人</label>
-                                        <input type="text" placeholder="小小明" class="edit-pt">
+                                        <input type="text" value="小小明" class="edit-pt">
                                     </li>
                                 </ul>
                                 <div class="modify">
@@ -501,8 +602,111 @@
                             </div>
                         </div>
                     </div>
+                    <div class="add same-hide">
+                        <div class="edit-box">
+                            <i class="close"></i>
+                            <div class="edit-pop">
+                                <ul class="pop-input">
+                                    <li>
+                                        <label>合同外部项目名称</label>
+                                        <select class="selected-same">
+                                            <option value="">必填</option>
+                                            <option value="">软件测试培训机构</option>
+                                            <option value="">建设工程承包合同</option>
+                                            <option value="">货物运输合同</option>
+                                            <option value="">加工承揽合同</option>
+                                            <option value="">建设工程承包合同</option>
+                                        </select>
+                                    </li>
+                                    <li>
+                                        <label>合同外部编号</label>
+                                        <input type="text" placeholder="必填" class="edit-pt">
+                                    </li>
+                                    <li>
+                                        <label>内部项目名称</label>
+                                        <select class="selected-same">
+                                            <option value="">必填</option>
+                                            <option value="">软件测试培训机构</option>
+                                            <option value="">建设工程承包合同</option>
+                                            <option value="">货物运输合同</option>
+                                            <option value="">加工承揽合同</option>
+                                            <option value="">建设工程承包合同</option>
+                                        </select>
+                                    </li>
+                                    <li>
+                                        <label>内部项目编号</label>
+                                        <input type="text" placeholder="必填" class="edit-pt">
+                                    </li>
+                                    <li>
+                                        <label>洽谈轮次</label>
+                                        <input type="text" placeholder="必填" class="edit-pt">
+                                    </li>
+                                    <li>
+                                        <label>洽谈目的</label>
+                                        <input type="text" placeholder="必填" class="edit-pt">
+                                    </li>
+                                    <li>
+                                        <label>洽谈时间</label>
+                                        <input type="text" placeholder="必填" class="edit-pt icon-time">
+                                    </li>
+                                    <li>
+                                        <label>洽谈人</label>
+                                        <input type="text" placeholder="必填" class="edit-pt">
+                                    </li>
+                                    <li>
+                                        <label>洽谈地址</label>
+                                        <input type="text" placeholder="必填" class="edit-pt">
+                                    </li>
+                                    <li>
+                                        <label>洽谈对象</label>
+                                        <select class="selected-same">
+                                            <option value="">必填</option>
+                                            <option value="">郑金锁</option>
+                                            <option value="">汪金锁</option>
+                                            <option value="">李金锁</option>
+                                            <option value="">黄金锁</option>
+                                            <option value="">陈金锁</option>
+                                        </select>
+                                    </li>
+                                    <li>
+                                        <label>费用预算</label>
+                                        <input type="number" placeholder="必填" class="edit-pt">
+                                    </li>
+                                    <li>
+                                        <label>洽谈内容</label>
+                                        <input type="text" placeholder="必填" class="edit-pt">
+                                    </li>
+                                    <li>
+                                        <label>记录人</label>
+                                        <input type="text" placeholder="必填" class="edit-pt">
+                                    </li>
+                                    <li>
+                                        <label>项目结果</label>
+                                        <input type="text" placeholder="必填" class="edit-pt">
+                                    </li>
+                                </ul>
+                                <div class="file-position">
+                                    <span class="cun">原件存储位置</span>
+                                    <p class="file-center">
+                                        <small>G:\issp平台新7大模块网站\业务市场化平台\资料\业务市场化平台资料</small>
+                                        <i class="bg-pic"></i>
+                                    </p>
+                                    <div class="file-upload">
+                                        <input type="file" id="upload">
+                                        <a href="javascript:void(0)" class="replace">
+                                            <img src="/images/business/shape.png" alt="">
+                                            上传文件
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="modify">
+                                    <button type="button" class="modify-btn" disabled>提交</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="tab-content clearfix same-over">
+                <div class="tab-content clearfix summary">
                     <div class="same-box">
                         <div class="and-content">
                             <div class="tab-summary">
@@ -555,7 +759,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-content clearfix same-over">
+                <div class="tab-content clearfix view">
                     <div class="same-box">
                         <div class="file-name">
                             <span>文件名：</span>
@@ -644,36 +848,9 @@
             </div>
 
         </div>
+        <div id="modulebg"></div>
     </div>
-    <footer>
-        <ul class="footer">
-            <li>
-                <a href="javascript:void(0)"><img src="/images/aboutus.png" alt=""></a>
-                <a href="javascript:void(0)">关于我们</a>
-                <a href="javascript:void(0)">帮助我们</a>
-                <a href="javascript:void(0)">意见反馈</a>
-            </li>
-            <li>
-                <a href="javascript:void(0)"><img src="/images/platopen.png" alt=""></a>
-                <a href="javascript:void(0)">开放平台</a>
-                <a href="javascript:void(0)">了解平台</a>
-            </li>
-            <li>
-                <a href="javascript:void(0)"><img src="/images/platnav.png" alt=""></a>
-                <a href="javascript:void(0)">平台导航</a>
-            </li>
-            <li>
-                <a href="javascript:void(0)"><img src="/images/platmana.png" alt=""></a>
-                <a href="javascript:void(0)">平台管理中心</a>
-            </li>
-            <li>
-                <a href="javascript:void(0)"><img src="/images/publicplat.png" alt=""></a>
-                <a href="javascript:void(0)">平台公共</a>
-            </li>
-        </ul>
-        <p>Copyright @ 2010-2017 ISSO 北京艾佳天诚信息技术有限公司<span>京文网[2012]0398-130号</span><span>京ICP备12003058号</span></p>
-    </footer>
-    <div id="modulebg"></div>
+
     <script src="/js/jquery-2.1.1.min.js"></script>
     <script src="/js/common.js"></script>
     <script src="/js/business.js"></script>
