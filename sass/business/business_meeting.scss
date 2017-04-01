@@ -616,10 +616,8 @@ $font:"Microsoft YaHei";
         .edit-box{
           width: 1000px;
           position: absolute;
-          //margin: 50px auto 0;
           z-index: 100;
           height: 800px;
-
           top: 20%;
           left: 50%;
           margin-left: -500px;
@@ -765,6 +763,30 @@ $font:"Microsoft YaHei";
             }
           }
 
+        }
+        .del-box{
+          width: 530px;
+          height: auto;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          margin-left: -265px;
+          z-index: 80;
+          .close{
+            width: 80px;
+            height: 80px;
+            background: url("/images/business/circle_close.png") no-repeat;
+            display: block;
+            position: absolute;
+            right: -62px;
+            top: -65px;
+            cursor: pointer;
+          }
+          .tips{
+            width: 100%;
+            background-color: #fff;
+            border: 2px solid #066dc2;
+          }
         }
       }
 
