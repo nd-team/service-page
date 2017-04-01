@@ -172,10 +172,9 @@ header{
         margin-top: 62px;
         position: relative;
         &:hover{
-          transition:all 5s;
           >.nav-hover{
-            transition:all 5s;
             display: block;
+            z-index: 2000;
           }
         }
         &.active{
@@ -193,70 +192,120 @@ header{
           left: 208px;
           bottom: 0;
           top: 0;
-          background-color: #47dbcd;
-          z-index: 50;
+          z-index: 2000;
           display: none;
-          transition:all .5s;
+          &.hover-blue{
+            background-color: #066dc2;
+            .company-nav{
+              background-color: #066dc2;
+            }
+          }
           .company-nav{
             width: 210px;
             position: fixed;
             top: 62px;
             bottom: 0;
-            background-color: #47dbcd;
             .company-plan{
+              width: 100%;
+              height: auto;
+              overflow-y: auto;
+              overflow-x: hidden;
+              margin-top: 30px;
+              .same-width{
+                width: 100%;
+                height: auto;
+                margin-top:20px;
+                text-align: left;
+                margin-left: 30px;
+                overflow-y: auto;
+                overflow-x: hidden;
+                &.business-active{
+                  margin-left: 20px;
+                  .plan-title{
+                    border-left: 6px solid #fff;
+                    color: #fff;
+                    .plan-pic {
+                      svg {
+                        fill: #fff;
+                      }
+                    }
+                    .plan{
+                      font-weight: bold;
+                    }
+                    .arrow{
+                      transform: rotate(0deg);
+                    }
+                  }
+                  .company-type{
+                    margin-left: 50px;
+                    p{
+                      &.text-cur{
+                        width: 140px;
+                        margin-left: -15px;
+                      }
 
-              &:last-child{
-                padding-top: 20px;
-              }
-              .plan-title{
-                height: 50px;
-                .vertical{
-                  width: 6px;
-                  height: 40px;
-                  display: inline-block;
-                  background-color: #fff;
-                  vertical-align: middle;
-                  margin-right: 10px;
-                }
-              }
-              .company-type{
-                padding-left: 32px;
-                p{
-                  height: 25px;
-                  text-align: center;
-                  margin: 10px 0 30px;
-                  .first-vertical{
-                    padding: 0 8px;
-                    border:{
-                      left: 2px;
-                      right: 2px;
-                      style: solid;
-                      color: #fff;
+                      a{
+                        font-size: 15px;
+                        &.first-vertical{
+                          padding: 0 10px;
+                          border:{
+                            left: 2px;
+                            right: 2px;
+                            style: solid;
+                            color: #fff;
+                          }
+                          font-weight: bold;
+                        }
+                      }
+
                     }
                   }
                 }
-              }
-              a{
-                line-height: 40px;
-                color: #fff;
-              }
-              .plan-pic{
-                height: 27px;
-                background-image: url("/images/img.png");
-                background-position: -20px 0;
-                background-repeat: no-repeat;
-                vertical-align: -5px;
-                padding: 5px 18px;
+                .plan-title{
+                  height: 45px;
+                  line-height: 45px;
+                  color: #fff;
+                  .plan-pic{
+                    margin: 0 5px 0 12px;
+                    svg{
+                      width: 20px;
+                      height: 20px;
+                      vertical-align: middle;
+                      fill: rgba(255,255,255,.6);
+                    }
+                  }
+                  a{
 
-              }
-              .project-pic{
-                height: 27px;
-                background-image: url("/images/img.png");
-                background-position: 0 0;
-                background-repeat: no-repeat;
-                vertical-align: -8px;
-                padding: 5px 12px;
+                    &.plan{
+                      line-height: 40px;
+                      color: #fff;
+                      font-size: 16px;
+                    }
+                  }
+                  .arrow{
+                    vertical-align: 0;
+                    transform: rotate(180deg);
+                    cursor: pointer;
+                    display: inline-block;
+                  }
 
+                }
+
+                .company-type{
+                  width: 100%;
+                  line-height: 30px;
+                  margin-left: 42px;
+                  p{
+                    width: 104px;
+                    height: 25px;
+                    line-height: 20px;
+                    margin: 10px 0 30px;
+                    a{
+                      font-size: 15px;
+                    }
+
+                  }
+                }
               }
             }
           }
@@ -293,7 +342,7 @@ header{
     float: left;
     width: 100%;
     height: 100%;
-    background-color: #f0f1f5;
+    //background-color: #f0f1f5;
     padding:{
       left: 80px;
       top: 60px;
@@ -383,11 +432,11 @@ header{
             .right-list{
               display: none;
               position: absolute;
-              width: 90px;
-              background: #f0f6fa;
+              width: 160%;
+              background: #fff;
               border: 1px solid #98b2c7;
               border-radius: 5px;
-              top: 48px;
+              top: 50px;
               right: 0;
               text-align: center;
               padding: {
