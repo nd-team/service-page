@@ -176,7 +176,7 @@
                                 <p data-title="upload" class="list-text">
                                     <a href="javascript:void(0)">上传洽谈附件</a>
                                 </p>
-                                <p class="list-text same-tab have">
+                                <p data-title="view" class="list-text">
                                     <a href="javascript:void(0)">查看洽谈附件</a>
                                 </p>
                                 <p data-title="import" class="list-text">
@@ -188,7 +188,7 @@
                                 <p data-title="send-custom" class="list-text">
                                     <a href="javascript:void(0)">汇总发送定制</a>
                                 </p>
-                                <p class="list-text same-tab">
+                                <p data-title="summary" class="list-text">
                                     <a href="javascript:void(0)">汇总</a>
                                 </p>
                             </div>
@@ -521,7 +521,7 @@
                                     </li>
                                     <li>
                                         <label>合同外部编号</label>
-                                        <input type="text" placeholder="GZ2016622" class="edit-pt">
+                                        <input type="text" value="GZ2016622" class="edit-pt">
                                     </li>
                                     <li>
                                         <label>内部项目名称</label>
@@ -535,35 +535,35 @@
                                     </li>
                                     <li>
                                         <label>内部项目编号</label>
-                                        <input type="text" placeholder="BJ2016622" class="edit-pt">
+                                        <input type="text" value="BJ2016622" class="edit-pt">
                                     </li>
                                     <li>
                                         <label>外包项目名称</label>
-                                        <input type="text" placeholder="货物运输合同" class="edit-pt">
+                                        <input type="text" value="货物运输合同" class="edit-pt">
                                     </li>
                                     <li>
                                         <label>外包项目编号</label>
-                                        <input type="text" placeholder="JM2016622" class="edit-pt">
+                                        <input type="text" value="JM2016622" class="edit-pt">
                                     </li>
                                     <li>
                                         <label>项目外包信息</label>
-                                        <input type="text" placeholder="一站式招商外包解决方案" class="edit-pt">
+                                        <input type="text" value="一站式招商外包解决方案" class="edit-pt">
                                     </li>
                                     <li>
                                         <label>洽谈目的</label>
-                                        <input type="text" placeholder="传达文件精神" class="edit-pt">
+                                        <input type="text" value="传达文件精神" class="edit-pt">
                                     </li>
                                     <li>
                                         <label>洽谈轮次</label>
-                                        <input type="text" placeholder="3次" class="edit-pt">
+                                        <input type="text" value="3次" class="edit-pt">
                                     </li>
                                     <li>
                                         <label>洽谈人</label>
-                                        <input type="text" placeholder="高令军" class="edit-pt">
+                                        <input type="text" value="高令军" class="edit-pt">
                                     </li>
                                     <li>
                                         <label>洽谈时间</label>
-                                        <input type="text" placeholder="2017/03/30" class="edit-pt icon-time">
+                                        <input type="text" value="2017/03/30" class="edit-pt icon-time">
                                     </li>
                                     <li>
                                         <label>洽谈对象</label>
@@ -577,23 +577,23 @@
                                     </li>
                                     <li>
                                         <label>洽谈地址</label>
-                                        <input type="text" placeholder="广州天河区" class="edit-pt">
+                                        <input type="text" value="广州天河区" class="edit-pt">
                                     </li>
                                     <li>
                                         <label>洽谈内容</label>
-                                        <input type="text" placeholder="公司致力于软件行业的项目外包" class="edit-pt">
+                                        <input type="text" value="公司致力于软件行业的项目外包" class="edit-pt">
                                     </li>
                                     <li>
                                         <label>费用预算</label>
-                                        <input type="number" placeholder="15800.36" class="edit-pt">
+                                        <input type="number" value="15800.36" class="edit-pt">
                                     </li>
                                     <li>
                                         <label>项目结果</label>
-                                        <input type="text" placeholder="良好" class="edit-pt">
+                                        <input type="text" value="良好" class="edit-pt">
                                     </li>
                                     <li>
                                         <label>记录人</label>
-                                        <input type="text" placeholder="小小明" class="edit-pt">
+                                        <input type="text" value="小小明" class="edit-pt">
                                     </li>
                                 </ul>
                                 <div class="modify">
@@ -610,6 +610,7 @@
                                     <li>
                                         <label>合同外部项目名称</label>
                                         <select class="selected-same">
+                                            <option value="">必填</option>
                                             <option value="">软件测试培训机构</option>
                                             <option value="">建设工程承包合同</option>
                                             <option value="">货物运输合同</option>
@@ -619,11 +620,12 @@
                                     </li>
                                     <li>
                                         <label>合同外部编号</label>
-                                        <input type="text" placeholder="GZ2016622" class="edit-pt">
+                                        <input type="text" placeholder="必填" class="edit-pt">
                                     </li>
                                     <li>
                                         <label>内部项目名称</label>
                                         <select class="selected-same">
+                                            <option value="">必填</option>
                                             <option value="">软件测试培训机构</option>
                                             <option value="">建设工程承包合同</option>
                                             <option value="">货物运输合同</option>
@@ -633,39 +635,32 @@
                                     </li>
                                     <li>
                                         <label>内部项目编号</label>
-                                        <input type="text" placeholder="BJ2016622" class="edit-pt">
-                                    </li>
-                                    <li>
-                                        <label>外包项目名称</label>
-                                        <input type="text" placeholder="货物运输合同" class="edit-pt">
-                                    </li>
-                                    <li>
-                                        <label>外包项目编号</label>
-                                        <input type="text" placeholder="JM2016622" class="edit-pt">
-                                    </li>
-                                    <li>
-                                        <label>项目外包信息</label>
-                                        <input type="text" placeholder="一站式招商外包解决方案" class="edit-pt">
-                                    </li>
-                                    <li>
-                                        <label>洽谈目的</label>
-                                        <input type="text" placeholder="传达文件精神" class="edit-pt">
+                                        <input type="text" placeholder="必填" class="edit-pt">
                                     </li>
                                     <li>
                                         <label>洽谈轮次</label>
-                                        <input type="text" placeholder="3次" class="edit-pt">
+                                        <input type="text" placeholder="必填" class="edit-pt">
                                     </li>
                                     <li>
-                                        <label>洽谈人</label>
-                                        <input type="text" placeholder="高令军" class="edit-pt">
+                                        <label>洽谈目的</label>
+                                        <input type="text" placeholder="必填" class="edit-pt">
                                     </li>
                                     <li>
                                         <label>洽谈时间</label>
-                                        <input type="text" placeholder="2017/03/30" class="edit-pt icon-time">
+                                        <input type="text" placeholder="必填" class="edit-pt icon-time">
+                                    </li>
+                                    <li>
+                                        <label>洽谈人</label>
+                                        <input type="text" placeholder="必填" class="edit-pt">
+                                    </li>
+                                    <li>
+                                        <label>洽谈地址</label>
+                                        <input type="text" placeholder="必填" class="edit-pt">
                                     </li>
                                     <li>
                                         <label>洽谈对象</label>
                                         <select class="selected-same">
+                                            <option value="">必填</option>
                                             <option value="">郑金锁</option>
                                             <option value="">汪金锁</option>
                                             <option value="">李金锁</option>
@@ -674,26 +669,36 @@
                                         </select>
                                     </li>
                                     <li>
-                                        <label>洽谈地址</label>
-                                        <input type="text" placeholder="广州天河区" class="edit-pt">
+                                        <label>费用预算</label>
+                                        <input type="number" placeholder="必填" class="edit-pt">
                                     </li>
                                     <li>
                                         <label>洽谈内容</label>
-                                        <input type="text" placeholder="公司致力于软件行业的项目外包" class="edit-pt">
-                                    </li>
-                                    <li>
-                                        <label>费用预算</label>
-                                        <input type="number" placeholder="15800.36" class="edit-pt">
-                                    </li>
-                                    <li>
-                                        <label>项目结果</label>
-                                        <input type="text" placeholder="良好" class="edit-pt">
+                                        <input type="text" placeholder="必填" class="edit-pt">
                                     </li>
                                     <li>
                                         <label>记录人</label>
-                                        <input type="text" placeholder="小小明" class="edit-pt">
+                                        <input type="text" placeholder="必填" class="edit-pt">
+                                    </li>
+                                    <li>
+                                        <label>项目结果</label>
+                                        <input type="text" placeholder="必填" class="edit-pt">
                                     </li>
                                 </ul>
+                                <div class="file-position">
+                                    <span class="cun">原件存储位置</span>
+                                    <p class="file-center">
+                                        <small>G:\issp平台新7大模块网站\业务市场化平台\资料\业务市场化平台资料</small>
+                                        <i class="bg-pic"></i>
+                                    </p>
+                                    <div class="file-upload">
+                                        <input type="file" id="upload">
+                                        <a href="javascript:void(0)" class="replace">
+                                            <img src="/images/business/shape.png" alt="">
+                                            上传文件
+                                        </a>
+                                    </div>
+                                </div>
                                 <div class="modify">
                                     <button type="button" class="modify-btn" disabled>提交</button>
                                 </div>
@@ -701,7 +706,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-content clearfix same-over">
+                <div class="tab-content clearfix summary">
                     <div class="same-box">
                         <div class="and-content">
                             <div class="tab-summary">
@@ -754,7 +759,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-content clearfix same-over">
+                <div class="tab-content clearfix view">
                     <div class="same-box">
                         <div class="file-name">
                             <span>文件名：</span>

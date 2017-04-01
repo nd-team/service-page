@@ -670,19 +670,87 @@ $font:"Microsoft YaHei";
                   padding-left: 50px;
                   font-size: 15px;
                   line-height: 45px;
-                  color: #636365;
+                  color: #252525;
                 }
                 .edit-pt{
                   width: 42%;
                   background: 0;
                   padding-left: 50px;
                   font-size: 14px;
-                  color: #333;
-                  &::-webkit-input-placeholder{ color: #333; }
+                  color: #252525;
+                  &::-webkit-input-placeholder{ color: #c2bcbc; }
                 }
                 .icon-time{
                   height: 25px;
                   background: url("/images/business/calendar.png") no-repeat right center;
+                }
+              }
+            }
+            .file-position{
+              width: 95%;
+              margin: 0 auto 30px;
+              height: auto;
+              overflow: hidden;
+              line-height: 78px;
+              font-size: 14px;
+
+              .cun{
+                width: 12%;
+                float: left;
+                color: #066dc2;
+                text-align: center;
+                border:2px solid #066dc2;
+                border-radius: 50px 0 0 50px;
+
+              }
+              .file-center{
+                width: 75%;
+                float: left;
+                padding-left: 20px;
+                overflow: hidden;
+                border: {
+                  top: 2px;
+                  bottom: 2px;
+                  style: solid;
+                  color: #066dc2;
+                }
+                small{
+                  float: left;
+                }
+                .bg-pic{
+                  float: right;
+                  width: 40px;
+                  height: 27px;
+                  background: url("/images/business/small.jpg") no-repeat right center;
+                  margin:{
+                    top: 26px;
+                    right: 2%;
+                  }
+                }
+              }
+              .file-upload{
+                width: 10%;
+                float: left;
+                background-color: #066dc2;
+                text-align: center;
+                border-radius: 0 50px 50px 0;
+                border-left:1px solid #066dc2;
+                height: 82px;
+                input[type="file"]{
+                  display: none;
+                }
+                .replace{
+                  display: block;
+                  color: #fff;
+                  vertical-align: middle;
+                  line-height: 30px;
+                  img{
+                    width: 29px;
+                    height: 31px;
+                    display: block;
+                    margin: 10px auto 0;
+
+                  }
                 }
               }
             }

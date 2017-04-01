@@ -37,11 +37,28 @@ $(function () {
         // }else {
         //     $('.all-main').children("."+listTitle).show().siblings().hide();
         // }
-        if(listTitle===undefined){
-            return
+        // if(listTitle===undefined){
+        //     return
+        // }else {
+        //     $('.list').find('.'+listTitle).show().siblings().not('.article,.so').hide();
+        //     $("#modulebg").show();
+        // }
+        if(listTitle==="summary"){
+            $('.all-main').children('.summary').show().siblings().not('.article,.so').hide();
+            $("#modulebg").hide();
+        }else if(listTitle==="view"){
+            $('.all-main').children('.view').show().siblings().not('.article,.so').hide();
+            $("#modulebg").hide();
+        }else if(listTitle==="list"){
+            $('.all-main').children('.list').show().siblings().hide();
+            $("#modulebg").hide();
         }else {
-            $('.list').find('.'+listTitle).show().siblings().not('.article,.so').hide();
-            $("#modulebg").show();
+            if(listTitle===undefined){
+                $('.all-main').children('.list').show().siblings().hide();
+            }else {
+                $('.list').find('.'+listTitle).show().siblings().not('.article,.so').hide();
+                $("#modulebg").show();
+            }
         }
     });
     //编辑框
