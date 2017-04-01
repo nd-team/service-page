@@ -1,8 +1,11 @@
-@import "../base";
-
+//@import "../base";
+body{
+  background: url("/images/business/bg.png") 100% -71%;
+}
+$font:"Microsoft YaHei";
 //右边内容
 .right-content{
-  background: url("/images/business/bg.png") no-repeat center;
+  //background: url("/images/business/bg.png") no-repeat center;
   //主体详细内容
   .all-main{
     width: 84%;
@@ -16,7 +19,6 @@
     }
     .tab-content{
       width: 100%;
-
       //列表
       .so{
         width: 100%;
@@ -300,7 +302,6 @@
               }
               .input-r{
                 float: left;
-                width: 20%;
                 textarea{
                   //resize: none;
                   height: 96px;
@@ -659,7 +660,8 @@
                   display: inline-block;
                   margin-left: 30px;
                   width: 35%;
-                  font-size: 16px;
+                  font-size: 14px;
+                  color: #636267;
                 }
                 .selected-same{
                   width: 56%;
@@ -700,18 +702,18 @@
 
 
     }
-    .same-over{
-      display: none;
-    }
+    //.same-over{
+    //  display: none;
+    //}
   }
 }
 
 #modulebg{
   background: rgba(0,0,0,.5);
-  z-index: 30;
+  z-index: 8;
   position: fixed;
   top: 0;
-  left: 0;
+  left: 10.9%;
   right: 0;
   bottom: 0;
   display: none;
