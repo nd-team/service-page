@@ -120,4 +120,20 @@ $(function () {
         return false;
     });
 
+    // 点击删除
+    $(".supplier-list").on('click','.deleted-btn',function () {
+        $(this).parent().css({'border':'1px solid red', 'width':'48%'});
+    })
 });
+
+
+
+
+
+
+
+
+
+
+
+
