@@ -302,7 +302,6 @@ $font:"Microsoft YaHei";
               .input-r{
                 float: left;
                 textarea{
-                  //resize: none;
                   height: 96px;
                   border-color: #98b2c7;
                   border-radius: 5px;
@@ -615,7 +614,7 @@ $font:"Microsoft YaHei";
         .edit-box{
           width: 1000px;
           position: absolute;
-          z-index: 100;
+          z-index: 10;
           height: 800px;
           top: 20%;
           left: 50%;
@@ -701,7 +700,7 @@ $font:"Microsoft YaHei";
 
               }
               .file-center{
-                width: 75%;
+                width: 74%;
                 float: left;
                 padding-left: 20px;
                 overflow: hidden;
@@ -850,7 +849,7 @@ $font:"Microsoft YaHei";
               }
             }
             .file-position{
-              width: 95%;
+              width: 98%;
               margin: 0 auto 10px;
               height: auto;
               overflow: hidden;
@@ -858,7 +857,7 @@ $font:"Microsoft YaHei";
               font-size: 14px;
 
               .cun{
-                width: 12%;
+                width: 15%;
                 float: left;
                 color: #066dc2;
                 text-align: center;
@@ -867,7 +866,7 @@ $font:"Microsoft YaHei";
 
               }
               .file-center{
-                width: 75%;
+                width: 70%;
                 float: left;
                 padding-left: 20px;
                 overflow: hidden;

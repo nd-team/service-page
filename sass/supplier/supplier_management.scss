@@ -35,9 +35,9 @@ $font:"Microsoft YaHei";
             .list-left{
               float: left;
               width: 48%;
-              overflow: hidden;
               border-right: 1px solid #f3f3f3;
               margin: 20px 2% 20px 15px;
+              position: relative;
               .pic-left{
                 float: left;
                 margin-right: 4%;
@@ -71,6 +71,27 @@ $font:"Microsoft YaHei";
                   top: 0;
                   left: 0;
                   display: none;
+                }
+              }
+              .bigger{
+                position: absolute;
+                top: 0;
+                left: 30%;
+                z-index: 1;
+                .close-pic{
+                  position: absolute;
+                  right: -5%;
+                  top: -3%;
+                  width: 16px;
+                  height: 17px;
+                  background: url("/images/supplier/close_pic.png") no-repeat right center;
+                  cursor: pointer;
+                }
+                .pic-big{
+                  display: block;
+                  width: 400px;
+                  height: 541px;
+                  background: url("/images/supplier/big_pic.png") no-repeat center;
                 }
               }
               .contact-info{
