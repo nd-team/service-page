@@ -1,0 +1,120 @@
+em{
+  font-style: normal;
+}
+.all-main {
+  width: 84%;
+  height: auto;
+  margin-top: 115px;
+  .tab-content{
+    width: 100%;
+    .soso{
+     .so-search {
+       color: #999;
+       width: 195px;
+       height: 40px;
+       padding-left: 15px;
+       border-bottom: 1px solid #d2d2d2;
+       background: url(/images/customer/search.png) no-repeat right 6px center;
+     }
+   }
+    .article {
+      width: 90%;
+      height: auto;
+      margin: 0 auto 50px;
+      .all-module {
+        float: left;
+        width: 100%;
+        height: auto;
+        li {
+          float: left;
+          width: 48%;
+          background-color: #fff;
+          margin-bottom: 36px;
+          padding: 0 10px;
+          margin-right: 4%;
+          box-shadow: 0 6px 13px #d6d7d9;
+          border-radius: 1px;
+          &.cont-red{
+            border-top: 1px solid #f32f4e;
+          }
+          .cont-top{
+            .top-input{
+                float: left;
+                margin-top: 11px;
+              .checked-none[data-style="checked"] {  display: none;  }
+              .checked-none[data-style="checked"]:checked + label {  background: url(/images/business/aright.png) no-repeat center; }
+              .checked-none[data-style="checked"] + label {
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                border: 1px solid #ddd;
+                background-color: #fff;
+                overflow: hidden;
+              }
+            }
+            .top-num{
+              float: right;
+              font-size: 14px;
+              display: inline-block;
+              color: white;
+               width: 42px;
+               height: 21px;
+              text-align: center;
+               background-color: #f32f4e;
+            }
+          }
+          .cont-all{
+            margin: {
+              top:20px;
+            };
+            .c-pic{
+              float: left;
+            img{
+              width: 88px;
+              height: 88px;
+              border-radius: 50%;
+            }
+            }
+            .all-page {
+              color: #333;
+              float: left;
+              margin: {
+                left: 14px;
+              };
+              .page-1 {
+                font-size: 20px;
+                padding: {
+                  top:10px;
+                };
+                &:after {
+                  content: '\FF1A';
+                }
+              }
+              .page-2 {
+                font-size: 20px;
+                margin-top: 15px;
+              }
+              .page-3 {
+                font-size: 14px;
+                line-height: 25px;
+                color: #066dc2;
+                margin: {
+                  top:28px;
+                };
+              }
+              .page-4{
+                font-size: 14px;
+                line-height: 25px;
+              }
+              em {
+                &:after {
+                  content: '\FF1A';
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
