@@ -1,0 +1,108 @@
+@import "../base";
+.tab-star{
+  width: 83%;
+  height: 750px;
+  margin-top: 140px;
+  margin-bottom: 20px;
+  z-index: 100;
+  .soso{
+    .so-search {
+      color: #999;
+      width: 195px;
+      height: 40px;
+      padding-left: 15px;
+      border-bottom: 1px solid #d2d2d2;
+      background: url(/images/customer/search.png) no-repeat right 6px center;
+    }
+  }
+  .star-article{
+    width: 100%;
+      ul{
+        li{
+          position: relative;
+          width: 23.5%;
+          height: 99px;
+          overflow: hidden;
+          float: left;
+          color: #252525;
+          box-shadow:0 0 10px rgba(111, 110, 110, .5);
+          background-color: white;
+          margin: {
+            top:17px;
+            right: 29px;
+          };
+          &:nth-of-type(4n+0){
+            margin-right: 0;
+          }
+          .star-one{
+            >p{
+              float: left;
+            }
+            .start-one-1{
+              text-align: center;
+              color: white;
+              width: 20%;
+              font-weight: bold;
+              font-size: 14px;
+              i{
+                font-size: 18px;
+                margin-right: 10px;
+              }
+              line-height: 99px;
+              background:-moz-linear-gradient(left top, #bcd7e0, #76cabc ,#25abe2);
+              background: -webkit-linear-gradient(left top, #bcd7e0, #76cabc ,#25abe2); /* Safari 5.1 - 6.0 */
+              background: -o-linear-gradient(bottom right,#bcd7e0, #76cabc ,#25abe2); /* Opera 11.1 - 12.0 */
+              background: -moz-linear-gradient(bottom right, #bcd7e0, #76cabc ,#25abe2); /* Firefox 3.6 - 15 */
+              background: linear-gradient(to bottom right, #bcd7e0, #76cabc ,#25abe2); /* 标准的语法（必须放在最后）*/
+              background-color: #25abe2;
+            }
+            .start-two-2{
+                width: 60%;
+                height: 79px;
+                font-size: 14px;
+                padding: 2% 2%;
+            }
+          }
+        }
+      }
+  }
+}
+//编辑
+.edit-all{
+  width: 100%;
+  height: 100%;
+  .edit-bg {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+  }
+  .state {
+    position: absolute;
+    z-index: 5;
+    top: 35%;
+    left: 40%;
+  }
+  .s-edit{
+    display: inline-block;
+    color: #066dc2;
+    background-color: white;
+    width: 81px;
+    height: 31px;
+    line-height: 31px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(111, 110, 110, 0.5);
+    margin-right: 14px;
+    border: 1px solid #bbc7d2;
+  }
+}
+
+.modulebg{
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 30;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
