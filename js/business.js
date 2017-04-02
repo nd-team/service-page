@@ -43,6 +43,7 @@ $(function () {
         //     $('.list').find('.'+listTitle).show().siblings().not('.article,.so').hide();
         //     $("#modulebg").show();
         // }
+
         if(listTitle==="summary"){
             $('.all-main').children('.summary').show().siblings().not('.article,.so').hide();
             $("#modulebg").hide();
@@ -65,7 +66,7 @@ $(function () {
     $('.same-hide').on("click",".close",function(){
         $('.same-hide').hide();
         $("#modulebg").hide();
-        $(".supplier-list .deleted-btn").parent().css({'border':'0', 'width':'49%'});
+        $(".article .deleted-btn").parent().css({'border':'0', 'width':'49%'});
     });
 
     // 文件切换
@@ -107,16 +108,30 @@ $(function () {
     });
 
     // 点击删除
-    $(".supplier-list").on('click','.deleted-btn',function () {
+    $(".article").on('click','.deleted-btn',function () {
         $(this).parent().css({'border':'1px solid red', 'width':'48%'});
         $("#modulebg").show();
-        $(".same-hide").show();
+        $(".same-other").show();
     });
 
     // 点击编辑
-    $(".supplier-list").on('click','.edit-btn',function () {
+    $(".article").on('click','.edit-btn',function () {
         $("#modulebg").show();
-        $(".same-hide").show();
+        $(".same-other").show();
+    });
+    // 点击放大图片
+    $(".list-left .pic-left").on('click','.magnifier',function () {
+        if(!$(this).hasClass('big')){
+            $(this).addClass('big');
+            $(this).parents().siblings('.bigger').show();
+        }else {
+            $(this).removeClass('big');
+            $(this).parents().siblings('.bigger').hide();
+        }
+
+    });
+    $(".bigger").on('click','.close-pic',function () {
+        $(".bigger").hide();
     });
 });
 

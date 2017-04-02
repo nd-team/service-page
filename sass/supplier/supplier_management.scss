@@ -17,9 +17,10 @@ $font:"Microsoft YaHei";
       width: 100%;
       height: auto;
       //列表
-        .supplier-list{
+        .article{
           width: 100%;
-          overflow: hidden;
+          height: auto;
+          overflow: auto;
           li{
             width: 49%;
             height: auto;
@@ -78,6 +79,7 @@ $font:"Microsoft YaHei";
                 top: 0;
                 left: 30%;
                 z-index: 1;
+                display: none;
                 .close-pic{
                   position: absolute;
                   right: -5%;
