@@ -62,26 +62,12 @@ $(function () {
         }
     });
     //编辑框
-    $('.edit-box').on("click",".close",function(){
+    $('.same-hide').on("click",".close",function(){
         $('.same-hide').hide();
-        $("#modulebg").hide()
+        $("#modulebg").hide();
+        $(".supplier-list .deleted-btn").parent().css({'border':'0', 'width':'49%'});
     });
 
-    // 切换其它菜单栏
-    $(".right-list").find(".same-tab").on("click",function(){
-        var $this = $(this),
-            $index = $this.index();
-        $this.addClass("have").siblings().removeClass("have");
-        $(".same-over").addClass("over-one").eq($index).show().siblings(".same-over").removeClass("over-one").hide();
-
-        // if($this.hasClass('have')){
-        //     $(".all-main").find(".same-over").eq($index).show();
-        //     // $(".all-main").find(".list").hide();
-        // }else {
-        //     $this.removeClass("have");
-        //     $(".all-main").find(".same-over").eq($index).hide()
-        // }
-    });
     // 文件切换
     (function($){
         $.fn.myTab = function(options){//将对象作为参数传进去
@@ -119,4 +105,29 @@ $(function () {
         }
         return false;
     });
+
+    // 点击删除
+    $(".supplier-list").on('click','.deleted-btn',function () {
+        $(this).parent().css({'border':'1px solid red', 'width':'48%'});
+        $("#modulebg").show();
+        $(".same-hide").show();
+    });
+
+    // 点击编辑
+    $(".supplier-list").on('click','.edit-btn',function () {
+        $("#modulebg").show();
+        $(".same-hide").show();
+    });
 });
+
+
+
+
+
+
+
+
+
+
+
+
