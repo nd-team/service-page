@@ -11,23 +11,6 @@ em{
   }
 }
 //编辑
-.checked-none[data-style="checked"] {  display: none;  }
-.checked-none[data-style="checked"]:checked + label {
-  margin-left: 0;
-}
-.checked-none[data-style="checked"] + label {
-  margin-left: 0;
-  width:50px;
-  height: 31px;
-  text-align: center;
-  padding: 5px 35px;
-  overflow: hidden;
-  margin-right: 14px;
-  border: 1px solid #bbc7d2;
-  &.pt-cur{
-    background-color:#82b6e0;
-  }
-}
 .edit-boxmo{
   display: none;
   width: 1020px;
@@ -73,7 +56,7 @@ em{
         &:nth-of-type(odd){
           margin-right: 60px;
         }
-        .label1{
+        label{
           display: inline-block;
           margin-left: 30px;
           width: 35%;
@@ -90,6 +73,7 @@ em{
         }
         .edit-pt{
           width: 54%;
+          height: 50px;
           background: 0;
           padding-left: 5px;
           font-size: 14px;
@@ -149,7 +133,7 @@ em{
           &:nth-of-type(odd){
             margin-right: 60px;
           }
-          .label1{
+          label{
             display: inline-block;
             margin-left: 30px;
             width: 35%;
@@ -167,6 +151,7 @@ em{
           }
           .edit-pt{
             width: 54%;
+            height: 50px;
             background: 0;
             padding-left: 5px;
             font-size: 14px;
@@ -305,7 +290,7 @@ em{
               border-bottom: 1px solid #ddd;
               float: left;
             }           }
-          .label1{
+          label{
             display: inline-block;
             margin-left: 30px;
             width: 22%;
@@ -459,7 +444,7 @@ em{
     background-color: white;
     margin: {
       top:25px;
-      right: 28px;
+      right: 1.5%;
     };
     &:nth-of-type(4n+0){
       margin-right: 0;
@@ -650,9 +635,6 @@ em{
     margin-left: -500px;
     width: 100%;
     height: auto;
-    /*max-height: 730px;
-    overflow-x: hidden;
-    overflow-y: auto;*/
     border: 1px solid #066dc2;
     background-color: #fff;
     .pop-input{
@@ -671,6 +653,27 @@ em{
         }
         .label1{
           display: inline-block;
+          width: 20%;
+          height: 30px;
+          line-height: 30px;
+          .checked-none[data-style="checked"] {  display: none;  }
+          .checked-none[data-style="checked"]:checked + label {
+            margin-left: 0;
+          }
+          .checked-none[data-style="checked"] + label {
+            margin-left: 0;
+            width: 90%;
+            height: 30px;
+            text-align: center;
+            margin-right: 16px;
+            border: 1px solid #bbc7d2;
+            &.pt-cur{
+              background-color:#82b6e0;
+            }
+          }
+        }
+        label{
+          display: inline-block;
           margin-left: 30px;
           width: 35%;
           font-size: 16px;
@@ -686,11 +689,11 @@ em{
         }
         .edit-pt{
           width: 54%;
+          height: 50px;
           background: 0;
           padding-left: 5px;
           font-size: 14px;
           color: #333;
-          &::-webkit-input-placeholder{ color: #333; }
         }
         .edit-pt3{
           width: 81px;
@@ -760,7 +763,7 @@ em{
         &:nth-of-type(3) {
           margin-right: 0;
         }
-        .label1{
+        label{
           float: left;
           width: 30%;
           font-size: 14px;
@@ -880,7 +883,7 @@ em{
         background-color: white;
         margin: {
           top:25px;
-          right: 28px;
+          right: 1.5%;
         };
         &:nth-of-type(4n+0){
           margin-right: 0;
@@ -1373,7 +1376,7 @@ em{
           &:nth-of-type(odd){
             margin-right: 60px;
           }
-          .label1{
+          label{
             display: inline-block;
             margin-left: 30px;
             width: 35%;
