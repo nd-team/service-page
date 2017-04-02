@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>业务市场化平台-客户详细信息</title>
     <meta name="keywords" content="客户详细信息">
-    <link rel="stylesheet" href="/css/customer/customer_detailed.css">
+    <link rel="stylesheet" href="/css/customer/customer_inform.css">
 </head>
 <body>
     <header class="clearfix">
@@ -94,13 +94,13 @@
                                 <p class="list-text current" data-title="list">
                                     <a href="javascript:void(0)">列表</a>
                                 </p>
-                                <p data-title="add" class="list-text">
+                                <p data-title="edit5" class="list-text">
                                     <a href="javascript:void(0)">添加</a>
                                 </p>
                                 <p data-title="edit" class="list-text">
                                     <a href="javascript:void(0)">编辑</a>
                                 </p>
-                                <p data-title="export" class="list-text">
+                                <p data-title="export-all" class="list-text">
                                     <a href="javascript:void(0)">导出</a>
                                 </p>
                             </div>
@@ -108,11 +108,12 @@
                     </ul>
                 </div>
             </div>
-            <div class="tab-content clearfix list">
-                <div class="soso">
-                    <input class="so-search" placeholder="搜索">
-                </div>
-                <div class="article clearfix">
+            <div class="cus-list">
+                <div class="tab-content clearfix list">
+                    <div class="soso">
+                        <input class="so-search" placeholder="搜索">
+                    </div>
+                    <div class="article clearfix">
                         <ul class="tab-module clearfix">
                             <li class="tab1" data-title="sws1">
                                 <p class="customer-num cus-height">
@@ -130,7 +131,7 @@
                                 </p>
                                 <p class="customer-intro cus-height">
                                     <span class="cus1">第一介绍人</span>
-                                    <span class="cus6" ><img src="/images/customer/male.png"></span>
+                                    <span class="cus7" ><img src="/images/customer/male.png"></span>
                                     <span class="cus4" >李建辉</span>
                                 </p>
                                 <div class="category">
@@ -164,7 +165,7 @@
                                 </p>
                                 <p class="customer-intro cus-height">
                                     <span class="cus1">第一介绍人</span>
-                                    <span class="cus6" ><img src="/images/customer/female.png"></span>
+                                    <span class="cus7" ><img src="/images/customer/female.png"></span>
                                     <span class="cus4" >黄焕来</span>
                                 </p>
                                 <div class="category">
@@ -198,7 +199,7 @@
                                 </p>
                                 <p class="customer-intro cus-height">
                                     <span class="cus1">第一介绍人</span>
-                                    <span class="cus6" ><img src="/images/customer/male.png"></span>
+                                    <span class="cus7" ><img src="/images/customer/male.png"></span>
                                     <span class="cus4" >黄焕来</span>
                                 </p>
                                 <div class="category">
@@ -232,7 +233,7 @@
                                 </p>
                                 <p class="customer-intro cus-height">
                                     <span class="cus1">第一介绍人</span>
-                                    <span class="cus6" ><img src="/images/customer/female.png"></span>
+                                    <span class="cus7" ><img src="/images/customer/female.png"></span>
                                     <span class="cus4" >黄焕来</span>
                                 </p>
                                 <div class="category">
@@ -266,7 +267,7 @@
                                 </p>
                                 <p class="customer-intro cus-height">
                                     <span class="cus1">第一介绍人</span>
-                                    <span class="cus6" ><img src="/images/customer/male.png"></span>
+                                    <span class="cus7" ><img src="/images/customer/male.png"></span>
                                     <span class="cus4" >李建辉</span>
                                 </p>
                                 <div class="category">
@@ -300,7 +301,7 @@
                                 </p>
                                 <p class="customer-intro cus-height">
                                     <span class="cus1">第一介绍人</span>
-                                    <span class="cus6" ><img src="/images/customer/female.png"></span>
+                                    <span class="cus7" ><img src="/images/customer/female.png"></span>
                                     <span class="cus4" >黄焕来</span>
                                 </p>
                                 <div class="category">
@@ -334,7 +335,7 @@
                                 </p>
                                 <p class="customer-intro cus-height">
                                     <span class="cus1">第一介绍人</span>
-                                    <span class="cus6" ><img src="/images/customer/male.png"></span>
+                                    <span class="cus7" ><img src="/images/customer/male.png"></span>
                                     <span class="cus4" >黄焕来</span>
                                 </p>
                                 <div class="category">
@@ -368,7 +369,7 @@
                                 </p>
                                 <p class="customer-intro cus-height">
                                     <span class="cus1">第一介绍人</span>
-                                    <span class="cus6" ><img src="/images/customer/female.png"></span>
+                                    <span class="cus7" ><img src="/images/customer/female.png"></span>
                                     <span class="cus4" >黄焕来</span>
                                 </p>
                                 <div class="category">
@@ -386,7 +387,7 @@
                                     <span class="speed2"><em>60%</em></span>
                                 </p>
                             </li>
-                            <li class="sw-all">
+                            <li class="sw-all sw-x">
                                 <div class="sw1 sws1">
                                     <div class="sw-head">
                                         <span class="close2">
@@ -716,246 +717,740 @@
                                     </div>
                                 </div>
                             </li>
-                       </ul>
+                        </ul>
+                    </div>
+                    <div class="bot-footer"></div>
                 </div>
-            </div>
-             <!--添加-->
-            <div class="edit-box edit1">
-                <i class="close"></i>
-                <div class="edit-pop">
-                     <ul class="pop-input">
-                        <li>
-                            <label>客户信息编号</label>
-                            <input type="text" placeholder="GZ2016622" class="edit-pt">
-                        </li>
-                        <li>
-                            <label>重要性级别</label>
-                            <input type="text" placeholder="一星" class="edit-pt">
-                        </li>
-                        <li>
-                            <label>客户类别</label>
-                            <input type="text" placeholder="合作伙伴" class="edit-pt">
-                        </li>
-                        <li>
-                            <label>客户状态</label>
-                            <input type="text" placeholder="合作伙伴" class="edit-pt">
-                        </li>
-                        <li>
-                            <label>客户来源</label>
-                            <input type="text" placeholder="合作伙伴" class="edit-pt">
-                        </li>
-                        <li>
-                            <label>地区</label>
-                            <input type="text" placeholder="合作伙伴" class="edit-pt">
-                        </li>
-                        <li>
-                            <label>姓名</label>
-                            <input type="text" placeholder="山有木兮" class="edit-pt">
-                        </li>
-                        <li>
-                            <label>性别</label>
-                            <a href="javascript:void(0)" class="edit-pt3 pt-cur">男</a>
-                            <a href="javascript:void(0)" class="edit-pt3 ">女</a>
-                        </li>
-                        <li>
-                            <label>年龄</label>
-                            <input type="text" placeholder="山有木兮" class="edit-pt">
-                        </li>
-                        <li>
-                            <label>出生年月</label>
-                            <input type="text" placeholder="山有木兮" class="edit-pt">
-                        </li>
-                    </ul>
-                     <p class="customer-pro">
-                        <span class="speed"><em>关系程度</em></span>
-                        <span class="speed2"><em>60%</em></span>
-                    </p>
-                     <div class="origin">
-                          <div class="origin-title">
-                              <span class="origin-ti1">籍贯</span>
-                              <p></p>
-                          </div>
-                          <ul class="pop-input">
-                             <li>
-                                 <label>邮箱</label>
-                                 <input type="text" placeholder="GZ2016622" class="edit-pt">
-                             </li>
-                             <li>
-                                 <label>座机</label>
-                                 <input type="text" placeholder="一星" class="edit-pt">
-                             </li>
-                             <li>
-                                 <label>手机</label>
-                                 <input type="text" placeholder="合作伙伴" class="edit-pt">
-                             </li>
-                             <li>
-                                 <label>QQ/微信</label>
-                                 <input type="text" placeholder="合作伙伴" class="edit-pt">
-                             </li>
-                        </ul>
-                     </div>
-                     <div class="origin">
-                          <div class="origin-title">
-                              <span class="origin-ti1">组织机构</span>
-                              <p></p>
-                          </div>
-                          <ul class="pop-input">
-                             <li>
-                                 <label>组织名称</label>
-                                 <input type="text" placeholder="合作伙伴" class="edit-pt">
-                             </li>
-                             <li>
-                                 <label>组织结构</label>
-                                 <input type="text" placeholder="合作伙伴" class="edit-pt">
-                             </li>
-                        </ul>
-                     </div>
-                     <div class="origin">
-                          <div class="origin-title">
-                              <span class="origin-ti1">职务</span>
-                              <p></p>
-                          </div>
-                          <ul class="pop-input">
-                             <li>
-                                 <label>级别</label>
-                                 <input type="text" placeholder="山有木兮" class="edit-pt">
-                             </li>
-                             <li>
-                                 <label>职权</label>
-                                 <input type="text" placeholder="合作伙伴" class="edit-pt">
-                             </li>
-                              <li>
-                                  <label>岗位</label>
-                                  <input type="text" placeholder="合作伙伴" class="edit-pt">
-                              </li>
-                        </ul>
-                     </div>
-                     <div class="origin">
-                          <div class="origin-title">
-                              <span class="origin-ti1">籍贯</span>
-                              <p></p>
-                          </div>
-                          <ul class="pop-input">
-                             <li>
-                                 <label>生活地区</label>
-                                 <input type="text" placeholder="山有木兮" class="edit-pt">
-                             </li>
-                             <li>
-                                 <label>以往工作地区</label>
-                                 <input type="text" placeholder="合作伙伴" class="edit-pt">
-                             </li>
-                              <li>
-                                  <label>成长地区</label>
-                                  <input type="text" placeholder="合作伙伴" class="edit-pt">
-                              </li>
-                        </ul>
-                     </div>
-                     <div class="ori-add">
-                            <p class="add-tit">
-                                   <span class="tit-left"></span>
-                                   <span class="tit-right"></span>
-                            </p>
-                            <ul>
-                                <li>
-                                     <div class="add-line">
-                                         <p>
-                                             <label>工作经历</label>
-                                             <input type="text" placeholder="山有木兮" class="edit-pt">
-                                         </p>
-                                         <a href="javascript:void(0)"><img src="/images/customer/add.png"></a>
-                                     </div>
-                                    <div class="add-line">
-                                        <p>
-                                            <label>求学培训经历</label>
-                                            <input type="text" placeholder="山有木兮" class="edit-pt">
+                <div class="tab-content clearfix edit">
+                        <div class="soso">
+                            <input class="so-search" placeholder="搜索">
+                        </div>
+                        <div class="article clearfix">
+                            <ul class="tab-module clearfix">
+                                <li class="tab1">
+                                    <p class="customer-num cus-height">
+                                        <span class="cus1">客户编号</span>
+                                        <span class="cus2" >SW20160622</span>
+                                        <span class="cus3"><img src="/images/customer/data.png"></span>
+                                    </p>
+                                    <p class="customer-name cus-height">
+                                        <span class="cus1">客户姓名</span>
+                                        <span class="cus4" >是汪不是汪</span>
+                                    </p>
+                                    <p class="customer-region cus-height">
+                                        <span class="cus1">地区</span>
+                                        <span class="cus4" >湖南</span>
+                                    </p>
+                                    <p class="customer-intro cus-height">
+                                        <span class="cus1">第一介绍人</span>
+                                        <span class="cus7" ><img src="/images/customer/male.png"></span>
+                                        <span class="cus4" >李建辉</span>
+                                    </p>
+                                    <div class="category">
+                                        <p class="cate3"><i>VIP客户</i></p>
+                                        <p class="cate3 cate-over2"><i>已完成项目客户</i></p>
+                                        <p class="cate4 cate2"><i>一般</i></p>
+                                    </div>
+                                    <p class="customer-all">
+                                        <span>客户类别</span>
+                                        <span>客户状态</span>
+                                        <span>重要级别</span>
+                                    </p>
+                                    <p class="customer-pro">
+                                        <span class="speed"><em>关系程度</em></span>
+                                        <span class="speed2"><em>60%</em></span>
+                                    </p>
+                                    <!-- 编辑、查看详情、关闭-->
+                                    <div class="edit-all">
+                                        <p class="state">
+                                            <a href="javascript:void(0)" class="s-edit" data-title="edit3">编辑</a>
+                                            <a href="javascript:void(0)" class="s-frozen">查看详情</a>
                                         </p>
-                                        <a href="javascript:void(0)"><img src="/images/customer/add.png"></a>
+                                        <p class="close"><img src="/images/customer/close1.png"></p>
+                                        <p class="edit-bg"></p>
+                                        <div class="close-hide hs1">
+                                            <p class="close-text"> 是否删除这条数据</p>
+                                            <a href="javascript:void(0)" class="close-yes">是(Yes)</a>
+                                            <a href="javascript:void(0)" class="close-no">否(No)</a>
+                                        </div>
                                     </div>
                                 </li>
                             </ul>
-                     </div>
-                    <div class="origin">
-                        <div class="origin-title">
-                            <span class="origin-ti1">家庭成员</span>
-                            <p></p>
                         </div>
+                        <div class="bot-footer"></div>
+                    </div>
+                <!---编辑-->
+                <div class="edit-boxmo edit5">
+                    <i class="close"></i>
+                    <div class="edit-pop2">
                         <ul class="pop-input">
                             <li>
-                                <label>称谓</label>
-                                <input type="text" placeholder="山有木兮" class="edit-pt">
+                                <label>客户信息编号</label>
+                                <input type="text" placeholder="GZ2016622" class="edit-pt">
+                            </li>
+                            <li>
+                                <label>重要性级别</label>
+                                <input type="text" placeholder="一星" class="edit-pt">
+                            </li>
+                            <li>
+                                <label>客户类别</label>
+                                <input type="text" placeholder="合作伙伴" class="edit-pt">
+                            </li>
+                            <li>
+                                <label>客户状态</label>
+                                <input type="text" placeholder="合作伙伴" class="edit-pt">
+                            </li>
+                            <li>
+                                <label>客户来源</label>
+                                <input type="text" placeholder="合作伙伴" class="edit-pt">
+                            </li>
+                            <li>
+                                <label>地区</label>
+                                <input type="text" placeholder="合作伙伴" class="edit-pt">
                             </li>
                             <li>
                                 <label>姓名</label>
-                                <input type="text" placeholder="合作伙伴" class="edit-pt">
+                                <input type="text" placeholder="山有木兮" class="edit-pt">
                             </li>
                             <li>
-                                <label>联系方式</label>
-                                <input type="text" placeholder="合作伙伴" class="edit-pt">
+                                <label>性别</label>
+                                <a href="javascript:void(0)" class="edit-pt3 pt-cur">男</a>
+                                <a href="javascript:void(0)" class="edit-pt3 ">女</a>
                             </li>
                             <li>
-                                <label>性格爱好</label>
-                                <input type="text" placeholder="合作伙伴" class="edit-pt">
+                                <label>年龄</label>
+                                <input type="text" placeholder="山有木兮" class="edit-pt">
                             </li>
                             <li>
-                                <label>工作单位</label>
-                                <input type="text" placeholder="合作伙伴" class="edit-pt">
-                            </li>
-                            <li>
-                                <label>职位</label>
-                                <input type="text" placeholder="合作伙伴" class="edit-pt">
+                                <label>出生年月</label>
+                                <input type="text" placeholder="山有木兮" class="edit-pt">
                             </li>
                         </ul>
+                        <p class="customer-pro">
+                            <span class="speed"><em>关系程度</em></span>
+                            <span class="speed2"><em>60%</em></span>
+                        </p>
+                        <div class="origin">
+                            <div class="origin-title">
+                                <span class="origin-ti1">籍贯</span>
+                                <p></p>
+                            </div>
+                            <ul class="pop-input">
+                                <li>
+                                    <label>邮箱</label>
+                                    <input type="text" placeholder="GZ2016622" class="edit-pt">
+                                </li>
+                                <li>
+                                    <label>座机</label>
+                                    <input type="text" placeholder="一星" class="edit-pt">
+                                </li>
+                                <li>
+                                    <label>手机</label>
+                                    <input type="text" placeholder="合作伙伴" class="edit-pt">
+                                </li>
+                                <li>
+                                    <label>QQ/微信</label>
+                                    <input type="text" placeholder="合作伙伴" class="edit-pt">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="origin">
+                            <div class="origin-title">
+                                <span class="origin-ti1">组织机构</span>
+                                <p></p>
+                            </div>
+                            <ul class="pop-input">
+                                <li>
+                                    <label>组织名称</label>
+                                    <input type="text" placeholder="合作伙伴" class="edit-pt">
+                                </li>
+                                <li>
+                                    <label>组织结构</label>
+                                    <input type="text" placeholder="合作伙伴" class="edit-pt">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="origin">
+                            <div class="origin-title">
+                                <span class="origin-ti1">职务</span>
+                                <p></p>
+                            </div>
+                            <ul class="pop-input">
+                                <li>
+                                    <label>级别</label>
+                                    <input type="text" placeholder="山有木兮" class="edit-pt">
+                                </li>
+                                <li>
+                                    <label>职权</label>
+                                    <input type="text" placeholder="合作伙伴" class="edit-pt">
+                                </li>
+                                <li>
+                                    <label>岗位</label>
+                                    <input type="text" placeholder="合作伙伴" class="edit-pt">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="origin">
+                            <div class="origin-title">
+                                <span class="origin-ti1">籍贯</span>
+                                <p></p>
+                            </div>
+                            <ul class="pop-input">
+                                <li>
+                                    <label>生活地区</label>
+                                    <input type="text" placeholder="山有木兮" class="edit-pt">
+                                </li>
+                                <li>
+                                    <label>以往工作地区</label>
+                                    <input type="text" placeholder="合作伙伴" class="edit-pt">
+                                </li>
+                                <li>
+                                    <label>成长地区</label>
+                                    <input type="text" placeholder="合作伙伴" class="edit-pt">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ori-add">
+                            <p class="add-tit">
+                                <span class="tit-left"></span>
+                                <span class="tit-right"></span>
+                            </p>
+                            <ul>
+                                <li>
+                                    <div class="add-line">
+                                        <div class="line-all">
+                                            <p>
+                                                <label>工作经历</label>
+                                                <input type="text" placeholder="山有木兮" class="edit-pt">
+                                            </p>
+                                        </div>
+                                        <a href="javascript:void(0)" class="icon-add"><img src="/images/customer/add.png"></a>
+                                    </div>
+                                    <div class="add-line">
+                                        <div class="line-all">
+                                            <p>
+                                                <label>工作经历</label>
+                                                <input type="text" placeholder="学着别人一样饮酒" class="edit-pt">
+                                            </p>
+                                        </div>
+                                        <a href="javascript:void(0)" class="icon-add"><img src="/images/customer/add.png"></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="origin">
+                            <div class="origin-title clearfix">
+                                <span class="origin-ti1">家庭成员</span>
+                                <p></p>
+                            </div>
+                            <div class="ori-delete clearfix">
+                                <p class="family">家庭成员列表</p>
+                                <ul>
+                                    <li>
+                                        <p><em>称谓</em><span>称谓</span></p>
+                                        <p><em>姓名</em><span>李四</span></p>
+                                        <p><em>联系方式</em><span>12345678901</span></p>
+                                        <p><em>性格爱好</em><span>运动</span></p>
+                                        <p><em>工作单位</em><span>在大家打架大家记得几点到几点</span></p>
+                                        <p><em>职位</em><span>工程师</span></p>
+                                        <a href="javascript:void(0)" class="cus-del"><img src="/images/customer/del.png"></a>
+                                    </li>
+                                    <li>
+                                        <p><em>称谓</em><span>称谓</span></p>
+                                        <p><em>姓名</em><span>李四</span></p>
+                                        <p><em>联系方式</em><span>12345678901</span></p>
+                                        <p><em>性格爱好</em><span>运动</span></p>
+                                        <p><em>工作单位</em><span>在大家打架大家记得几点到几点</span></p>
+                                        <p><em>职位</em><span>工程师</span></p>
+                                        <a href="javascript:void(0)" class="cus-del"><img src="/images/customer/del.png"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="pop-input">
+                                <li>
+                                    <label>称谓</label>
+                                    <input type="text" placeholder="山有木兮" class="edit-pt">
+                                </li>
+                                <li>
+                                    <label>姓名</label>
+                                    <input type="text" placeholder="合作伙伴" class="edit-pt">
+                                </li>
+                                <li>
+                                    <label>联系方式</label>
+                                    <input type="text" placeholder="合作伙伴" class="edit-pt">
+                                </li>
+                                <li>
+                                    <label>性格爱好</label>
+                                    <input type="text" placeholder="合作伙伴" class="edit-pt">
+                                </li>
+                                <li>
+                                    <label>工作单位</label>
+                                    <input type="text" placeholder="合作伙伴" class="edit-pt">
+                                </li>
+                                <li>
+                                    <label>职位</label>
+                                    <input type="text" placeholder="合作伙伴" class="edit-pt">
+                                </li>
+                            </ul>
+                            <div class="add-cont">
+                                <a href="javascript:void(0)">增加</a>
+                            </div>
+                        </div>
+                        <div class="modify">
+                            <button type="button" class="modify-btn" disabled>修改</button>
+                        </div>
                     </div>
-                    <div class="modify">
-                        <button type="button" class="modify-btn" disabled>修改</button>
+                </div>
+                <!--导出-->
+                <div class="tab-content export-all clearfix">
+                     <div class="soso">
+                         <input class="so-search" placeholder="搜索">
+                     </div>
+                      <div class="export-main">
+                           <div class="export-left clearfix">
+                                    <ul class="clearfix">
+                                        <li>
+                                            <label>地区</label>
+                                            <p class="select-all">
+                                                <select>
+                                                    <option>广州</option>
+                                                    <option>北京</option>
+                                                    <option>上海</option>
+                                                    <option>南京</option>
+                                                    <option>非洲</option>
+                                                    <option>台湾</option>
+                                                </select>
+                                                <i class="sele-close"><img src="/images/customer/select-close.png"> </i>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <label>客户名</label>
+                                            <p class="select-all">
+                                                <select>
+                                                    <option>广州</option>
+                                                    <option>北京</option>
+                                                    <option>上海</option>
+                                                    <option>南京</option>
+                                                    <option>非洲</option>
+                                                    <option>台湾</option>
+                                                </select>
+                                                <i class="sele-close"><img src="/images/customer/select-close.png"> </i>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                    <p class="ex-query clearfix">
+                                        查询
+                                    </p>
+                                    <p class="ex-download">
+                                          <span>下载</span>
+                                          <span><img src="/images/customer/download.png"></span>
+                                    </p>
+                           </div>
+                           <div class="export-right">
+                               <ul class="tab-module clearfix">
+                                   <li class="tab1">
+                                       <p class="customer-num cus-height">
+                                           <span class="cus1">客户编号</span>
+                                           <span class="cus2" >SW20160622</span>
+                                           <span class="cus3"><img src="/images/customer/data.png"></span>
+                                       </p>
+                                       <p class="customer-name cus-height">
+                                           <span class="cus1">客户姓名</span>
+                                           <span class="cus4" >是汪不是汪</span>
+                                       </p>
+                                       <p class="customer-region cus-height">
+                                           <span class="cus1">地区</span>
+                                           <span class="cus4" >湖南</span>
+                                       </p>
+                                       <p class="customer-intro cus-height">
+                                           <span class="cus1">第一介绍人</span>
+                                           <span class="cus7" ><img src="/images/customer/male.png"></span>
+                                           <span class="cus4" >李建辉</span>
+                                       </p>
+                                       <div class="category">
+                                           <p class="cate3"><i>VIP客户</i></p>
+                                           <p class="cate3 cate-over2"><i>已完成项目客户</i></p>
+                                           <p class="cate4 cate2"><i>一般</i></p>
+                                       </div>
+                                       <p class="customer-all">
+                                           <span>客户类别</span>
+                                           <span>客户状态</span>
+                                           <span>重要级别</span>
+                                       </p>
+                                       <p class="customer-pro">
+                                           <span class="speed"><em>关系程度</em></span>
+                                           <span class="speed2"><em>60%</em></span>
+                                       </p>
+                                   </li>
+                                   <li class="tab1">
+                                       <p class="customer-num cus-height">
+                                           <span class="cus1">客户编号</span>
+                                           <span class="cus2" >SW20160622</span>
+                                           <span class="cus3"><img src="/images/customer/data.png"></span>
+                                       </p>
+                                       <p class="customer-name cus-height">
+                                           <span class="cus1">客户姓名</span>
+                                           <span class="cus4" >是汪不是汪</span>
+                                       </p>
+                                       <p class="customer-region cus-height">
+                                           <span class="cus1">地区</span>
+                                           <span class="cus4" >湖南</span>
+                                       </p>
+                                       <p class="customer-intro cus-height">
+                                           <span class="cus1">第一介绍人</span>
+                                           <span class="cus7" ><img src="/images/customer/male.png"></span>
+                                           <span class="cus4" >李建辉</span>
+                                       </p>
+                                       <div class="category">
+                                           <p class="cate3"><i>VIP客户</i></p>
+                                           <p class="cate3 cate-over2"><i>已完成项目客户</i></p>
+                                           <p class="cate4 cate2"><i>一般</i></p>
+                                       </div>
+                                       <p class="customer-all">
+                                           <span>客户类别</span>
+                                           <span>客户状态</span>
+                                           <span>重要级别</span>
+                                       </p>
+                                       <p class="customer-pro">
+                                           <span class="speed"><em>关系程度</em></span>
+                                           <span class="speed2"><em>60%</em></span>
+                                       </p>
+                                   </li>
+                                   <li class="tab1">
+                                       <p class="customer-num cus-height">
+                                           <span class="cus1">客户编号</span>
+                                           <span class="cus2" >SW20160622</span>
+                                           <span class="cus3"><img src="/images/customer/data.png"></span>
+                                       </p>
+                                       <p class="customer-name cus-height">
+                                           <span class="cus1">客户姓名</span>
+                                           <span class="cus4" >是汪不是汪</span>
+                                       </p>
+                                       <p class="customer-region cus-height">
+                                           <span class="cus1">地区</span>
+                                           <span class="cus4" >湖南</span>
+                                       </p>
+                                       <p class="customer-intro cus-height">
+                                           <span class="cus1">第一介绍人</span>
+                                           <span class="cus7" ><img src="/images/customer/male.png"></span>
+                                           <span class="cus4" >李建辉</span>
+                                       </p>
+                                       <div class="category">
+                                           <p class="cate3"><i>VIP客户</i></p>
+                                           <p class="cate3 cate-over2"><i>已完成项目客户</i></p>
+                                           <p class="cate4 cate2"><i>一般</i></p>
+                                       </div>
+                                       <p class="customer-all">
+                                           <span>客户类别</span>
+                                           <span>客户状态</span>
+                                           <span>重要级别</span>
+                                       </p>
+                                       <p class="customer-pro">
+                                           <span class="speed"><em>关系程度</em></span>
+                                           <span class="speed2"><em>60%</em></span>
+                                       </p>
+                                   </li>
+                                   <li class="tab1">
+                                       <p class="customer-num cus-height">
+                                           <span class="cus1">客户编号</span>
+                                           <span class="cus2" >SW20160622</span>
+                                           <span class="cus3"><img src="/images/customer/data.png"></span>
+                                       </p>
+                                       <p class="customer-name cus-height">
+                                           <span class="cus1">客户姓名</span>
+                                           <span class="cus4" >是汪不是汪</span>
+                                       </p>
+                                       <p class="customer-region cus-height">
+                                           <span class="cus1">地区</span>
+                                           <span class="cus4" >湖南</span>
+                                       </p>
+                                       <p class="customer-intro cus-height">
+                                           <span class="cus1">第一介绍人</span>
+                                           <span class="cus7" ><img src="/images/customer/male.png"></span>
+                                           <span class="cus4" >李建辉</span>
+                                       </p>
+                                       <div class="category">
+                                           <p class="cate3"><i>VIP客户</i></p>
+                                           <p class="cate3 cate-over2"><i>已完成项目客户</i></p>
+                                           <p class="cate4 cate2"><i>一般</i></p>
+                                       </div>
+                                       <p class="customer-all">
+                                           <span>客户类别</span>
+                                           <span>客户状态</span>
+                                           <span>重要级别</span>
+                                       </p>
+                                       <p class="customer-pro">
+                                           <span class="speed"><em>关系程度</em></span>
+                                           <span class="speed2"><em>60%</em></span>
+                                       </p>
+                                   </li>
+                                </ul>
+                           </div>
+                      </div>
+                 </div>
+            </div>
+             <!--添加-->
+            <div class="all-module2">
+                <div class="edit-boxmo edit3">
+                    <i class="close"></i>
+                    <div class="edit-pop2">
+                        <ul class="pop-input">
+                            <li>
+                                <label>客户信息编号</label>
+                                <input type="text" placeholder="GZ2016622" class="edit-pt">
+                            </li>
+                            <li>
+                                <label>重要性级别</label>
+                                <input type="text" placeholder="一星" class="edit-pt">
+                            </li>
+                            <li>
+                                <label>客户类别</label>
+                                <input type="text" placeholder="合作伙伴" class="edit-pt">
+                            </li>
+                            <li>
+                                <label>客户状态</label>
+                                <input type="text" placeholder="合作伙伴" class="edit-pt">
+                            </li>
+                            <li>
+                                <label>客户来源</label>
+                                <input type="text" placeholder="合作伙伴" class="edit-pt">
+                            </li>
+                            <li>
+                                <label>地区</label>
+                                <input type="text" placeholder="合作伙伴" class="edit-pt">
+                            </li>
+                            <li>
+                                <label>姓名</label>
+                                <input type="text" placeholder="山有木兮" class="edit-pt">
+                            </li>
+                            <li>
+                                <label>性别</label>
+                                <a href="javascript:void(0)" class="edit-pt3 pt-cur">男</a>
+                                <a href="javascript:void(0)" class="edit-pt3 ">女</a>
+                            </li>
+                            <li>
+                                <label>年龄</label>
+                                <input type="text" placeholder="山有木兮" class="edit-pt">
+                            </li>
+                            <li>
+                                <label>出生年月</label>
+                                <input type="text" placeholder="山有木兮" class="edit-pt">
+                            </li>
+                        </ul>
+                        <p class="customer-pro">
+                            <span class="speed"><em>关系程度</em></span>
+                            <span class="speed2"><em>60%</em></span>
+                        </p>
+                        <div class="origin">
+                            <div class="origin-title">
+                                <span class="origin-ti1">籍贯</span>
+                                <p></p>
+                            </div>
+                            <ul class="pop-input">
+                                <li>
+                                    <label>邮箱</label>
+                                    <input type="text" placeholder="GZ2016622" class="edit-pt">
+                                </li>
+                                <li>
+                                    <label>座机</label>
+                                    <input type="text" placeholder="一星" class="edit-pt">
+                                </li>
+                                <li>
+                                    <label>手机</label>
+                                    <input type="text" placeholder="合作伙伴" class="edit-pt">
+                                </li>
+                                <li>
+                                    <label>QQ/微信</label>
+                                    <input type="text" placeholder="合作伙伴" class="edit-pt">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="origin">
+                            <div class="origin-title">
+                                <span class="origin-ti1">组织机构</span>
+                                <p></p>
+                            </div>
+                            <ul class="pop-input">
+                                <li>
+                                    <label>组织名称</label>
+                                    <input type="text" placeholder="合作伙伴" class="edit-pt">
+                                </li>
+                                <li>
+                                    <label>组织结构</label>
+                                    <input type="text" placeholder="合作伙伴" class="edit-pt">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="origin">
+                            <div class="origin-title">
+                                <span class="origin-ti1">职务</span>
+                                <p></p>
+                            </div>
+                            <ul class="pop-input">
+                                <li>
+                                    <label>级别</label>
+                                    <input type="text" placeholder="山有木兮" class="edit-pt">
+                                </li>
+                                <li>
+                                    <label>职权</label>
+                                    <input type="text" placeholder="合作伙伴" class="edit-pt">
+                                </li>
+                                <li>
+                                    <label>岗位</label>
+                                    <input type="text" placeholder="合作伙伴" class="edit-pt">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="origin">
+                            <div class="origin-title">
+                                <span class="origin-ti1">籍贯</span>
+                                <p></p>
+                            </div>
+                            <ul class="pop-input">
+                                <li>
+                                    <label>生活地区</label>
+                                    <input type="text" placeholder="山有木兮" class="edit-pt">
+                                </li>
+                                <li>
+                                    <label>以往工作地区</label>
+                                    <input type="text" placeholder="合作伙伴" class="edit-pt">
+                                </li>
+                                <li>
+                                    <label>成长地区</label>
+                                    <input type="text" placeholder="合作伙伴" class="edit-pt">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ori-add">
+                            <p class="add-tit">
+                                <span class="tit-left"></span>
+                                <span class="tit-right"></span>
+                            </p>
+                            <ul>
+                                <li>
+                                    <div class="add-line">
+                                        <div class="line-all">
+                                            <p>
+                                                <label>工作经历</label>
+                                                <input type="text" placeholder="山有木兮" class="edit-pt">
+                                            </p>
+                                        </div>
+                                        <a href="javascript:void(0)" class="icon-add"><img src="/images/customer/add.png"></a>
+                                    </div>
+                                    <div class="add-line">
+                                        <div class="line-all">
+                                            <p>
+                                                <label>工作经历</label>
+                                                <input type="text" placeholder="学着别人一样饮酒" class="edit-pt">
+                                            </p>
+                                        </div>
+                                        <a href="javascript:void(0)" class="icon-add"><img src="/images/customer/add.png"></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="origin">
+                            <div class="origin-title clearfix">
+                                <span class="origin-ti1">家庭成员</span>
+                                <p></p>
+                            </div>
+                            <div class="ori-delete clearfix">
+                                <p class="family">家庭成员列表</p>
+                                <ul>
+                                    <li>
+                                        <p><em>称谓</em><span>称谓</span></p>
+                                        <p><em>姓名</em><span>李四</span></p>
+                                        <p><em>联系方式</em><span>12345678901</span></p>
+                                        <p><em>性格爱好</em><span>运动</span></p>
+                                        <p><em>工作单位</em><span>在大家打架大家记得几点到几点</span></p>
+                                        <p><em>职位</em><span>工程师</span></p>
+                                        <a href="javascript:void(0)" class="cus-del"><img src="/images/customer/del.png"></a>
+                                    </li>
+                                    <li>
+                                        <p><em>称谓</em><span>称谓</span></p>
+                                        <p><em>姓名</em><span>李四</span></p>
+                                        <p><em>联系方式</em><span>12345678901</span></p>
+                                        <p><em>性格爱好</em><span>运动</span></p>
+                                        <p><em>工作单位</em><span>在大家打架大家记得几点到几点</span></p>
+                                        <p><em>职位</em><span>工程师</span></p>
+                                        <a href="javascript:void(0)" class="cus-del"><img src="/images/customer/del.png"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="pop-input">
+                                <li>
+                                    <label>称谓</label>
+                                    <input type="text" placeholder="山有木兮" class="edit-pt">
+                                </li>
+                                <li>
+                                    <label>姓名</label>
+                                    <input type="text" placeholder="合作伙伴" class="edit-pt">
+                                </li>
+                                <li>
+                                    <label>联系方式</label>
+                                    <input type="text" placeholder="合作伙伴" class="edit-pt">
+                                </li>
+                                <li>
+                                    <label>性格爱好</label>
+                                    <input type="text" placeholder="合作伙伴" class="edit-pt">
+                                </li>
+                                <li>
+                                    <label>工作单位</label>
+                                    <input type="text" placeholder="合作伙伴" class="edit-pt">
+                                </li>
+                                <li>
+                                    <label>职位</label>
+                                    <input type="text" placeholder="合作伙伴" class="edit-pt">
+                                </li>
+                            </ul>
+                            <div class="add-cont">
+                                <a href="javascript:void(0)">增加</a>
+                            </div>
+                        </div>
+                        <div class="modify">
+                            <button type="button" class="modify-btn" disabled>修改</button>
+                        </div>
                     </div>
                 </div>
             </div>
-             <!--编辑-->
         </div>
     </div>
-    <div class="bot-footer"></div>
+    <div id="modulebg"></div>
     <script src="/js/jquery-2.1.1.min.js"></script>
-    <script src="/js/business.js"></script>
-   <script>
-       function actConTable(){
-           $('.activity-con').on("click",".icon-add",function(){
-               var tagName = $( this ).parent().prop("tagName");
-               var actConHtml;
-               if(tagName=="DT"){
-                   actConHtml = "<dl>" +
-                           "<dt>" +
-                           "<input type='text'>" +
-                           "<a href='javascript:void(0)' class='icon-add'>" +
-                           "<svg role='img'>" +
-                           "<use xlink:href='#act_close'></use>" +
-                           "</svg>" +
-                           "</a>" +
-                           "</dt>" +
-                           "<dd>" +
-                           "<p>" +
-                           "<input type='text'>" +
-                           "<input type='text'>" +
-                           "</p>" +
-                           "<a href='javascript:void(0)' class='icon-add'>" +
-                           "<svg role='img'>" +
-                           "<use xlink:href='#act_close'></use>" +
-                           "</svg>" +
-                           "</a>" +
-                           "</dd></dl>";
-                   $('.activity-con .item-con').append(actConHtml)
-
-               }else if(tagName=="DD"){
-                   actConHtml= "<input type='text'>";
-                   $(this).siblings('p').append(actConHtml)
-               }
-           });
-       }
+    <script>
+      function actConTable(){
+          $('.add-line').on("click",".icon-add",function(){
+             var tem="";
+                  tem += "<p class='add-work'><label>工作经历</label><input type='text' placeholder='愿世间山有木兮' class='edit-pt'></p>";
+                  $(this).siblings('.line-all').append(tem);
+         });
+     }
        $(function () {
+           $(".management-right .line-btn").on('mouseover',function () {
+               $(".management-right li .right-list").show();
+           });
+           $(".management-right .line-btn").on('mouseout', function () {
+               $(".management-right li .right-list").hide();
+           });
+
            $(".tab-module li").click(function () {
                var listTitle = $(this).attr("data-title");
                $('.sw-all').children("."+listTitle).show().siblings().hide();
            });
+           actConTable();
+           $('.edit3').on("click",".close",function(){
+               $('.edit3').hide();
+               $("#modulebg").hide()
+           });
+           $("a[data-title]").click(function () {
+               var listTitle = $(this).attr("data-title");
+               $('.all-module2').children("."+listTitle).show().siblings().hide();
+               $("#modulebg").show();
+           });
+           $("p[data-title]").click(function () {
+               var listTitle = $(this).attr("data-title");
+               $('.cus-list').children("."+listTitle).show().siblings().hide();
+           })
        })
    </script>
 </body>
