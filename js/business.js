@@ -62,7 +62,7 @@ $(function () {
         }
     });
     //编辑框
-    $('.edit-box').on("click",".close",function(){
+    $('.same-hide').on("click",".close",function(){
         $('.same-hide').hide();
         $("#modulebg").hide()
     });
