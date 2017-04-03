@@ -27,17 +27,23 @@ em{
         height: auto;
         li {
           float: left;
-          width: 48%;
+          width: 32%;
           background-color: #fff;
-          margin-bottom: 36px;
-          padding: 0 10px;
-          margin-right: 4%;
+          margin-top: 36px;
+          margin-right:2%;
           box-shadow: 0 6px 13px #d6d7d9;
           border-radius: 1px;
+          &:nth-of-type(3n+0){
+            margin-right: 0;
+          }
           &.cont-red{
             border-top: 1px solid #f32f4e;
           }
+          &.cont-blue{
+            border-top: 1px solid #066dc2;
+          }
           .cont-top{
+            padding: 0 10px;
             .top-input{
                 float: left;
                 margin-top: 11px;
@@ -60,10 +66,16 @@ em{
                width: 42px;
                height: 21px;
               text-align: center;
-               background-color: #f32f4e;
-            }
-          }
+              &.num-red{
+                background-color: #f32f4e;
+              }
+              &.num-blue{
+                background-color: #066dc2;
+               }
+              }
+           }
           .cont-all{
+            padding: 0 10px;
             margin: {
               top:20px;
             };
@@ -76,6 +88,7 @@ em{
             }
             }
             .all-page {
+              width: 65%;
               color: #333;
               float: left;
               margin: {
@@ -113,8 +126,390 @@ em{
               }
             }
           }
+          .cont-bot{
+            margin: {
+              top:32px;
+            };
+            font-size: 14px;
+            border-top: 1px solid #eeeeee;
+            text-align: center;
+            a{
+              display: inline-block;
+              width: 32.4%;
+              line-height: 52px;
+              color: #333333;
+              border-right: 1px solid #eeeeee;
+              &:hover{
+                color: white;
+                background-color: #066dc2;
+              }
+              &:last-child{
+                border-right: 0;
+              }
+             }
+          }
         }
       }
     }
   }
 }
+//内弹窗相同样式
+.module-layer{
+  float: left;
+  width: 100%;
+  height: 100%;
+  padding-left: 80px;
+  margin-left: 195px;
+  //查看附件
+  .mode-all{
+    width: 84%;
+    height: auto;
+  }
+  .mode-annex{
+    .same-box{
+      width: 100%;
+      min-height: 590px;
+      //查看洽谈文件
+      .file-name{
+        line-height: 35px;
+        overflow: hidden;
+        span{
+          font-size: 18px;
+          color: #333;
+          padding-right: 10px;
+          float: left;
+          margin-top: 4px;
+        }
+        .name-left{
+          float: left;
+          li{
+            float: left;
+            text-align: center;
+            margin-right: 10px;
+            &.current{
+              border-bottom:2px solid #046ec4;
+              .file-pic{
+                svg{
+                  fill:#066dc2 ;
+                }
+              }
+
+            }
+            .file-pic{
+              vertical-align: middle;
+              padding: 0 8px 5px;
+              text-align: center;
+              svg{
+                width: 20px;
+                height: 20px;
+                fill: #757575;
+                vertical-align: middle;
+                &.file{
+                  width: 25px;
+                  height: 25px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .file-order{
+        width: 100%;
+        min-height:500px;
+        .file-list{
+          margin-top: 30px;
+          display: none;
+          li{
+            width: 100%;
+            height: 60px;
+            background-color: #fff;
+            box-shadow: 0 2px 6px rgba(0,0,0,.1);
+            margin-bottom: 15px;
+            &:hover{
+              box-shadow:0 0 10px 5px #d2dfec;
+            }
+            line-height: 60px;
+            span{
+              display: inline-block;
+              width: 26px;
+              height: 18px;
+              text-align: center;
+              line-height: 18px;
+              color: #fff;
+              font:{
+                size: 10px;
+                family: Arial;
+              }
+              border-radius: 5px;
+              margin-left: -10px;
+              &.first{
+                background-color: #066dc2;
+              }
+              &.second{
+                background-color: #f32f4e;
+              }
+              &.third{
+                background-color: #46dbcd;
+              }
+            }
+            .icon-text{
+              font-size: 16px;
+              color: #333;
+              padding-left: 45px;
+              .pic-file{
+                display: inline-block;
+                width: 40px;
+                height: 36px;
+                background: url("/images/business/small_file.png") no-repeat center;
+                vertical-align: middle;
+                margin-right: 15px;
+              }
+              small{
+                font-size: 16px;
+                color: #999;
+              }
+            }
+          }
+        }
+        .list-change{
+          height: auto;
+          overflow: hidden;
+          li{
+            float: left;
+            width: 185px;
+            height: 150px;
+            margin-right: 30px;
+            display: flex;
+            align-items: flex-start;
+            box-shadow: 0 4px 15px rgba(0,0,0,.15);
+            &:last-child{
+              margin-right: 0;
+            }
+            span{
+              width: 20px;
+              height: 20px;
+              margin-left: 0;
+              border-radius: 0;
+            }
+            .icon-text{
+              width: 100%;
+              display: block;
+              text-align: center;
+              padding:{
+                left: 0;
+              }
+              .icon-second{
+                display: block;
+                width: 85px;
+                height: 77px;
+                background: url("/images/business/big_file.png") no-repeat center;
+                margin: 15px auto 0;
+              }
+              text{
+                text-align: center;
+              }
+            }
+          }
+        }
+        .tab-item{
+          display: block;
+        }
+      }
+    }
+  }
+}
+#modulebg{
+  display: none;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 8;
+  position: fixed;
+  top: 0;
+  left: 10.9%;
+  right: 0;
+  bottom: 0;
+}
+#modulebg2{
+  @extend #modulebg;
+}
+//外弹窗相同样式
+.edit-box {
+  width: 534px;
+  position: absolute;
+  z-index: 100;
+  height: 800px;
+  top: 50%;
+  left: 55%;
+  margin-left: -130px;
+  .close {
+    width: 80px;
+    height: 80px;
+    background: url(/images/business/circle_close.png) no-repeat;
+    display: block;
+    position: absolute;
+    right: 165px;
+    top: -65px;
+    cursor: pointer;
+  }
+  .delete-box1{
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -500px;
+    width: 100%;
+    height: auto;
+    border: 2px solid #066dc2;
+    .del-tit{
+      color: #066dc2;
+      font-size: 16px;
+      margin: 30px 0;
+    }
+    .del-tit2{
+      font-size: 14px;
+      color: #333;
+    }
+    button{
+      width: 100%;
+      height: 60px;
+      margin-top: 40px;
+      color: white;
+      background-color: #066dc2;
+    }
+  }
+}
+
+.edit-box2{
+ width: 1020px;
+  position: absolute;
+  z-index: 100;
+  height: 800px;
+  top: 20%;
+  left: 55%;
+  margin-left: -500px;
+  .close{
+    width: 80px;
+    height: 80px;
+    background: url("/images/business/circle_close.png") no-repeat;
+    display: block;
+    position: absolute;
+    right: -62px;
+    top: -65px;
+    cursor: pointer;
+  }
+  .edit-pop{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -500px;
+    width: 100%;
+    height: auto;
+    /*max-height: 730px;
+    overflow-x: hidden;
+    overflow-y: auto;*/
+    border: 1px solid #066dc2;
+    background-color: #fff;
+    .pop-input{
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      margin-bottom: 25px;
+      li{
+        width: 47%;
+        float: left;
+        line-height: 60px;
+        border-bottom:1px solid #ddd;
+        margin-top: 10px;
+        &:nth-of-type(odd){
+          margin-right: 60px;
+        }
+        .label1{
+          display: inline-block;
+          width: 20%;
+          height: 30px;
+          line-height: 30px;
+          .checked-none[data-style="checked"] {  display: none;  }
+          .checked-none[data-style="checked"]:checked + label {
+            margin-left: 0;
+          }
+          .checked-none[data-style="checked"] + label {
+            margin-left: 0;
+            width: 90%;
+            height: 30px;
+            text-align: center;
+            margin-right: 16px;
+            border: 1px solid #bbc7d2;
+            &.pt-cur{
+              background-color:#82b6e0;
+            }
+          }
+        }
+        label{
+          display: inline-block;
+          margin-left: 30px;
+          width: 35%;
+          font-size: 16px;
+        }
+        .selected-same{
+          width: 56%;
+          background: url("/images/business/down.png") no-repeat right 10px center;
+          text-align: center;
+          padding-left: 5px;
+          font-size: 15px;
+          line-height: 45px;
+          color: #636365;
+        }
+        .edit-pt{
+          width: 54%;
+          background: 0;
+          padding-left: 5px;
+          font-size: 14px;
+          color: #333;
+        }
+        .edit-pt3{
+          width: 81px;
+          height: 31px;
+          padding: 7px 32px;
+          text-align: center;
+          margin-right: 14px;
+          border: 1px solid #bbc7d2;
+        }
+        .pt-cur{
+          color: white;
+          background-color:#82b6e0;
+        }
+        .close5{
+          height: 25px;
+          background: url(/images/customer/close4.png) no-repeat right center;
+        }
+        .icon-time{
+          height: 25px;
+          background: url("/images/business/calendar.png") no-repeat right center;
+        }
+        .position1{
+          width: 56%;
+          line-height: 34px;
+          float: right;
+        }
+      }
+    }
+    .modify{
+      width: 100%;
+      .modify-btn{
+        width: 100%;
+        height: 58px;
+        color: #fff;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+
+
+//删除数据
+
+
+
+//项目合同基本信息管理
+
