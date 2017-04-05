@@ -595,6 +595,7 @@ $font:"Microsoft YaHei";
                 width: 25%;
                 vertical-align: middle;
                 margin-bottom: 30px;
+                height: 35px;
                 label{
                   display: inline-block;
                   width: 22%;
@@ -608,7 +609,7 @@ $font:"Microsoft YaHei";
                   height: 32px;
                   border: 1px solid #e7e6eb;
                   padding-left: 10px;
-                  vertical-align: 3px;
+                  vertical-align: middle;
                   &::-webkit-input-placeholder{
                     color: #252525;
                   }
