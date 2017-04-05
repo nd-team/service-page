@@ -163,16 +163,16 @@
                                 <p data-title="add" class="list-text">
                                     <a href="javascript:void(0)">添加</a>
                                 </p>
-                                <p data-title="view" class="list-text">
+                                <p data-title="view-info" class="list-text">
                                     <a href="javascript:void(0)">查看合作信息</a>
                                 </p>
                                 <p data-title="upload" class="list-text">
                                     <a href="javascript:void(0)">上传营业执照附件</a>
                                 </p>
-                                <p data-title="look" class="list-text">
+                                <p data-title="view-license" class="list-text">
                                     <a href="javascript:void(0)">查看营业执照附件</a>
                                 </p>
-                                <p data-title="edit" class="list-text">
+                                <p data-title="edit-info" class="list-text">
                                     <a href="javascript:void(0)">编辑详细信息</a>
                                 </p>
                             </div>
@@ -181,7 +181,7 @@
                 </div>
             </div>
             <div class="all-main">
-                <div class="tab-content clearfix list">
+                <div class="tab-content clearfix">
                     <ul class="article clearfix">
                         <li class="clearfix">
                             <div class="list-left">
@@ -460,10 +460,6 @@
                                         <input type="text" placeholder="必填" class="edit-pt">
                                     </li>
                                     <li>
-                                        <label>项目外包信息</label>
-                                        <input type="text" placeholder="必填" class="edit-pt">
-                                    </li>
-                                    <li>
                                         <label>主要产品和服务</label>
                                         <input type="text" placeholder="必填" class="edit-pt">
                                     </li>
@@ -494,55 +490,307 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="tab-content clearfix same-over">
-                    <div class="same-box">
-                        <div class="and-content">
-                            <div class="tab-summary">
-                                <ul class="summary-input clearfix">
+                    <div class="view-info same-hide">
+                        <div class="edit-box">
+                            <i class="close"></i>
+                            <div class="edit-pop">
+                                <ul class="pop-input">
                                     <li>
-                                        <label>内部项目名称</label>
-                                        <select class="select-number">
-                                            <option value="0">必填数额</option>
-                                            <option value="0">1</option>
-                                            <option value="0">2</option>
-                                        </select>
+                                        <label>公司名称</label>
+                                        <input type="text" value="北京艾佳天诚信息技术有限公司" class="edit-pt" readonly>
                                     </li>
                                     <li>
-                                        <label>开始日期</label>
-                                        <input type="text" class="icon-calendar" id="start" disabled>
+                                        <label>产品/服务内容</label>
+                                        <input type="text" placeholder="必填" class="edit-pt">
                                     </li>
                                     <li>
-                                        <label>结束日期</label>
-                                        <input type="text" class="icon-calendar" id="end" disabled>
+                                        <label>合作时间</label>
+                                        <input type="text" class="edit-pt icon-time" id="partner" disabled>
+                                    </li>
+                                    <li>
+                                        <label>合作期限</label>
+                                        <input type="text" placeholder="必填" class="edit-pt">
                                     </li>
                                 </ul>
-                                <div class="hui-btn clearfix">
-                                    <button type="button" class="and-btn">汇总</button>
+                                <div class="modify">
+                                    <button type="button" class="sure">确定</button>
                                 </div>
                             </div>
-                            <ul class="summary-list">
-                                <li class="head-list">
-                                    <span>合同外部项目名称</span>
-                                    <span>洽谈人</span>
-                                    <span>项目合作</span>
-                                    <span>内部项目名称</span>
-                                    <span>洽谈对象</span>
-                                    <span>项目跟进</span>
-                                    <span>洽谈轮次</span>
-                                    <span>费用预算</span>
-                                    <span>项目丢弃</span>
+                        </div>
+                    </div>
+                    <div class="upload same-hide">
+                        <div class="edit-box">
+                            <i class="close"></i>
+                            <div class="edit-pop">
+                                <ul class="pop-input">
+                                    <li>
+                                        <label>供应商地区</label>
+                                        <input type="text" placeholder="必填" class="edit-pt">
+                                    </li>
+                                    <li>
+                                        <label>供应商名称</label>
+                                        <input type="text" placeholder="必填" class="edit-pt">
+                                    </li>
+                                </ul>
+                                <div class="file-position">
+                                    <span class="cun">原件存储位置</span>
+                                    <p class="file-center">
+                                        <small>G:\issp平台新7大模块网站\业务市场化平台\资料\业务市场化平台资料</small>
+                                        <i class="bg-pic"></i>
+                                    </p>
+                                    <div class="file-upload">
+                                        <input type="file" id="upload">
+                                        <label class="replace" for="upload">
+                                            <img src="/images/business/shape.png" alt="">
+                                            上传文件
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="modify">
+                                    <button type="button" class="sure" disabled>确实</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="view-license same-hide">
+                        <div class="edit-box">
+                            <i class="close"></i>
+                            <div class="edit-pop">
+                                <ul class="pop-input">
+                                    <li>
+                                        <label>供应商地区</label>
+                                        <input type="text" placeholder="必填" class="edit-pt">
+                                    </li>
+                                    <li>
+                                        <label>供应商名称</label>
+                                        <input type="text" placeholder="必填" class="edit-pt">
+                                    </li>
+                                </ul>
+                                <div class="file-position">
+                                    <span class="file">文件夹</span>
+                                    <span class="name-file">商业合作</span>
+                                    <p class="file-center view-upload">
+                                        <small>G:\issp平台新7大模块网站\业务市场化平台\资料\业务市场化平台资料</small>
+                                        <i class="view-pic"></i>
+                                    </p>
+                                    <div class="file-upload ">
+                                        <input type="file" id="upload-view">
+                                        <label class="replace" for="upload-view">
+                                            <img src="/images/business/shape.png" alt="">
+                                            上传文件
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="modify">
+                                    <button type="button" class="sure" disabled>确实</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content clearfix edit-info" style="display: block;">
+                    <div class="same-box">
+                        <div class="edit-content">
+                            <h4>供应商信息登记表</h4>
+                            <div class="basic-info">
+                                <h5>基本信息</h5>
+                                <ul class="info-edit clearfix">
+                                    <li>
+                                        <label>供应商名称：</label>
+                                        <input type="text" placeholder="北京艾佳信息技术有限公司">
+                                    </li>
+                                    <li>
+                                        <label>公司网址：</label>
+                                        <input type="text" placeholder="http://www.zcool.com.cn/">
+                                    </li>
+                                    <li>
+                                        <label>供应商类型：</label>
+                                        <input type="text" placeholder="合作厂家">
+                                    </li>
+                                    <li>
+                                        <label>法定代表人：</label>
+                                        <input type="text" placeholder="小明">
+                                    </li>
+                                    <li>
+                                        <label>工商注册号：</label>
+                                        <input type="text" placeholder="10293828223">
+                                    </li>
+                                    <li>
+                                        <label>税务登记证编号：</label>
+                                        <input type="text" placeholder="202038477393">
+                                    </li>
+                                    <li>
+                                        <label>组织机构代码：</label>
+                                        <input type="text" placeholder="202038477393">
+                                    </li>
+                                    <li>
+                                        <label>注册资本：</label>
+                                        <input type="text" placeholder="小明">
+                                    </li>
+                                    <li>
+                                        <label>公司类型：</label>
+                                        <input type="text" placeholder="有限公司">
+                                    </li>
+                                    <li>
+                                        <label>成立时间：</label>
+                                        <input type="text" placeholder="2017.3.30">
+                                    </li>
+                                    <li>
+                                        <label>地址：</label>
+                                        <input type="text" placeholder="广州市天河区东圃镇13号">
+                                    </li>
+                                    <li>
+                                        <label>邮编：</label>
+                                        <input type="text" placeholder="520003">
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="scope clearfix">
+                                <li class="operating">
+                                    <h5>经营范围</h5>
+                                    <textarea cols="30" rows="6" class="text">商业合作</textarea>
                                 </li>
-                                <li class="children-list">
-                                    <span>软件测试培训机构</span>
-                                    <span>高令军</span>
-                                    <span>良好</span>
-                                    <span>软件测试培训机构</span>
-                                    <span>郑金锁</span>
-                                    <span>跟进中</span>
-                                    <span>3次</span>
-                                    <span>15800￥</span>
-                                    <span>否</span>
+                                <li class="operating">
+                                    <h5>主要产品/服务</h5>
+                                    <textarea cols="30" rows="6" class="text">商业合作</textarea>
+                                </li>
+                                <li class="operating enterprise">
+                                    <h5>企业资质</h5>
+                                    <div class="qualification">
+                                        <p class="text-title">
+                                            <span style="width: 8%;">序号</span>
+                                            <span style="width: 15%;">证书名称</span>
+                                            <span style="width: 15%;">证书编号</span>
+                                            <span style="width: 15%;">有效期限</span>
+                                            <span style="width: 15%;">颁发单位</span>
+                                            <span style="width: 15%;">资质等级</span>
+                                            <span style="width: 8%;">备注</span>
+                                        </p>
+                                        <p class="text-title">
+                                            <span style="width: 8%;"><input type="text" placeholder="" style="width: 70%"></span>
+                                            <span style="width: 15%;"><input type="text" placeholder=""  style="width: 80%"></span>
+                                            <span style="width: 15%;"><input type="text" placeholder="" style="width: 80%"></span>
+                                            <span style="width: 15%;"><input type="text" placeholder=""  style="width: 80%"></span>
+                                            <span style="width: 15%;"><input type="text" placeholder=""  style="width: 80%"></span>
+                                            <span style="width: 15%;"><input type="text" placeholder=""  style="width: 80%"></span>
+                                            <span style="width: 8%;"><input type="text" placeholder=""  style="width: 80%"></span>
+                                        </p>
+                                        <p class="text-title">
+                                            <span style="width: 8%;"><input type="text" placeholder="" style="width: 70%"></span>
+                                            <span style="width: 15%;"><input type="text" placeholder=""  style="width: 80%"></span>
+                                            <span style="width: 15%;"><input type="text" placeholder="" style="width: 80%"></span>
+                                            <span style="width: 15%;"><input type="text" placeholder=""  style="width: 80%"></span>
+                                            <span style="width: 15%;"><input type="text" placeholder=""  style="width: 80%"></span>
+                                            <span style="width: 15%;"><input type="text" placeholder=""  style="width: 80%"></span>
+                                            <span style="width: 8%;"><input type="text" placeholder=""  style="width: 80%"></span>
+                                        </p>
+                                        <p class="text-title">
+                                            <span style="width: 8%;"><input type="text" placeholder="" style="width: 70%"></span>
+                                            <span style="width: 15%;"><input type="text" placeholder=""  style="width: 80%"></span>
+                                            <span style="width: 15%;"><input type="text" placeholder="" style="width: 80%"></span>
+                                            <span style="width: 15%;"><input type="text" placeholder=""  style="width: 80%"></span>
+                                            <span style="width: 15%;"><input type="text" placeholder=""  style="width: 80%"></span>
+                                            <span style="width: 15%;"><input type="text" placeholder=""  style="width: 80%"></span>
+                                            <span style="width: 8%;"><input type="text" placeholder=""  style="width: 80%"></span>
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="scope clearfix">
+                                <li class="happening">
+                                    <h5>获奖情况</h5>
+                                    <div class="qualification">
+                                        <p class="text-title">
+                                            <span style="width: 60%;">奖励名称</span>
+                                            <span style="width: 35%;">获得时间</span>
+                                        </p>
+                                        <p class="text-title">
+                                            <span style="width: 60%;"><input type="text" placeholder="海外投资合作项目" style="width: 95%"></span>
+                                            <span style="width: 35%;"><input type="text" placeholder="2017.3.29"  style="width: 90%"></span>
+                                        </p>
+                                        <p class="text-title">
+                                            <span style="width: 60%;"><input type="text" placeholder="" style="width: 95%"></span>
+                                            <span style="width: 35%;"><input type="text" placeholder=""  style="width: 90%"></span>
+                                        </p>
+                                        <p class="text-title">
+                                            <span style="width: 60%;"><input type="text" placeholder="" style="width: 95%"></span>
+                                            <span style="width: 35%;"><input type="text" placeholder=""  style="width: 90%"></span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="happening">
+                                    <h5>联络情况</h5>
+                                    <div class="qualification">
+                                        <p class="text-title">
+                                            <span style="width: 9%;">业务联系人</span>
+                                            <span style="width: 8%;">职务</span>
+                                            <span style="width: 13%;">联系电话</span>
+                                            <span style="width: 18%;">邮箱</span>
+                                            <span style="width: 10%;">传真</span>
+                                            <span style="width: 8%;">开户银行</span>
+                                            <span style="width: 21%;">账户</span>
+                                            <span style="width: 8%;">信用等级</span>
+                                        </p>
+                                        <p class="text-title">
+                                            <span style="width: 9%;"><input type="text" placeholder="黄焕来" style="width: 50%"></span>
+                                            <span style="width: 8%;"><input type="text" placeholder="业务员" style="width: 56%"></span>
+                                            <span style="width: 13%;"><input type="text" placeholder="13800138000"  style="width: 72%"></span>
+                                            <span style="width: 18%;"><input type="text" placeholder="1067823465@qq.com"  style="width: 90%"></span>
+                                            <span style="width: 10%;"><input type="text" placeholder="020-7777777"  style="width: 45%"></span>
+                                            <span style="width: 8%;"><input type="text" placeholder="农业"  style="width: 40%"></span>
+                                            <span style="width: 21%;"><input type="text" placeholder="6289532011118568"  style="width: 60%"></span>
+                                            <span style="width: 8%;"><input type="text" placeholder="良好"  style="width: 40%"></span>
+                                        </p>
+                                        <p class="text-title">
+                                            <span style="width: 9%;"><input type="text" placeholder="" style="width: 50%"></span>
+                                            <span style="width: 8%;"><input type="text" placeholder="" style="width: 56%"></span>
+                                            <span style="width: 13%;"><input type="text" placeholder=""  style="width: 72%"></span>
+                                            <span style="width: 18%;"><input type="text" placeholder=""  style="width: 90%"></span>
+                                            <span style="width: 10%;"><input type="text" placeholder=""  style="width: 45%"></span>
+                                            <span style="width: 8%;"><input type="text" placeholder=""  style="width: 40%"></span>
+                                            <span style="width: 21%;"><input type="text" placeholder=""  style="width: 60%"></span>
+                                            <span style="width: 8%;"><input type="text" placeholder="" style="width: 40%"></span>
+                                        </p>
+                                        <p class="text-title">
+                                            <span style="width: 9%;"><input type="text" placeholder="" style="width: 50%"></span>
+                                            <span style="width: 8%;"><input type="text" placeholder="" style="width: 56%"></span>
+                                            <span style="width: 13%;"><input type="text" placeholder=""  style="width: 72%"></span>
+                                            <span style="width: 18%;"><input type="text" placeholder=""  style="width: 90%"></span>
+                                            <span style="width: 10%;"><input type="text" placeholder=""  style="width: 45%"></span>
+                                            <span style="width: 8%;"><input type="text" placeholder=""  style="width: 40%"></span>
+                                            <span style="width: 21%;"><input type="text" placeholder=""  style="width: 60%"></span>
+                                            <span style="width: 8%;"><input type="text" placeholder="" style="width: 40%"></span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="happening">
+                                    <h5>针对我公司提供服务，目前与其他公司长期合作情况</h5>
+                                    <div class="qualification">
+                                        <p class="text-title">
+                                            <span style="width: 25%;">公司名称</span>
+                                            <span style="width: 35%;">产品/服务内容</span>
+                                            <span style="width: 17%;">合作时间</span>
+                                            <span style="width: 17%;">合作期限</span>
+                                        </p>
+                                        <p class="text-title">
+                                            <span style="width: 25%;"><input type="text" placeholder="" style="width: 95%"></span>
+                                            <span style="width: 35%;"><input type="text" placeholder=""  style="width: 90%"></span>
+                                            <span style="width: 17%;"><input type="text" placeholder="" style="width: 90%"></span>
+                                            <span style="width: 17%;"><input type="text" placeholder=""  style="width: 90%"></span>
+                                        </p>
+                                        <p class="text-title">
+                                            <span style="width: 25%;"><input type="text" placeholder="" style="width: 95%"></span>
+                                            <span style="width: 35%;"><input type="text" placeholder=""  style="width: 90%"></span>
+                                            <span style="width: 17%;"><input type="text" placeholder="" style="width: 90%"></span>
+                                            <span style="width: 17%;"><input type="text" placeholder=""  style="width: 90%"></span>
+                                        </p>
+                                        <p class="text-title">
+                                            <span style="width: 25%;"><input type="text" placeholder="" style="width: 95%"></span>
+                                            <span style="width: 35%;"><input type="text" placeholder=""  style="width: 90%"></span>
+                                            <span style="width: 17%;"><input type="text" placeholder="" style="width: 90%"></span>
+                                            <span style="width: 17%;"><input type="text" placeholder=""  style="width: 90%"></span>
+                                        </p>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -633,7 +881,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div id="modulebg"></div>
             </div>
 

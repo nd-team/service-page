@@ -50,6 +50,9 @@ $(function () {
         }else if(listTitle==="view"){
             $('.all-main').children('.view').show().siblings().not('.article,.so').hide();
             $("#modulebg").hide();
+        }else if(listTitle==="edit-info"){
+            $('.all-main').children('.edit-info').show().siblings().not('.article,.so').hide();
+            $("#modulebg").hide();
         }else if(listTitle==="list"){
             $('.all-main').children('.list').show().siblings().hide();
             $("#modulebg").hide();
