@@ -105,6 +105,7 @@ $(function () {
     $(".article .click-button").on('click','.edit-btn',function () {
         $("#modulebg").show();
         $(".same-other").show();
+        $(".edit").show();
     });
     // 点击放大图片
     $(".list-left .pic-left").on('click','.magnifier',function () {
