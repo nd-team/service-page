@@ -69,7 +69,7 @@ $(function () {
     $('.same-hide').on("click",".close",function(){
         $('.same-hide').hide();
         $("#modulebg").hide();
-        $(".article .deleted-btn").parent().css({'border':'0', 'width':'49%'});
+        // $(".article .deleted-btn").parent().css({'border':'0', 'width':'49%'});
     });
 
     // 文件切换
@@ -111,14 +111,14 @@ $(function () {
     });
 
     // 点击删除
-    $(".article").on('click','.deleted-btn',function () {
-        $(this).parent().css({'border':'1px solid red', 'width':'48%'});
+    $(".article .click-button").on('click','.deleted-btn',function () {
+        // $(this).parents().parents().css({'border':'1px solid red', 'width':'48%'});
         $("#modulebg").show();
-        $(".same-other").show();
+        $(".same-del").show();
     });
 
     // 点击编辑
-    $(".article").on('click','.edit-btn',function () {
+    $(".article .click-button").on('click','.edit-btn',function () {
         $("#modulebg").show();
         $(".same-other").show();
     });
