@@ -50,6 +50,9 @@ $font:"Microsoft YaHei";
                 &:last-of-type{
                   border-bottom: 0;
                 }
+                &:hover{
+                  box-shadow: 0 2px 20px #c3c3c3;
+                }
                 span{
                   display: inline-block;
                   width: 12%;
