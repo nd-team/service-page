@@ -27,22 +27,6 @@ $(function () {
 
         var listTitle = $(this).attr("data-title");
         console.log(listTitle);
-        // console.log(listTitle);
-        // if(listTitle=="delete"){
-        //     $('.all-main').children('.delete').show();
-        //     $("#modalbg").show();
-        // }else if(listTitle=="review"){
-        //     $('.all-main').children('.review').show();
-        //     $("#modalbg").show();
-        // }else {
-        //     $('.all-main').children("."+listTitle).show().siblings().hide();
-        // }
-        // if(listTitle===undefined){
-        //     return
-        // }else {
-        //     $('.list').find('.'+listTitle).show().siblings().not('.article,.so').hide();
-        //     $("#modulebg").show();
-        // }
 
         if(listTitle==="summary"){
             $('.all-main').children('.summary').show().siblings().not('.article,.so').hide();
@@ -135,6 +119,18 @@ $(function () {
     });
     $(".bigger").on('click','.close-pic',function () {
         $(".bigger").hide();
+    });
+
+    // 列表页图标
+
+    $(".click-button .mark-btn").on('click',function () {
+        if(!$(this).hasClass("show")){
+            $(this).addClass("show");
+            $(this).parents(".click-button").find('.hide-show').slideDown()
+        }else {
+            $(this).removeClass("show");
+            $(this).parents(".click-button").find('.hide-show').slideUp()
+        }
     });
 });
 

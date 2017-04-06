@@ -149,8 +149,8 @@
                     <ul class="management-right">
                         <li>
                             <select class="selected" id="href_select">
-                                <option value="/pages/customer/supplier/supplier_basic_info.html">供应商基本信息管理</option>
                                 <option value="/pages/customer/supplier/supplier_type.html">供应商类型管理</option>
+                                <option value="/pages/customer/supplier/supplier_basic_info.html">供应商基本信息管理</option>
                             </select>
                             <span class="span-line"></span>
                         </li>
@@ -169,7 +169,7 @@
                                 <p data-title="deleted" class="list-text">
                                     <a href="javascript:void(0)">删除</a>
                                 </p>
-                                <p class="list-text" data-title="freeze">
+                                <p data-title="freeze" class="list-text">
                                     <a href="javascript:void(0)">冻结</a>
                                 </p>
                                 <p data-title="unfreeze" class="list-text">
@@ -230,116 +230,18 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="same-hide same-other">
-                        <div class="del-box">
-                            <i class="close"></i>
-                            <div class="tips">
-                                <h3>温馨提示</h3>
-                                <p>您确实删除这条数据吗？</p>
-                                <button type="button" class="sure">确定</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="same-hide same-other">
-                        <div class="edit-box">
-                            <i class="close"></i>
-                            <div class="edit-pop">
-                                <ul class="pop-input">
-                                    <li>
-                                        <label>供应商地区</label>
-                                        <input type="text" placeholder="必填" class="edit-pt">
-                                    </li>
-                                    <li>
-                                        <label>供应商名称</label>
-                                        <input type="text" placeholder="必填" class="edit-pt">
-                                    </li>
-                                    <li>
-                                        <label>供应商类型</label>
-                                        <input type="text" placeholder="必填" class="edit-pt">
-                                    </li>
-                                    <li>
-                                        <label>经营范围</label>
-                                        <input type="text" placeholder="必填" class="edit-pt">
-                                    </li>
-                                    <li>
-                                        <label>项目外包信息</label>
-                                        <input type="text" placeholder="必填" class="edit-pt">
-                                    </li>
-                                    <li>
-                                        <label>主要产品和服务</label>
-                                        <input type="text" placeholder="必填" class="edit-pt">
-                                    </li>
-                                    <li>
-                                        <label>业务联系人</label>
-                                        <input type="text" placeholder="必填" class="edit-pt">
-                                    </li>
-                                    <li>
-                                        <label>职务</label>
-                                        <input type="text" placeholder="必填" class="edit-pt">
-                                    </li>
-                                    <li>
-                                        <label>联系电话</label>
-                                        <input type="number" placeholder="必填" class="edit-pt">
-                                    </li>
-                                    <li>
-                                        <label>邮箱</label>
-                                        <input type="email" placeholder="必填" class="edit-pt">
-                                    </li>
-                                    <li>
-                                        <label>传真</label>
-                                        <input type="number" placeholder="必填" class="edit-pt">
-                                    </li>
-                                </ul>
-                                <div class="modify">
-                                    <button type="button" class="modify-btn" disabled>确定</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="add same-hide">
                         <div class="edit-box">
                             <i class="close"></i>
                             <div class="edit-pop">
                                 <ul class="pop-input">
                                     <li>
-                                        <label>供应商地区</label>
+                                        <label>名称</label>
                                         <input type="text" placeholder="必填" class="edit-pt">
                                     </li>
                                     <li>
-                                        <label>供应商名称</label>
+                                        <label>描述</label>
                                         <input type="text" placeholder="必填" class="edit-pt">
-                                    </li>
-                                    <li>
-                                        <label>供应商类型</label>
-                                        <input type="text" placeholder="必填" class="edit-pt">
-                                    </li>
-                                    <li>
-                                        <label>经营范围</label>
-                                        <input type="text" placeholder="必填" class="edit-pt">
-                                    </li>
-                                    <li>
-                                        <label>主要产品和服务</label>
-                                        <input type="text" placeholder="必填" class="edit-pt">
-                                    </li>
-                                    <li>
-                                        <label>业务联系人</label>
-                                        <input type="text" placeholder="必填" class="edit-pt">
-                                    </li>
-                                    <li>
-                                        <label>职务</label>
-                                        <input type="text" placeholder="必填" class="edit-pt">
-                                    </li>
-                                    <li>
-                                        <label>联系电话</label>
-                                        <input type="number" placeholder="必填" class="edit-pt">
-                                    </li>
-                                    <li>
-                                        <label>邮箱</label>
-                                        <input type="email" placeholder="必填" class="edit-pt">
-                                    </li>
-                                    <li>
-                                        <label>传真</label>
-                                        <input type="number" placeholder="必填" class="edit-pt">
                                     </li>
                                 </ul>
                                 <div class="modify">
@@ -348,100 +250,53 @@
                             </div>
                         </div>
                     </div>
-                    <div class="view-info same-hide">
+                    <div class="edit same-hide">
                         <div class="edit-box">
                             <i class="close"></i>
                             <div class="edit-pop">
                                 <ul class="pop-input">
                                     <li>
-                                        <label>公司名称</label>
-                                        <input type="text" value="北京艾佳天诚信息技术有限公司" class="edit-pt" readonly>
-                                    </li>
-                                    <li>
-                                        <label>产品/服务内容</label>
+                                        <label>名称</label>
                                         <input type="text" placeholder="必填" class="edit-pt">
                                     </li>
                                     <li>
-                                        <label>合作时间</label>
-                                        <input type="text" class="edit-pt icon-time" id="partner" disabled>
-                                    </li>
-                                    <li>
-                                        <label>合作期限</label>
+                                        <label>描述</label>
                                         <input type="text" placeholder="必填" class="edit-pt">
                                     </li>
                                 </ul>
                                 <div class="modify">
-                                    <button type="button" class="sure">确定</button>
+                                    <button type="button" class="modify-btn" disabled>确定</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="upload same-hide">
-                        <div class="edit-box">
+                    <div class="same-hide deleted">
+                        <div class="del-box">
                             <i class="close"></i>
-                            <div class="edit-pop">
-                                <ul class="pop-input">
-                                    <li>
-                                        <label>供应商地区</label>
-                                        <input type="text" placeholder="必填" class="edit-pt">
-                                    </li>
-                                    <li>
-                                        <label>供应商名称</label>
-                                        <input type="text" placeholder="必填" class="edit-pt">
-                                    </li>
-                                </ul>
-                                <div class="file-position">
-                                    <span class="cun">原件存储位置</span>
-                                    <p class="file-center">
-                                        <small>G:\issp平台新7大模块网站\业务市场化平台\资料\业务市场化平台资料</small>
-                                        <i class="bg-pic"></i>
-                                    </p>
-                                    <div class="file-upload">
-                                        <input type="file" id="upload">
-                                        <label class="replace" for="upload">
-                                            <img src="/images/business/shape.png" alt="">
-                                            上传文件
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="modify">
-                                    <button type="button" class="sure" disabled>确实</button>
-                                </div>
+                            <div class="tips">
+                                <h3>温馨提示</h3>
+                                <p>您确定删除这条数据吗？</p>
+                                <button type="button" class="sure">确定</button>
                             </div>
                         </div>
                     </div>
-                    <div class="view-license same-hide">
-                        <div class="edit-box">
+                    <div class="same-hide freeze">
+                        <div class="del-box">
                             <i class="close"></i>
-                            <div class="edit-pop">
-                                <ul class="pop-input">
-                                    <li>
-                                        <label>供应商地区</label>
-                                        <input type="text" placeholder="必填" class="edit-pt">
-                                    </li>
-                                    <li>
-                                        <label>供应商名称</label>
-                                        <input type="text" placeholder="必填" class="edit-pt">
-                                    </li>
-                                </ul>
-                                <div class="file-position">
-                                    <span class="file">文件夹</span>
-                                    <span class="name-file">商业合作</span>
-                                    <p class="file-center view-upload">
-                                        <small>G:\issp平台新7大模块网站\业务市场化平台\资料\业务市场化平台资料</small>
-                                        <i class="view-pic"></i>
-                                    </p>
-                                    <div class="file-upload ">
-                                        <input type="file" id="upload-view">
-                                        <label class="replace" for="upload-view">
-                                            <img src="/images/business/shape.png" alt="">
-                                            上传文件
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="modify">
-                                    <button type="button" class="sure" disabled>确实</button>
-                                </div>
+                            <div class="tips">
+                                <h3>温馨提示</h3>
+                                <p>您确定冻结这条数据吗？</p>
+                                <button type="button" class="sure">确定</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="same-hide unfreeze">
+                        <div class="del-box">
+                            <i class="close"></i>
+                            <div class="tips">
+                                <h3>温馨提示</h3>
+                                <p>您确定解冻这条数据吗？</p>
+                                <button type="button" class="sure">确定</button>
                             </div>
                         </div>
                     </div>
