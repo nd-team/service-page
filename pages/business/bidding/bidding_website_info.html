@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>业务市场化平台招投标管理</title>
+    <meta name="keywords" content="招投标网站信息">
+    <link rel="stylesheet" href="/css/supplier/supplier_type.css">
+</head>
+<body>
+    <header class="clearfix">
+        <div class="logo-left">
+            <a href="/pages/index.html" title="业务市场化平台" class="logo">业务市场化平台</a>
+        </div>
+        <div class="search-right clearfix">
+            <div class="input-box">
+                <input type="text" placeholder="输入要搜索的内容" class="input">
+                <a href="javascript:void(0)" class="search"></a>
+            </div>
+            <div class="header-pic">
+                <a href="javascript:void(0)"><img src="/images/often.png" alt=""></a>
+            </div>
+        </div>
+    </header>
+    <div class="content clearfix">
+        <nav class="clearfix">
+            <ul class="nav-left">
+                <li class="active">
+                    <p>
+                        <a href="javascript:void(0)">综合资源部</a>
+                        <span class="green"></span>
+                    </p>
+                </li>
+                <li class="red-nav">
+                    <p>
+                        <a href="javascript:void(0)">预算</a>
+                        <span class="red"></span>
+                    </p>
+                </li>
+                <li class="blue-nav">
+                    <p>
+                        <a href="javascript:void(0)">商务发展部</a>
+                        <span class="blue"></span>
+                    </p>
+                    <div class="nav-hover hover-blue">
+                        <div class="company-nav">
+                            <ul class="company-plan">
+                                <li class="same-width business-active">
+                                    <div class="plan-title">
+                                        <a class="plan-pic">
+                                            <svg role="img" class="custor">
+                                                <use xlink:href="#custor"></use>
+                                            </svg>
+                                        </a>
+                                        <a href="javascript:void(0)" class="plan">客户管理</a>
+                                        <i class="arrow">^</i>
+                                    </div>
+                                    <div class="company-type">
+                                        <p>
+                                            <a href="javascript:void(0)">市场活动管理</a>
+                                        </p>
+                                        <p class="text-cur">
+                                            <a href="javascript:void(0)" class="first-vertical">客户信息管理</a>
+                                        </p>
+                                        <p>
+                                            <a href="javascript:void(0)">竞争对手管理</a>
+                                        </p>
+                                        <p>
+                                            <a href="javascript:void(0)">供应商管理</a>
+                                        </p>
+                                        <p>
+                                            <a href="javascript:void(0)">市场能力展示</a>
+                                        </p>
+                                        <p>
+                                            <a href="javascript:void(0)">市场能力互动信息管理</a>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="same-width">
+                                    <div class="plan-title">
+                                        <a class="plan-pic">
+                                            <svg role="img" class="business-btn">
+                                                <use xlink:href="#business-btn"></use>
+                                            </svg>
+                                        </a>
+                                        <a href="javascript:void(0)" class="plan">业务管理</a>
+                                        <i class="arrow">^</i>
+                                    </div>
+                                    <div class="company-type">
+                                        <p>
+                                            <a href="javascript:void(0)">项目测算管理</a>
+                                        </p>
+                                        <p>
+                                            <a href="javascript:void(0)">招投标流程管理</a>
+                                        </p>
+                                        <p>
+                                            <a href="javascript:void(0)">商务洽谈</a>
+                                        </p>
+                                        <p>
+                                            <a href="javascript:void(0)">商务合同管理</a>
+                                        </p>
+                                        <p>
+                                            <a href="javascript:void(0)">商务评估管理</a>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="same-width">
+                                    <div class="plan-title">
+                                        <a class="plan-pic">
+                                            <svg role="img" class="come-btn">
+                                                <use xlink:href="#come-btn"></use>
+                                            </svg>
+                                        </a>
+                                        <a href="javascript:void(0)" class="plan">进度管理</a>
+                                        <i class="arrow">^</i>
+                                    </div>
+                                    <div class="company-type">
+                                        <p>
+                                            <a href="javascript:void(0)">市场开发计划进度管理</a>
+                                        </p>
+                                        <p>
+                                            <a href="javascript:void(0)">商务计划工作进度把控</a>
+                                        </p>
+                                        <p>
+                                            <a href="javascript:void(0)">项目验收签字结算进度管理</a>
+                                        </p>
+                                        <p>
+                                            <a href="javascript:void(0)">项目中问题受理和处理</a>
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <span class="blue"></span>
+                    </div>
+                </li>
+            </ul>
+
+        </nav>
+        <div class="right-content">
+            <div class="top-fix">
+                <div class="management clearfix">
+                    <ul class="management-left">
+                        <li class="current">
+                            <a href="javascript:void(0)">招投标管理</a>
+                        </li>
+                    </ul>
+                    <ul class="management-right">
+                        <li>
+                            <select class="selected" id="href_select">
+                                <option value="">招投标网站信息</option>
+                                <option value="">招标信息</option>
+                                <option value="">投标答疑问题记录</option>
+                                <option value="">标书资料</option>
+                                <option value="">开标信息</option>
+                            </select>
+                            <span class="span-line"></span>
+                        </li>
+                        <li class="line-btn">
+                            <i class="line-list"></i>
+                            <div class="right-list">
+                                <p class="list-text current" data-title="list">
+                                    <a href="javascript:void(0)">列表</a>
+                                </p>
+                                <p data-title="add" class="list-text">
+                                    <a href="javascript:void(0)">添加</a>
+                                </p>
+                                <p data-title="edit" class="list-text">
+                                    <a href="javascript:void(0)">编辑</a>
+                                </p>
+                                <p data-title="deleted" class="list-text">
+                                    <a href="javascript:void(0)">删除</a>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="all-main">
+                <div class="tab-content clearfix list">
+                    <div class="article clearfix">
+                        <div class="type-title">
+                            <p class="title-text">
+                                <span>序号</span>
+                                <span>网站名称</span>
+                                <span>网址</span>
+                            </p>
+                            <ul class="list-show">
+                                <li>
+                                    <span>1</span>
+                                    <span>网站名称</span>
+                                    <span>http://my.zcool.com.cn</span>
+                                </li>
+                                <li>
+                                    <span>2</span>
+                                    <span>网站名称</span>
+                                    <span>http://my.zcool.com.cn</span>
+                                </li>
+                                <li>
+                                    <span>3</span>
+                                    <span>网站名称</span>
+                                    <span>http://my.zcool.com.cn</span>
+                                </li>
+                                <li>
+                                    <span>4</span>
+                                    <span>网站名称</span>
+                                    <span>http://my.zcool.com.cn</span>
+                                </li>
+                                <li>
+                                    <span>5</span>
+                                    <span>网站名称</span>
+                                    <span>http://my.zcool.com.cn</span>
+                                </li>
+                                <li>
+                                    <span>6</span>
+                                    <span>网站名称</span>
+                                    <span>http://my.zcool.com.cn</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="add same-hide">
+                        <div class="edit-box">
+                            <i class="close"></i>
+                            <div class="edit-pop">
+                                <ul class="pop-input">
+                                    <li>
+                                        <label>网站名称</label>
+                                        <select class="selected-same">
+                                            <option value="">必填</option>
+                                            <option value="">你猜</option>
+                                            <option value="">你猜</option>
+                                            <option value="">你猜</option>
+                                            <option value="">你猜</option>
+                                        </select>
+                                    </li>
+                                    <li>
+                                        <label>网址</label>
+                                        <select class="selected-same">
+                                            <option value="">必填</option>
+                                            <option value="">你猜</option>
+                                            <option value="">你猜</option>
+                                            <option value="">你猜</option>
+                                            <option value="">你猜</option>
+                                        </select>
+                                    </li>
+                                </ul>
+                                <div class="modify">
+                                    <button type="button" class="modify-btn" disabled>确定</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="edit same-hide">
+                        <div class="edit-box">
+                            <i class="close"></i>
+                            <div class="edit-pop">
+                                <ul class="pop-input">
+                                    <li>
+                                        <label>网站名称</label>
+                                        <select class="selected-same">
+                                            <option value="">必填</option>
+                                            <option value="">你猜</option>
+                                            <option value="">你猜</option>
+                                            <option value="">你猜</option>
+                                            <option value="">你猜</option>
+                                        </select>
+                                    </li>
+                                    <li>
+                                        <label>网址</label>
+                                        <select class="selected-same">
+                                            <option value="">必填</option>
+                                            <option value="">你猜</option>
+                                            <option value="">你猜</option>
+                                            <option value="">你猜</option>
+                                            <option value="">你猜</option>
+                                        </select>
+                                    </li>
+                                </ul>
+                                <div class="modify">
+                                    <button type="button" class="modify-btn" disabled>确定</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="same-hide deleted">
+                        <div class="del-box">
+                            <i class="close"></i>
+                            <div class="tips">
+                                <h3>温馨提示</h3>
+                                <p>您确定删除这条数据吗？</p>
+                                <button type="button" class="sure">确定</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="same-hide freeze">
+                        <div class="del-box">
+                            <i class="close"></i>
+                            <div class="tips">
+                                <h3>温馨提示</h3>
+                                <p>您确定冻结这条数据吗？</p>
+                                <button type="button" class="sure">确定</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="same-hide unfreeze">
+                        <div class="del-box">
+                            <i class="close"></i>
+                            <div class="tips">
+                                <h3>温馨提示</h3>
+                                <p>您确定解冻这条数据吗？</p>
+                                <button type="button" class="sure">确定</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content clearfix edit-info">
+                    <div class="same-box">
+                        <div class="edit-content">
+                            <h4>供应商信息登记表</h4>
+                            <div class="basic-info">
+                                <h5>基本信息</h5>
+                                <ul class="info-edit clearfix">
+                                    <li>
+                                        <label>供应商名称：</label>
+                                        <input type="text" placeholder="北京艾佳信息技术有限公司">
+                                    </li>
+                                    <li>
+                                        <label>公司网址：</label>
+                                        <input type="text" placeholder="http://www.zcool.com.cn/">
+                                    </li>
+                                    <li>
+                                        <label>供应商类型：</label>
+                                        <input type="text" placeholder="合作厂家">
+                                    </li>
+                                    <li>
+                                        <label>法定代表人：</label>
+                                        <input type="text" placeholder="小明">
+                                    </li>
+                                    <li>
+                                        <label>工商注册号：</label>
+                                        <input type="text" placeholder="10293828223">
+                                    </li>
+                                    <li>
+                                        <label>税务登记证编号：</label>
+                                        <input type="text" placeholder="202038477393">
+                                    </li>
+                                    <li>
+                                        <label>组织机构代码：</label>
+                                        <input type="text" placeholder="202038477393">
+                                    </li>
+                                    <li>
+                                        <label>注册资本：</label>
+                                        <input type="text" placeholder="小明">
+                                    </li>
+                                    <li>
+                                        <label>公司类型：</label>
+                                        <input type="text" placeholder="有限公司">
+                                    </li>
+                                    <li>
+                                        <label>成立时间：</label>
+                                        <input type="text" placeholder="2017.3.30">
+                                    </li>
+                                    <li>
+                                        <label>地址：</label>
+                                        <input type="text" placeholder="广州市天河区东圃镇13号">
+                                    </li>
+                                    <li>
+                                        <label>邮编：</label>
+                                        <input type="text" placeholder="520003">
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="scope clearfix">
+                                <li class="operating">
+                                    <h5>经营范围</h5>
+                                    <textarea cols="30" rows="6" class="text">商业合作</textarea>
+                                </li>
+                                <li class="operating">
+                                    <h5>主要产品/服务</h5>
+                                    <textarea cols="30" rows="6" class="text">商业合作</textarea>
+                                </li>
+                                <li class="operating enterprise">
+                                    <h5>企业资质</h5>
+                                    <div class="qualification">
+                                        <p class="text-title">
+                                            <span style="width: 8%;">序号</span>
+                                            <span style="width: 15%;">证书名称</span>
+                                            <span style="width: 15%;">证书编号</span>
+                                            <span style="width: 15%;">有效期限</span>
+                                            <span style="width: 15%;">颁发单位</span>
+                                            <span style="width: 15%;">资质等级</span>
+                                            <span style="width: 8%;">备注</span>
+                                        </p>
+                                        <p class="text-title">
+                                            <span style="width: 8%;"><input type="text" placeholder="" style="width: 70%"></span>
+                                            <span style="width: 15%;"><input type="text" placeholder=""  style="width: 80%"></span>
+                                            <span style="width: 15%;"><input type="text" placeholder="" style="width: 80%"></span>
+                                            <span style="width: 15%;"><input type="text" placeholder=""  style="width: 80%"></span>
+                                            <span style="width: 15%;"><input type="text" placeholder=""  style="width: 80%"></span>
+                                            <span style="width: 15%;"><input type="text" placeholder=""  style="width: 80%"></span>
+                                            <span style="width: 8%;"><input type="text" placeholder=""  style="width: 80%"></span>
+                                        </p>
+                                        <p class="text-title">
+                                            <span style="width: 8%;"><input type="text" placeholder="" style="width: 70%"></span>
+                                            <span style="width: 15%;"><input type="text" placeholder=""  style="width: 80%"></span>
+                                            <span style="width: 15%;"><input type="text" placeholder="" style="width: 80%"></span>
+                                            <span style="width: 15%;"><input type="text" placeholder=""  style="width: 80%"></span>
+                                            <span style="width: 15%;"><input type="text" placeholder=""  style="width: 80%"></span>
+                                            <span style="width: 15%;"><input type="text" placeholder=""  style="width: 80%"></span>
+                                            <span style="width: 8%;"><input type="text" placeholder=""  style="width: 80%"></span>
+                                        </p>
+                                        <p class="text-title">
+                                            <span style="width: 8%;"><input type="text" placeholder="" style="width: 70%"></span>
+                                            <span style="width: 15%;"><input type="text" placeholder=""  style="width: 80%"></span>
+                                            <span style="width: 15%;"><input type="text" placeholder="" style="width: 80%"></span>
+                                            <span style="width: 15%;"><input type="text" placeholder=""  style="width: 80%"></span>
+                                            <span style="width: 15%;"><input type="text" placeholder=""  style="width: 80%"></span>
+                                            <span style="width: 15%;"><input type="text" placeholder=""  style="width: 80%"></span>
+                                            <span style="width: 8%;"><input type="text" placeholder=""  style="width: 80%"></span>
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="scope clearfix">
+                                <li class="happening">
+                                    <h5>获奖情况</h5>
+                                    <div class="qualification">
+                                        <p class="text-title">
+                                            <span style="width: 60%;">奖励名称</span>
+                                            <span style="width: 35%;">获得时间</span>
+                                        </p>
+                                        <p class="text-title">
+                                            <span style="width: 60%;"><input type="text" placeholder="海外投资合作项目" style="width: 95%"></span>
+                                            <span style="width: 35%;"><input type="text" placeholder="2017.3.29"  style="width: 90%"></span>
+                                        </p>
+                                        <p class="text-title">
+                                            <span style="width: 60%;"><input type="text" placeholder="" style="width: 95%"></span>
+                                            <span style="width: 35%;"><input type="text" placeholder=""  style="width: 90%"></span>
+                                        </p>
+                                        <p class="text-title">
+                                            <span style="width: 60%;"><input type="text" placeholder="" style="width: 95%"></span>
+                                            <span style="width: 35%;"><input type="text" placeholder=""  style="width: 90%"></span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="happening">
+                                    <h5>联络情况</h5>
+                                    <div class="qualification">
+                                        <p class="text-title">
+                                            <span style="width: 9%;">业务联系人</span>
+                                            <span style="width: 8%;">职务</span>
+                                            <span style="width: 13%;">联系电话</span>
+                                            <span style="width: 18%;">邮箱</span>
+                                            <span style="width: 10%;">传真</span>
+                                            <span style="width: 8%;">开户银行</span>
+                                            <span style="width: 21%;">账户</span>
+                                            <span style="width: 8%;">信用等级</span>
+                                        </p>
+                                        <p class="text-title">
+                                            <span style="width: 9%;"><input type="text" placeholder="黄焕来" style="width: 50%"></span>
+                                            <span style="width: 8%;"><input type="text" placeholder="业务员" style="width: 56%"></span>
+                                            <span style="width: 13%;"><input type="text" placeholder="13800138000"  style="width: 72%"></span>
+                                            <span style="width: 18%;"><input type="text" placeholder="1067823465@qq.com"  style="width: 90%"></span>
+                                            <span style="width: 10%;"><input type="text" placeholder="020-7777777"  style="width: 45%"></span>
+                                            <span style="width: 8%;"><input type="text" placeholder="农业"  style="width: 40%"></span>
+                                            <span style="width: 21%;"><input type="text" placeholder="6289532011118568"  style="width: 60%"></span>
+                                            <span style="width: 8%;"><input type="text" placeholder="良好"  style="width: 40%"></span>
+                                        </p>
+                                        <p class="text-title">
+                                            <span style="width: 9%;"><input type="text" placeholder="" style="width: 50%"></span>
+                                            <span style="width: 8%;"><input type="text" placeholder="" style="width: 56%"></span>
+                                            <span style="width: 13%;"><input type="text" placeholder=""  style="width: 72%"></span>
+                                            <span style="width: 18%;"><input type="text" placeholder=""  style="width: 90%"></span>
+                                            <span style="width: 10%;"><input type="text" placeholder=""  style="width: 45%"></span>
+                                            <span style="width: 8%;"><input type="text" placeholder=""  style="width: 40%"></span>
+                                            <span style="width: 21%;"><input type="text" placeholder=""  style="width: 60%"></span>
+                                            <span style="width: 8%;"><input type="text" placeholder="" style="width: 40%"></span>
+                                        </p>
+                                        <p class="text-title">
+                                            <span style="width: 9%;"><input type="text" placeholder="" style="width: 50%"></span>
+                                            <span style="width: 8%;"><input type="text" placeholder="" style="width: 56%"></span>
+                                            <span style="width: 13%;"><input type="text" placeholder=""  style="width: 72%"></span>
+                                            <span style="width: 18%;"><input type="text" placeholder=""  style="width: 90%"></span>
+                                            <span style="width: 10%;"><input type="text" placeholder=""  style="width: 45%"></span>
+                                            <span style="width: 8%;"><input type="text" placeholder=""  style="width: 40%"></span>
+                                            <span style="width: 21%;"><input type="text" placeholder=""  style="width: 60%"></span>
+                                            <span style="width: 8%;"><input type="text" placeholder="" style="width: 40%"></span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="happening">
+                                    <h5>针对我公司提供服务，目前与其他公司长期合作情况</h5>
+                                    <div class="qualification">
+                                        <p class="text-title">
+                                            <span style="width: 25%;">公司名称</span>
+                                            <span style="width: 35%;">产品/服务内容</span>
+                                            <span style="width: 17%;">合作时间</span>
+                                            <span style="width: 17%;">合作期限</span>
+                                        </p>
+                                        <p class="text-title">
+                                            <span style="width: 25%;"><input type="text" placeholder="" style="width: 95%"></span>
+                                            <span style="width: 35%;"><input type="text" placeholder=""  style="width: 90%"></span>
+                                            <span style="width: 17%;"><input type="text" placeholder="" style="width: 90%"></span>
+                                            <span style="width: 17%;"><input type="text" placeholder=""  style="width: 90%"></span>
+                                        </p>
+                                        <p class="text-title">
+                                            <span style="width: 25%;"><input type="text" placeholder="" style="width: 95%"></span>
+                                            <span style="width: 35%;"><input type="text" placeholder=""  style="width: 90%"></span>
+                                            <span style="width: 17%;"><input type="text" placeholder="" style="width: 90%"></span>
+                                            <span style="width: 17%;"><input type="text" placeholder=""  style="width: 90%"></span>
+                                        </p>
+                                        <p class="text-title">
+                                            <span style="width: 25%;"><input type="text" placeholder="" style="width: 95%"></span>
+                                            <span style="width: 35%;"><input type="text" placeholder=""  style="width: 90%"></span>
+                                            <span style="width: 17%;"><input type="text" placeholder="" style="width: 90%"></span>
+                                            <span style="width: 17%;"><input type="text" placeholder=""  style="width: 90%"></span>
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content clearfix same-over">
+                    <div class="same-box">
+                        <div class="file-name">
+                            <span>文件名：</span>
+                            <ul class="name-left">
+                                <li class="current">
+                                    <a href="javascript:void(0)" class="file-pic">
+                                        <svg role="img" class="put">
+                                            <use xlink:href="#put"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="file-pic">
+                                        <svg role="img" class="file">
+                                            <use xlink:href="#file"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="file-order">
+                            <ul class="file-list tab-item">
+                                <li>
+                                    <span class="first">1</span>
+                                    <a href="javascript:void(0)" class="icon-text">
+                                        <i class="pic-file"></i>
+                                        项目承包管理<small>.PNG</small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <span class="second">2</span>
+                                    <a href="javascript:void(0)" class="icon-text">
+                                        <i class="pic-file"></i>
+                                        转正审批表<small>.RAR</small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <span class="third">3</span>
+                                    <a href="javascript:void(0)" class="icon-text">
+                                        <i class="pic-file"></i>
+                                        身份证<small>.JPEG</small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <span class="first">4</span>
+                                    <a href="javascript:void(0)" class="icon-text">
+                                        <i class="pic-file"></i>
+                                        资格证书<small>.JPEG</small>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="file-list list-change">
+                                <li>
+                                    <span class="first">1</span>
+                                    <a href="javascript:void(0)" class="icon-text">
+                                        <i class="icon-second"></i>
+                                        <text>项目承包管理<small>.PNG</small></text>
+                                    </a>
+                                </li>
+                                <li>
+                                    <span class="second">2</span>
+                                    <a href="javascript:void(0)" class="icon-text">
+                                        <i class="icon-second"></i>
+                                        <text>转正审批表<small>.RAR</small></text>
+                                    </a>
+                                </li>
+                                <li>
+                                    <span class="third">3</span>
+                                    <a href="javascript:void(0)" class="icon-text">
+                                        <i class="icon-second"></i>
+                                        <text>身份证<small>.JPEG</small></text>
+                                    </a>
+                                </li>
+                                <li>
+                                    <span class="first">4</span>
+                                    <a href="javascript:void(0)" class="icon-text">
+                                        <i class="icon-second"></i>
+                                        <text>资格证书<small>.JPEG</small></text>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="modulebg"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="/js/jquery-2.1.1.min.js"></script>
+    <script src="/js/common.js"></script>
+    <script src="/js/business.js"></script>
+</body>
+</html>

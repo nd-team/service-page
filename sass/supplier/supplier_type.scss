@@ -1,0 +1,325 @@
+@import "../base";
+$font:"Microsoft YaHei";
+//右边内容
+.right-content{
+  //主体详细内容
+  .all-main{
+    width: 84%;
+    height: auto;
+    margin-top: 120px;
+    >div{
+      display: none;
+    }
+    >div.list{
+      display: block;
+    }
+    .tab-content{
+      width: 100%;
+      height: auto;
+      //列表
+        .article{
+          width: 100%;
+          height: auto;
+          .type-title{
+            width: 100%;
+            height: auto;
+            background-color: #fff;
+            .title-text{
+              height: 48px;
+              line-height: 48px;
+              background-color: #e1f1fe;
+              span{
+                display: inline-block;
+                width:12%;
+                text-align: left;
+                font-size: 14px;
+                color: #333;
+                &:first-of-type{
+                  width: 6%;
+                  text-align: center;
+                }
+              }
+            }
+            .list-show{
+              width: 100%;
+              height: auto;
+              li{
+                height: 46px;
+                line-height: 46px;
+                border-bottom:1px solid #e9ebea;
+                &:last-of-type{
+                  border-bottom: 0;
+                }
+                &:hover{
+                  box-shadow: 0 2px 20px #c3c3c3;
+                }
+                span{
+                  display: inline-block;
+                  width: 12%;
+                  text-align: left;
+                  font-size: 12px;
+                  color: #555;
+                  &:first-of-type{
+                    width: 6%;
+                    text-align: center;
+                  }
+                  &:nth-of-type(2){
+                    color: #0285e3;
+                  }
+                }
+              }
+            }
+          }
+        }
+        //编辑
+        .same-hide{
+        display: none;
+        .edit-box{
+          width: 1000px;
+          position: absolute;
+          z-index: 100;
+          height: 800px;
+          top: 20%;
+          left: 50%;
+          margin-left: -500px;
+          .close{
+            width: 80px;
+            height: 80px;
+            background: url("/images/business/circle_close.png") no-repeat;
+            display: block;
+            position: absolute;
+            right: -62px;
+            top: -65px;
+            cursor: pointer;
+          }
+          .edit-pop{
+            position: absolute;
+            left: 50%;
+            top: 0;
+            margin-left: -500px;
+            width: 100%;
+            height: auto;
+            border: 1px solid #066dc2;
+            background-color: #fff;
+            .pop-input{
+              width: 100%;
+              height: auto;
+              overflow: hidden;
+              margin-bottom: 25px;
+              li{
+                width: 47%;
+                float: left;
+                line-height: 55px;
+                border-bottom:1px solid #ddd;
+                margin-top: 10px;
+                &:nth-of-type(odd){
+                  margin-right: 60px;
+                }
+                label{
+                  display: inline-block;
+                  margin-left: 30px;
+                  width: 35%;
+                  font-size: 14px;
+                  color: #636267;
+                }
+                .selected-same{
+                  width: 56%;
+                  background: url("/images/business/down.png") no-repeat right 10px center;
+                  text-align: center;
+                  padding-left: 50px;
+                  font-size: 15px;
+                  line-height: 45px;
+                  color: #252525;
+                }
+                .edit-pt{
+                  width: 42%;
+                  background: 0;
+                  padding-left: 50px;
+                  font-size: 14px;
+                  color: #252525;
+                  &::-webkit-input-placeholder{ color: #c2bcbc; }
+
+                }
+                .icon-time{
+                  height: 25px;
+                  background: url("/images/business/calendar.png") no-repeat right center;
+                }
+              }
+            }
+            .file-position{
+              width: 95%;
+              margin: 0 auto 30px;
+              height: auto;
+              overflow: hidden;
+              line-height: 78px;
+              font-size: 14px;
+              .file{
+                float: left;
+                width: 8%;
+                background-color: #066dc2;
+                text-align: center;
+                color: #fff;
+                border-radius: 50px 0 0 50px;
+                height: 82px;
+              }
+              .name-file{
+                width: 15%;
+                float: left;
+
+                text-align: left;
+                padding-left: 20px;
+                color: #333;
+                border:2px solid #066dc2;
+              }
+              .view-upload{
+                width:62% !important;
+              }
+              .cun{
+                width: 12%;
+                float: left;
+                color: #066dc2;
+                text-align: center;
+                border:2px solid #066dc2;
+                border-radius: 50px 0 0 50px;
+
+              }
+              .file-center{
+                width: 75%;
+                float: left;
+                padding-left: 20px;
+                overflow: hidden;
+                border: {
+                  top: 2px;
+                  bottom: 2px;
+                  style: solid;
+                  color: #066dc2;
+                }
+                small{
+                  float: left;
+                }
+                .bg-pic{
+                  float: right;
+                  width: 40px;
+                  height: 27px;
+                  background: url("/images/business/small.jpg") no-repeat right center;
+                  margin:{
+                    top: 26px;
+                    right: 2%;
+                  }
+                }
+                .view-pic{
+                  float: right;
+                  width: 34px;
+                  height: 30px;
+                  background: url("/images/supplier/file_view.png") no-repeat right center;
+                  margin:{
+                    top: 26px;
+                    right: 2%;
+                  }
+                }
+              }
+              .file-upload{
+                width: 10%;
+                float: left;
+                background-color: #066dc2;
+                text-align: center;
+                border-radius: 0 50px 50px 0;
+                border-left:1px solid #066dc2;
+                height: 82px;
+                input[type="file"]{
+                  display: none;
+                }
+                .replace{
+                  display: block;
+                  color: #fff;
+                  vertical-align: middle;
+                  line-height: 30px;
+                  img{
+                    width: 29px;
+                    height: 31px;
+                    display: block;
+                    margin: 10px auto 0;
+
+                  }
+                }
+              }
+            }
+            .modify{
+              width: 100%;
+              .modify-btn{
+                width: 100%;
+                height: 58px;
+                color: #fff;
+                font-size: 16px;
+              }
+              .sure{
+                @extend .modify-btn;
+                background-color: #066dc2;
+                cursor: pointer;
+              }
+            }
+          }
+
+        }
+        .del-box{
+          width: 30%;
+          height: auto;
+          position: absolute;
+          left: 50%;
+          top: 30%;
+          margin-left: -265px;
+          z-index: 80;
+          .close{
+            width: 80px;
+            height: 80px;
+            background: url("/images/business/circle_close.png") no-repeat;
+            display: block;
+            position: absolute;
+            right: -62px;
+            top: -65px;
+            cursor: pointer;
+          }
+          .tips{
+            width: 100%;
+            background-color: #fff;
+            border: 2px solid #066dc2;
+            text-align: center;
+            h3{
+              color: #066dc2;
+              font-size: 16px;
+              height: 40px;
+              line-height: 40px;
+              margin: 20px 0 10px;
+            }
+            p{
+              font-size: 16px;
+              color: #333;
+              line-height: 30px;
+              margin-bottom: 20px;
+            }
+            .sure{
+              width: 100%;
+              height: 62px;
+              font-size: 16px;
+              background-color: #066dc2;
+              color: #fff;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+
+#modulebg{
+  background: rgba(0,0,0,.5);
+  z-index: 8;
+  position: fixed;
+  top: 0;
+  left: 10.8%;
+  right: 0;
+  bottom: 0;
+  display: none;
+}

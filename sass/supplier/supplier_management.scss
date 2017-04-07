@@ -17,9 +17,10 @@ $font:"Microsoft YaHei";
       width: 100%;
       height: auto;
       //列表
-        .supplier-list{
+        .article{
           width: 100%;
-          overflow: hidden;
+          height: auto;
+          overflow: auto;
           li{
             width: 49%;
             height: auto;
@@ -78,6 +79,7 @@ $font:"Microsoft YaHei";
                 top: 0;
                 left: 30%;
                 z-index: 1;
+                display: none;
                 .close-pic{
                   position: absolute;
                   right: -5%;
@@ -116,7 +118,6 @@ $font:"Microsoft YaHei";
                   display: block;
                   font-size: 14px;
                   color: #919191;
-                  //padding-bottom: 10px;
                 }
                 p{
                   color: #027ee4;
@@ -163,26 +164,45 @@ $font:"Microsoft YaHei";
                 }
               }
             }
-            .deleted-btn{
+            .click-button{
               float: right;
-              width: 32px;
-              height: 32px;
-              margin: 10px;
-              cursor: pointer;
-              background: url("/images/supplier/del.png") no-repeat;
+              padding-top: 10px;
+              padding-right: 10px;
+              height: 100%;
+              .mark-btn{
+                display: block;
+                width: 32px;
+                height: 32px;
+                background: url("/images/supplier/replace.png") no-repeat;
+                margin:auto;
+                padding-bottom: 10px;
+              }
+              .hide-show{
+                display: none;
+                width: 32px;
+                height: auto;
+                i{
+                  display: block;
+                  width: 32px;
+                  height: 32px;
+                  cursor: pointer;
+                  &.deleted-btn{
+                    background: url("/images/supplier/del.png") no-repeat;
+                  }
+                  &.edit-btn{
+                    margin-top: 6px;
+                    background: url("/images/supplier/edit.png") no-repeat;
+                  }
+                }
+              }
+
+
             }
-            .edit-btn{
-              float: right;
-              width: 32px;
-              height: 32px;
-              margin: 10px;
-              cursor: pointer;
-              background: url("/images/supplier/edit.png") no-repeat;
-            }
+
           }
         }
         //编辑
-      .same-hide{
+        .same-hide{
         display: none;
         .edit-box{
           width: 1000px;
@@ -248,6 +268,7 @@ $font:"Microsoft YaHei";
                   font-size: 14px;
                   color: #252525;
                   &::-webkit-input-placeholder{ color: #c2bcbc; }
+
                 }
                 .icon-time{
                   height: 25px;
@@ -262,7 +283,27 @@ $font:"Microsoft YaHei";
               overflow: hidden;
               line-height: 78px;
               font-size: 14px;
+              .file{
+                float: left;
+                width: 8%;
+                background-color: #066dc2;
+                text-align: center;
+                color: #fff;
+                border-radius: 50px 0 0 50px;
+                height: 82px;
+              }
+              .name-file{
+                width: 15%;
+                float: left;
 
+                text-align: left;
+                padding-left: 20px;
+                color: #333;
+                border:2px solid #066dc2;
+              }
+              .view-upload{
+                width:62% !important;
+              }
               .cun{
                 width: 12%;
                 float: left;
@@ -291,6 +332,16 @@ $font:"Microsoft YaHei";
                   width: 40px;
                   height: 27px;
                   background: url("/images/business/small.jpg") no-repeat right center;
+                  margin:{
+                    top: 26px;
+                    right: 2%;
+                  }
+                }
+                .view-pic{
+                  float: right;
+                  width: 34px;
+                  height: 30px;
+                  background: url("/images/supplier/file_view.png") no-repeat right center;
                   margin:{
                     top: 26px;
                     right: 2%;
@@ -331,6 +382,11 @@ $font:"Microsoft YaHei";
                 color: #fff;
                 font-size: 16px;
               }
+              .sure{
+                @extend .modify-btn;
+                background-color: #066dc2;
+                cursor: pointer;
+              }
             }
           }
 
@@ -340,7 +396,7 @@ $font:"Microsoft YaHei";
           height: auto;
           position: absolute;
           left: 50%;
-          top: 40%;
+          top: 30%;
           margin-left: -265px;
           z-index: 80;
           .close{
@@ -381,150 +437,184 @@ $font:"Microsoft YaHei";
             }
           }
         }
-        .export-box{
-          width: 50%;
-          height: auto;
-          position: absolute;
-          left: 50%;
-          top: 35%;
-          margin-left: -25%;
-          z-index: 80;
-          .close{
-            width: 80px;
-            height: 80px;
-            background: url("/images/business/circle_close.png") no-repeat;
-            display: block;
-            position: absolute;
-            right: -62px;
-            top: -65px;
-            cursor: pointer;
-          }
-          .tips{
+      }
+      
+        .same-box{
+          width: 100%;
+          background-color: #fff;
+          margin-bottom: 50px;
+          .edit-content{
             width: 100%;
-            background-color: #fff;
-            border: 2px solid #066dc2;
-            text-align: center;
-            h3{
-              color: #066dc2;
+            height: auto;
+            h4{
+              color: #636267;
+              line-height: 60px;
+              border-bottom: 1px solid #ddd;
+              padding-left: 30px;
               font-size: 18px;
-              height: 40px;
-              line-height: 40px;
-              margin: 20px 0 10px;
+              font-weight: normal;
             }
-            p{
-              font-size: 16px;
-              color: #333;
-              line-height: 30px;
-              margin-bottom: 20px;
-              span{
-                color: #999;
-                font-size: 14px;
+            .basic-info{
+              padding:30px 30px;
+              h5{
+                color: #636267;
+                font-size: 16px;
+                border-left: 6px solid #027ee4;
+                padding-left: 10px;
+                margin-bottom: 15px;
+                font-weight: normal;
               }
-            }
-            .file-position{
-              width: 95%;
-              margin: 0 auto 10px;
-              height: auto;
-              overflow: hidden;
-              line-height: 78px;
-              font-size: 14px;
-
-              .cun{
-                width: 12%;
-                float: left;
-                color: #066dc2;
-                text-align: center;
-                border:2px solid #066dc2;
-                border-radius: 50px 0 0 50px;
-
-              }
-              .file-center{
-                width: 75%;
-                float: left;
-                padding-left: 20px;
-                overflow: hidden;
-                border: {
-                  top: 2px;
-                  bottom: 2px;
-                  style: solid;
-                  color: #066dc2;
-                }
-                line-height: 78px;
-                small{
+              .info-edit{
+                width: 100%;
+                li{
                   float: left;
-                }
-                .bg-pic{
-                  float: right;
-                  width: 34px;
-                  height: 35px;
-                  background: url("/images/business/excel.png") no-repeat right center;
-                  margin:{
-                    top: 3%;
-                    right: 2%;
-                  }
-                }
-              }
-              .file-upload{
-                width: 10%;
-                float: left;
-                background-color: #066dc2;
-                text-align: center;
-                border-radius: 0 50px 50px 0;
-                border-left:1px solid #066dc2;
-                height: 82px;
-                input[type="file"]{
-                  display: none;
-                }
-                .replace{
-                  display: block;
-                  color: #fff;
+                  width: 25%;
                   vertical-align: middle;
-                  line-height: 30px;
-                  img{
-                    width: 29px;
-                    height: 31px;
-                    display: block;
-                    margin: 10px auto 0;
-
+                  margin-bottom: 30px;
+                  height: 35px;
+                  label{
+                    display: inline-block;
+                    width: 22%;
+                    text-align: right;
+                    color: #636267;
+                    font-size: 14px;
+                    height: 32px;
+                  }
+                  input{
+                    width: 70%;
+                    height: 32px;
+                    border: 1px solid #e7e6eb;
+                    padding-left: 10px;
+                    vertical-align: middle;
+                    &::-webkit-input-placeholder{
+                      color: #252525;
+                    }
                   }
                 }
               }
             }
-            .number-time{
-              width: 45%;
-              margin: 80px auto;
-              border-bottom: 1px solid #dfdfdf;
-              text-align: left;
-              label{
-                width: 40%;
-                display: inline-block;
-                text-align: center;
-              }
-              .select-number{
-                width: 56%;
-                padding-left: 90px;
-                line-height: 45px;
-                color: #c2bcbc;
-                font-size: 14px;
-                option{
+            .scope{
+              width: 100%;
+              height: auto;
+              padding: 0 30px;
+              .operating{
+                width: 30%;
+                float: left;
+                margin-right: 3%;
+                margin-bottom: 30px;
+                h5{
+                  color: #636267;
+                  font-size: 16px;
+                  border-left: 6px solid #027ee4;
+                  padding-left: 10px;
+                  margin-bottom: 15px;
+                  font-weight: normal;
+                }
+                .text{
+                  width: 100%;
+                  resize: none;
+                  padding:{
+                    top: 10px;
+                    left: 10px;
+                  }
+                  height: 130px;
+                  font:{
+                    size: 16px;
+                    family: "Microsoft YaHei";
+                  }
+                  border: 1px solid #e7e6eb;
                   color: #252525;
                 }
+                &.enterprise{
+                  margin-right: 0;
+                  .qualification{
+                    width: 100%;
+                    border: 1px solid #e7e6eb;
+                    .text-title{
+                      border-bottom: 1px solid #e7e6eb;
+                      height: 34px;
+                      line-height: 34px;
+                      &:last-of-type{
+                        border-bottom: 0;
+                      }
+                      span{
+                        display: inline-block;
+                        height: 34px;
+                        text-align: center;
+                        border-right: 1px solid #e7e6eb;
+                        font-size: 14px;
+                        color: #636267;
+                        &:last-of-type{
+                          border-right: 0;
+                        }
+                        input{
+                          vertical-align: middle;
+                          height: 30px;
+                          line-height: 30px;
+                        }
+                      }
+                    }
+                  }
+                }
+
+              }
+              .happening{
+
+                float: left;
+                margin-right: 2%;
+                margin-bottom: 30px;
+                &:first-of-type{
+                  width: 12%;
+                }
+                &:nth-of-type(2){
+                  width: 55%;
+                }
+                &:last-of-type{
+                  width: 25%;
+                  margin-right: 0;
+                }
+                h5{
+                  color: #636267;
+                  font-size: 16px;
+                  border-left: 6px solid #027ee4;
+                  padding-left: 10px;
+                  margin-bottom: 15px;
+                  font-weight: normal;
+                }
+                .qualification{
+                  width: 100%;
+                  border: 1px solid #e7e6eb;
+                  .text-title{
+                    border-bottom: 1px solid #e7e6eb;
+                    height: 34px;
+                    line-height: 34px;
+                    &:last-of-type{
+                      border-bottom: 0;
+                    }
+                    span{
+                      display: inline-block;
+                      height: 34px;
+                      text-align: center;
+                      border-right: 1px solid #e7e6eb;
+                      font-size: 14px;
+                      color: #636267;
+                      input{
+                        //padding-left: 15px;
+                        &::-webkit-input-placeholder{
+                          color: #252525;
+                        }
+                      }
+                      &:last-of-type{
+                        border-right: 0;
+                      }
+                    }
+                  }
+                }
               }
 
-            }
-            .sure{
-              width: 100%;
-              height: 62px;
-              font-size: 16px;
-              background-color: #066dc2;
-              color: #fff;
-              cursor: pointer;
             }
           }
         }
-      }
-
-
     }
 
   }

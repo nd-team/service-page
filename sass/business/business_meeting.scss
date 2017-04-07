@@ -9,7 +9,7 @@ $font:"Microsoft YaHei";
   .all-main{
     width: 84%;
     height: auto;
-    margin-top: 120px;
+    margin-top: 92px;
     >div{
       display: none;
     }
@@ -20,19 +20,24 @@ $font:"Microsoft YaHei";
       width: 100%;
       //列表
       .so{
-        width: 100%;
-        position: relative;
+        width: 84%;
+        position: fixed;
+        background-color: #f0f1f5;
+        padding-top: 20px;
         p{
           width: 212px;
           border-bottom: 1px solid #d2d2d2;
-          margin-bottom: 20px;
+          margin-bottom: 10px;
           input{
             width: 80%;
             vertical-align: middle;
             background: 0;
-            font-size: 12px;
-            color: #999;
+            font-size: 14px;
+            color: #333;
             line-height: 35px;
+            &::-webkit-input-placeholder{
+              color: #999;
+            }
           }
           .under-search{
             display: inline-block;
@@ -120,7 +125,7 @@ $font:"Microsoft YaHei";
       .article{
         width: 90%;
         height: auto;
-        margin: 0 auto 50px;
+        margin: 90px auto 50px;
         .all-module{
           float: left;
           height: auto;
@@ -303,6 +308,7 @@ $font:"Microsoft YaHei";
               .input-r{
                 float: left;
                 textarea{
+                  resize: none;
                   height: 96px;
                   border-color: #98b2c7;
                   border-radius: 5px;
