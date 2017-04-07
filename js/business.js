@@ -133,6 +133,16 @@ $(function () {
             $(this).parents(".click-button").find('.hide-show').slideUp()
         }
     });
+    // 点击列表查看详情
+    $(".three-circle .yuan").on('click',function () {
+        if(!$(this).hasClass("show")){
+            $(this).addClass("show");
+            $(this).parents(".three-circle").find('.more-list').show();
+        }else {
+            $(this).removeClass("show");
+            $(this).parents(".three-circle").find('.more-list').hide();
+        }
+    });
 });
 
 

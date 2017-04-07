@@ -118,10 +118,9 @@ $font:"Microsoft YaHei";
         }
       }
       //列表
-      .article{
+      .biddingArticle{
         width: 100%;
         height: auto;
-        overflow: hidden;
         li{
           width: 19%;
           height: auto;
@@ -131,6 +130,7 @@ $font:"Microsoft YaHei";
             right: 20px;
             bottom: 30px;
           }
+          position: relative;
           &:last-of-type{
             margin-right: 0;
           }
@@ -241,6 +241,7 @@ $font:"Microsoft YaHei";
                 border-radius: 3px;
                 height: 44px;
                 line-height: 44px;
+                background-color: #fff;
                 &:first-of-type{
                   width: 42%;
                   margin-right: 2%;
@@ -267,13 +268,27 @@ $font:"Microsoft YaHei";
                   }
                 }
               }
+              .time{
+                display: inline-block;
+                width: 47%;
+                border:1px solid #ddd;
+                border-radius: 3px;
+                height: 44px;
+                line-height: 44px;
+                color: #b4b4b4;
+                font-size: 12px;
+                text-align: center;
+                background-color: #fff;
+                &:first-of-type{
+                  margin-right: 2%;
+                }
+              }
             }
 
             }
           .open-person{
             height: auto;
             background-color: #fff;
-            text-align: center;
             padding:15px 0;
             margin: 20px 0 0;
             .head-pic{
@@ -283,13 +298,16 @@ $font:"Microsoft YaHei";
               background:url("/images/bidding/head_pic.png") no-repeat center;
               border-radius: 50%;
               margin: 0 auto 10px;
+
             }
             p{
+              text-align: center;
               font-size:12px;
               line-height: 22px;
               color: #027de4;
               &:first-of-type{
                 color: #333;
+                font-size: 14px;
               }
               &:last-of-type{
                 color: #8c8c8c;
@@ -319,6 +337,43 @@ $font:"Microsoft YaHei";
                 }
                 &.green{
                   background-color: #66b96b;
+                }
+              }
+            }
+          }
+          .three-circle{
+            position: absolute;
+            top: 45%;
+            left: 85%;
+            width: 260px;
+            text-align: left;
+            z-index: 2;
+            //height: 500px;
+            .yuan{
+              margin-bottom: 5px;
+              cursor: pointer;
+              span{
+                display: inline-block;
+                width: 4px;
+                height: 4px;
+                background-color: #b7c1c3;
+                border-radius: 50%;
+              }
+            }
+            .more-list{
+              display: none;
+              background-color: #fff;
+              border: 1px solid #027ee4;
+              p{
+                color: #333;
+                font-size: 12px;
+                line-height: 22px;
+                padding-left: 6px;
+                span{
+                  display: inline-block;
+                  &:first-of-type{
+                    width: 40%;
+                  }
                 }
               }
             }
@@ -353,8 +408,22 @@ $font:"Microsoft YaHei";
                   height: 17px;
                   background: url("/images/bidding/write.png") no-repeat;
                 }
+                &.open-people{
+                  width: 18px;
+                  height: 18px;
+                  background: url("/images/bidding/number.png") no-repeat;
+                }
               }
             }
+          }
+          .answer{
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            color: #fff;
+            font-size: 14px;
+            background-color: #027de4;
           }
         }
       }
@@ -400,7 +469,7 @@ $font:"Microsoft YaHei";
                 border-bottom:1px solid #ddd;
                 margin-top: 10px;
                 &:nth-of-type(odd){
-                  margin-right: 60px;
+                  margin-right: 6%;
                 }
                 label{
                   display: inline-block;
@@ -546,7 +615,18 @@ $font:"Microsoft YaHei";
               }
             }
           }
-
+          .fixed-height{
+            height: 500px;
+            overflow: auto;
+            &::-webkit-scrollbar {
+              width: 10px;
+            }
+            &::-webkit-scrollbar-thumb {
+              border-radius: 10px;
+              background: #007fe7;
+              -webkit-box-shadow: inset 0 0 6px rgba(255,255,255,0.5);
+            }
+          }
         }
         .del-box{
           width: 30%;
