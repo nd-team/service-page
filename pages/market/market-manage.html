@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>市场信息管理--机会信息管理</title>
+    <meta name="keywords" content="机会信息管理">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/market/market.css">
+</head>
+<body>
+<header class="clearfix">
+    <div class="logo-left">
+        <a href="/pages/index.html" title="业务市场化平台" class="logo">业务市场化平台</a>
+    </div>
+    <div class="search-right clearfix">
+        <div class="input-box">
+            <input type="text" placeholder="输入要搜索的内容" class="input">
+            <a href="javascript:void(0)" class="search"></a>
+        </div>
+        <div class="header-pic">
+            <a href="javascript:void(0)"><img src="/images/often.png" alt=""></a>
+        </div>
+    </div>
+</header>
+<div class="content clearfix">
+    <nav class="clearfix">
+        <ul class="nav-left">
+            <li class="active">
+                <p>
+                    <a href="javascript:void(0)">综合资源部</a>
+                    <span class="green"></span>
+                </p>
+            </li>
+            <li class="red-nav">
+                <p>
+                    <a href="javascript:void(0)">预算</a>
+                    <span class="red"></span>
+                </p>
+            </li>
+            <li class="blue-nav">
+                <p>
+                    <a href="javascript:void(0)">商务发展部</a>
+                    <span class="blue"></span>
+                </p>
+                <div class="nav-hover hover-blue">
+                    <div class="company-nav">
+                        <ul class="company-plan">
+                            <li class="same-width business-active">
+                                <div class="plan-title">
+                                    <a class="plan-pic">
+                                        <svg role="img" class="custor">
+                                            <use xlink:href="#custor"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="javascript:void(0)" class="plan">客户管理</a>
+                                    <i class="arrow">^</i>
+                                </div>
+                                <div class="company-type">
+                                    <p>
+                                        <a href="javascript:void(0)">市场活动管理</a>
+                                    </p>
+                                    <p class="text-cur">
+                                        <a href="javascript:void(0)" class="first-vertical">客户信息管理</a>
+                                    </p>
+                                    <p>
+                                        <a href="javascript:void(0)">竞争对手管理</a>
+                                    </p>
+                                    <p>
+                                        <a href="javascript:void(0)">供应商管理</a>
+                                    </p>
+                                    <p>
+                                        <a href="javascript:void(0)">市场能力展示</a>
+                                    </p>
+                                    <p>
+                                        <a href="javascript:void(0)">市场能力互动信息管理</a>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="same-width">
+                                <div class="plan-title">
+                                    <a class="plan-pic">
+                                        <svg role="img" class="business-btn">
+                                            <use xlink:href="#business-btn"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="javascript:void(0)" class="plan">业务管理</a>
+                                    <i class="arrow">^</i>
+                                </div>
+                                <div class="company-type">
+                                    <p>
+                                        <a href="javascript:void(0)">项目测算管理</a>
+                                    </p>
+                                    <p>
+                                        <a href="javascript:void(0)">招投标流程管理</a>
+                                    </p>
+                                    <p>
+                                        <a href="javascript:void(0)">商务洽谈</a>
+                                    </p>
+                                    <p>
+                                        <a href="javascript:void(0)">商务合同管理</a>
+                                    </p>
+                                    <p>
+                                        <a href="javascript:void(0)">商务评估管理</a>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="same-width">
+                                <div class="plan-title">
+                                    <a class="plan-pic">
+                                        <svg role="img" class="come-btn">
+                                            <use xlink:href="#come-btn"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="javascript:void(0)" class="plan">进度管理</a>
+                                    <i class="arrow">^</i>
+                                </div>
+                                <div class="company-type">
+                                    <p>
+                                        <a href="javascript:void(0)">市场开发计划进度管理</a>
+                                    </p>
+                                    <p>
+                                        <a href="javascript:void(0)">商务计划工作进度把控</a>
+                                    </p>
+                                    <p>
+                                        <a href="javascript:void(0)">项目验收签字结算进度管理</a>
+                                    </p>
+                                    <p>
+                                        <a href="javascript:void(0)">项目中问题受理和处理</a>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <span class="blue"></span>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div class="right-content">
+        <div class="top-fix">
+            <div class="management clearfix">
+                <ul class="management-left">
+                    <li class="current">
+                        <a href="javascript:void(0)">市场管理</a>
+                    </li>
+                </ul>
+                <ul class="management-right">
+                    <li>
+                        <select class="selected" id="href_select">
+                            <option value="">市场信息管理</option>
+                        </select>
+                        <span class="span-line"></span>
+                    </li>
+                    <li class="line-btn">
+                        <i class="line-list"></i>
+                        <div class="right-list">
+                            <p data-title="list" class="list-text list-a">
+                                <a href="javascript:void(0)">添加</a>
+                            </p>
+                            <p data-title="edit" class="list-text text-bg">
+                                <a href="javascript:void(0)">编辑</a>
+                            </p>
+                            <p data-title="delete" class="list-text text-bg">
+                                <a href="javascript:void(0)">导出</a>
+                            </p>
+                            <p data-title="delete" class="list-text text-bg">
+                                <a href="javascript:void(0)">汇总</a>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="all-main">
+            <div class="tab-content clearfix list" style="display: none">
+                <div class="soso">
+                    <input class="so-search" placeholder="搜索">
+                </div>
+                <div class="article clearfix">
+                    <ul class="all-module clearfix">
+                         <li class="blue-frame">
+                             <div class="examine-top">
+                                 <p class="head-tit">
+                                     <span class="tit-region">广州</span>
+                                     <span class="tit-name">SW20160622</span>
+                                     <span class="tit-user">曾强</span>
+                                 </p>
+                                  <p class="suggestion">
+                                          审核意见
+                                  </p>
+                                   <p class="exam-cont">
+                                       一天的日常，很多的事，叫我的名字，是有生以来最好的
+                                       没关系啊，在这里，现在就想见你，我是鸟儿，永远为
+                                       你歌唱，如果闭上眼睛就在心里，樱花樱花，樱花想见你
+                                       没关系，别再哭了，我是微风正围绕在你身边，谢谢你，一直喜欢着你
+                                   </p>
+                             </div>
+                             <div class="examine-bot exam-blue">
+                                   <p class="ex-time">
+                                       <span class="time-data">2017-129-14</span>
+                                       <span class="time-min">17:00:20</span>
+                                   </p>
+                                 <p class="explain">
+                                     机械设备、五金交电及电子产品
+                                 </p>
+                                 <p class="ex-reason">
+                                     出车管理
+                                 </p>
+                             </div>
+                         </li>
+                         <li class="red-frame">
+                             <div class="examine-top">
+                                 <p class="head-tit">
+                                     <span class="tit-region">广州</span>
+                                     <span class="tit-name">SW20160622</span>
+                                     <span class="tit-user">曾强</span>
+                                 </p>
+                                  <p class="suggestion blue-line">
+                                          审核意见
+                                  </p>
+                                   <p class="exam-cont">
+                                       一天的日常，很多的事，叫我的名字，是有生以来最好的
+                                       没关系啊，在这里，现在就想见你，我是鸟儿，永远为
+                                       你歌唱，如果闭上眼睛就在心里，樱花樱花，樱花想见你
+                                       没关系，别再哭了，我是微风正围绕在你身边，谢谢你，一直喜欢着你
+                                   </p>
+                             </div>
+                             <div class="examine-bot exam-blue">
+                                   <p class="ex-time">
+                                       <span class="time-data">2017-129-14</span>
+                                       <span class="time-min">17:00:20</span>
+                                   </p>
+                                 <p class="explain">
+                                     机械设备、五金交电及电子产品
+                                 </p>
+                                 <p class="ex-reason">
+                                     出车管理
+                                 </p>
+                             </div>
+                         </li>
+                         <li class="green-frame">
+                             <div class="examine-top">
+                                 <p class="head-tit">
+                                     <span class="tit-region">广州</span>
+                                     <span class="tit-name">SW20160622</span>
+                                     <span class="tit-user">曾强</span>
+                                 </p>
+                                  <p class="suggestion blue-line">
+                                          审核意见
+                                  </p>
+                                   <p class="exam-cont">
+                                       一天的日常，很多的事，叫我的名字，是有生以来最好的
+                                       没关系啊，在这里，现在就想见你，我是鸟儿，永远为
+                                       你歌唱，如果闭上眼睛就在心里，樱花樱花，樱花想见你
+                                       没关系，别再哭了，我是微风正围绕在你身边，谢谢你，一直喜欢着你
+                                   </p>
+                             </div>
+                             <div class="examine-bot exam-blue">
+                                   <p class="ex-time">
+                                       <span class="time-data">2017-129-14</span>
+                                       <span class="time-min">17:00:20</span>
+                                   </p>
+                                 <p class="explain">
+                                     机械设备、五金交电及电子产品
+                                 </p>
+                                 <p class="ex-reason">
+                                     出车管理
+                                 </p>
+                             </div>
+                         </li>
+                         <li class="yellow-frame">
+                             <div class="examine-top">
+                                 <p class="head-tit">
+                                     <span class="tit-region">广州</span>
+                                     <span class="tit-name">SW20160622</span>
+                                     <span class="tit-user">曾强</span>
+                                 </p>
+                                  <p class="suggestion blue-line">
+                                          审核意见
+                                  </p>
+                                   <p class="exam-cont">
+                                       一天的日常，很多的事，叫我的名字，是有生以来最好的
+                                       没关系啊，在这里，现在就想见你，我是鸟儿，永远为
+                                       你歌唱，如果闭上眼睛就在心里，樱花樱花，樱花想见你
+                                       没关系，别再哭了，我是微风正围绕在你身边，谢谢你，一直喜欢着你
+                                   </p>
+                             </div>
+                             <div class="examine-bot exam-blue">
+                                   <p class="ex-time">
+                                       <span class="time-data">2017-129-14</span>
+                                       <span class="time-min">17:00:20</span>
+                                   </p>
+                                 <p class="explain">
+                                     机械设备、五金交电及电子产品
+                                 </p>
+                                 <p class="ex-reason">
+                                     出车管理
+                                 </p>
+                             </div>
+                         </li>
+                         <li class="blue-frame">
+                            <div class="examine-top">
+                                <p class="head-tit">
+                                    <span class="tit-region">广州</span>
+                                    <span class="tit-name">SW20160622</span>
+                                    <span class="tit-user">曾强</span>
+                                </p>
+                                <p class="suggestion">
+                                    审核意见
+                                </p>
+                                <p class="exam-cont">
+                                    一天的日常，很多的事，叫我的名字，是有生以来最好的
+                                    没关系啊，在这里，现在就想见你，我是鸟儿，永远为
+                                    你歌唱，如果闭上眼睛就在心里，樱花樱花，樱花想见你
+                                    没关系，别再哭了，我是微风正围绕在你身边，谢谢你，一直喜欢着你
+                                </p>
+                            </div>
+                            <div class="examine-bot exam-blue">
+                                <p class="ex-time">
+                                    <span class="time-data">2017-129-14</span>
+                                    <span class="time-min">17:00:20</span>
+                                </p>
+                                <p class="explain">
+                                    机械设备、五金交电及电子产品
+                                </p>
+                                <p class="ex-reason">
+                                    出车管理
+                                </p>
+                            </div>
+                        </li>
+                         <li class="red-frame">
+                            <div class="examine-top">
+                                <p class="head-tit">
+                                    <span class="tit-region">广州</span>
+                                    <span class="tit-name">SW20160622</span>
+                                    <span class="tit-user">曾强</span>
+                                </p>
+                                <p class="suggestion blue-line">
+                                    审核意见
+                                </p>
+                                <p class="exam-cont">
+                                    一天的日常，很多的事，叫我的名字，是有生以来最好的
+                                    没关系啊，在这里，现在就想见你，我是鸟儿，永远为
+                                    你歌唱，如果闭上眼睛就在心里，樱花樱花，樱花想见你
+                                    没关系，别再哭了，我是微风正围绕在你身边，谢谢你，一直喜欢着你
+                                </p>
+                            </div>
+                            <div class="examine-bot exam-blue">
+                                <p class="ex-time">
+                                    <span class="time-data">2017-129-14</span>
+                                    <span class="time-min">17:00:20</span>
+                                </p>
+                                <p class="explain">
+                                    机械设备、五金交电及电子产品
+                                </p>
+                                <p class="ex-reason">
+                                    出车管理
+                                </p>
+                            </div>
+                        </li>
+                         <li class="green-frame">
+                            <div class="examine-top">
+                                <p class="head-tit">
+                                    <span class="tit-region">广州</span>
+                                    <span class="tit-name">SW20160622</span>
+                                    <span class="tit-user">曾强</span>
+                                </p>
+                                <p class="suggestion blue-line">
+                                    审核意见
+                                </p>
+                                <p class="exam-cont">
+                                    一天的日常，很多的事，叫我的名字，是有生以来最好的
+                                    没关系啊，在这里，现在就想见你，我是鸟儿，永远为
+                                    你歌唱，如果闭上眼睛就在心里，樱花樱花，樱花想见你
+                                    没关系，别再哭了，我是微风正围绕在你身边，谢谢你，一直喜欢着你
+                                </p>
+                            </div>
+                            <div class="examine-bot exam-blue">
+                                <p class="ex-time">
+                                    <span class="time-data">2017-129-14</span>
+                                    <span class="time-min">17:00:20</span>
+                                </p>
+                                <p class="explain">
+                                    机械设备、五金交电及电子产品
+                                </p>
+                                <p class="ex-reason">
+                                    出车管理
+                                </p>
+                            </div>
+                        </li>
+                         <li class="yellow-frame">
+                            <div class="examine-top">
+                                <p class="head-tit">
+                                    <span class="tit-region">广州</span>
+                                    <span class="tit-name">SW20160622</span>
+                                    <span class="tit-user">曾强</span>
+                                </p>
+                                <p class="suggestion blue-line">
+                                    审核意见
+                                </p>
+                                <p class="exam-cont">
+                                    一天的日常，很多的事，叫我的名字，是有生以来最好的
+                                    没关系啊，在这里，现在就想见你，我是鸟儿，永远为
+                                    你歌唱，如果闭上眼睛就在心里，樱花樱花，樱花想见你
+                                    没关系，别再哭了，我是微风正围绕在你身边，谢谢你，一直喜欢着你
+                                </p>
+                            </div>
+                            <div class="examine-bot exam-blue">
+                                <p class="ex-time">
+                                    <span class="time-data">2017-129-14</span>
+                                    <span class="time-min">17:00:20</span>
+                                </p>
+                                <p class="explain">
+                                    机械设备、五金交电及电子产品
+                                </p>
+                                <p class="ex-reason">
+                                    出车管理
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="all-main2">
+                 <!--编辑-->
+                 <div class="tab-content clearfix edit" style="display: none">
+                     <div class="all-other">
+                         <i class="close"></i>
+                         <div class="tab-other">
+                             <ul class="clearfix">
+                                 <li>
+                                     <label>客户信息编号</label>
+                                     <select class="selected-same">
+                                         <option value="">SW520000</option>
+                                         <option value="">SW520000</option>
+                                     </select>
+                                 </li>
+                                 <li>
+                                     <label>客户姓名</label>
+                                     <input type="text">
+                                 </li>
+                                 <li>
+                                     <label>组织机构名称</label>
+                                     <input type="text">
+                                 </li>
+                                 <li>
+                                     <label>行业</label>
+                                     <select class="selected-same">
+                                         <option value="">金融</option>
+                                         <option value="">服务</option>
+                                     </select>
+                                 </li>
+                                 <li>
+                                     <label>技术类别</label>
+                                     <input type="text">
+                                 </li>
+                                 <li>
+                                     <label>地区</label>
+                                     <select class="selected-same">
+                                         <option value="">北京</option>
+                                         <option value="">广州</option>
+                                     </select>
+                                 </li>
+                                 <li>
+                                     <label>项目名称</label>
+                                     <input type="text">
+                                 </li>
+                                 <li>
+                                     <label>规模</label>
+                                     <input type="number">
+                                 </li>
+                                 <li>
+                                     <label>发起时间点</label>
+                                     <input type="text"  class="icon-time">
+                                 </li>
+                                 <li>
+                                     <label>重要时间点</label>
+                                     <input type="text"  class="icon-time">
+                                 </li>
+                                 <li>
+                                     <label>结束时间点</label>
+                                     <input type="text"  class="icon-time">
+                                 </li>
+                                 <li>
+                                     <label>信息来源</label>
+                                     <input type="text">
+                                 </li>
+                                 <li>
+                                     <label>配置要求</label>
+                                      <div class="position1">
+                                          <p>真的很好啊</p>
+                                          <p>真的很好啊</p>
+                                          <p>真的很好啊</p>
+                                      </div>
+                                 </li>
+                                 <li>
+                                     <label>技术要求</label>
+                                     <div class="position1">
+                                         <p>真的很好啊</p>
+                                         <p>真的很好啊</p>
+                                         <p>真的很好啊</p>
+                                     </div>
+                                 </li>
+                                 <li>
+                                     <label>资质要求</label>
+                                     <div class="position1">
+                                         <p>真的很好啊</p>
+                                         <p>真的很好啊</p>
+                                         <p>真的很好啊</p>
+                                     </div>
+                                 </li>
+                                 <li>
+                                     <label>备注</label>
+                                     <input type="text">
+                                 </li>
+                             </ul>
+                             <div class="modify">
+                                 <button type="button" class="modify-btn" disabled>修改</button>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <!--汇总-->
+                  <div class="market-summary">
+                         <div class="summ-top clearfix">
+                              <ul>
+                                  <li>
+                                      <label>地区</label>
+                                      <p class="select-all">
+                                          <select>
+                                              <option>北京</option>
+                                              <option>广州</option>
+                                          </select>
+                                          <i class="sele-close"><img src="/images/customer/select-close.png"></i>
+                                      </p>
+                                  </li>
+                                  <li>
+                                      <label>发送间断</label>
+                                      <p class="select-all">
+                                          <input type="text">
+                                          <i class="sele-close"><img src="/images/customer/select-close.png"></i>
+                                      </p>
+                                  </li>
+                                  <li>
+                                      <label>汇总间隔</label>
+                                      <p class="select-all">
+                                          <select>
+                                              <option>北京</option>
+                                              <option>广州</option>
+                                          </select>
+                                          <i class="sele-close"><img src="/images/customer/select-close.png"></i>
+                                      </p>
+                                  </li>
+                                  <li class="object-all">
+                                      <label>选择对象</label>
+                                      <p class="obj1">
+                                          <select>
+                                              <option>个人邮箱</option>
+                                          </select>
+                                          <i class="sele-close"><img src="/images/customer/select-close.png"></i>
+                                      </p>
+                                      <p class="obj2 obj4">
+                                          <select>
+                                              <option>个人邮箱</option>
+                                          </select>
+                                      </p>
+                                      <p class="obj3 obj4">
+                                          <input type="text">
+                                          <i class="sele-close"><img src="/images/customer/select-close.png"></i>
+                                      </p>
+                                      <button class="sum-but">汇总</button>
+                                  </li>
+                              </ul>
+                         </div>
+                         <div class="summ-bot">
+                                <div class="summ-bot1">
+                                      <p class="summ-tit">
+                                          <span class="tit1">地区</span>
+                                          <span class="tit2">广州</span>
+                                      </p>
+                                       <ul class="clearfix">
+                                           <li>
+                                                <p class="sum-text">
+                                                     <span>移动通信行业市场信息d数量场信息d数量场信息d数量场信息d数量</span>
+                                                     <i class="first-icon"></i>
+                                                     <i class="one-icon"></i>
+                                                </p>
+                                                <span class="sum-number">3</span>
+                                           </li>
+                                      </ul>
+                                </div>
+                         </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <div class="module-layer" style="display: none">
+        <!--点击某一块内容详细-->
+        <div class="tab-content clearfix detail">
+            <div class="edit-box2">
+                <i class="close"></i>
+                <div class="edit-pop">
+                    <div class="edit-start">
+                        <p class="ed-start1">市场编号</p>
+                        <p class="ed-start2">SW20160622</p>
+                        <p class="ed-start3">编辑</p>
+                    </div>
+                    <ul>
+                        <li>
+                            <label>技术要求</label>
+                            <p>
+                                厉害
+                            </p>
+                            <p>
+                                强壮
+                            </p>
+                            <p>
+                                帅
+                            </p>
+                        </li>
+                        <li>
+                            <label>技术类别</label>
+                            <input type="text" placeholder="it">
+                        </li>
+                        <li>
+                            <label>规模</label>
+                            <input type="text" placeholder="32人">
+                        </li>
+                        <li>
+                            <label>项目名称</label>
+                            <input type="text" placeholder="出车管理">
+                        </li>
+                        <li>
+                            <label>发起时间</label>
+                            <input type="text" placeholder="2017-02-12 15：00：30">
+                        </li>
+                        <li>
+                            <label>结束时间</label>
+                            <input type="text" placeholder="2017-02-12 15：00：30">
+                        </li>
+                        <li>
+                            <label>客户信息编号</label>
+                            <input type="text" placeholder="SW20160622">
+                        </li>
+                        <li>
+                            <label>信息来源</label>
+                            <input type="text" placeholder="SW20160622">
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <label>是否为有效信息</label>
+                            <input type="text" placeholder="否">
+                        </li>
+                        <li>
+                            <label>项目性质</label>
+                            <input type="text" placeholder="调配">
+                        </li>
+                        <li>
+                            <label>组织机构名称</label>
+                            <input type="text" placeholder="广州裕大通讯有限公司">
+                        </li>
+                        <li>
+                            <label>竞争对手名称</label>
+                            <input type="text" placeholder="是汪不是汪">
+                        </li>
+                        <li>
+                            <label>客户、竞争对手信息填写</label>
+                            <input type="text" placeholder="是汪不是汪">
+                        </li>
+                        <li>
+                            <label>备注</label>
+                            <textarea>
+                                         樱花，樱花，想见你，不要嘛，现在就想要见你没关系，不要再哭了，我是风，正包围在你的身边。谢谢，一直都最喜欢你，我是星星，会永远看着你守护着你。和你认识真好，真的真的是很好很好。已经不能在这里了，已经不走不行了，真的对不起
+                                    </textarea>
+                        </li>
+                        <li>
+                            <label>客户姓名</label>
+                            <input type="text" placeholder="王五">
+                        </li>
+                        <li>
+                            <label>市场信息收集人</label>
+                            <input type="text" placeholder="王五">
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <label>审核人</label>
+                            <input type="text" placeholder="张三">
+                        </li>
+                        <li>
+                            <label>行业</label>
+                            <input type="text" placeholder="金融业">
+                        </li>
+                        <li>
+                            <label>信息收集日期</label>
+                            <input type="text" placeholder="2017-02-15 15:00:30">
+                        </li>
+                        <li>
+                            <label>市场分析人员</label>
+                            <input type="text" placeholder="布鲁">
+                        </li>
+                        <li>
+                            <label>审核意见</label>
+                            <textarea>
+                                        樱花，樱花，想见你，不要嘛，现在就想要见你没关系，不要再哭了，我是风，正包围在你的身边。谢谢，一直都最喜欢你，我是星星，会永远看着你守护着你。和你认识真好，真的真的是很好很好。已经不能在这里了，已经不走不行了，真的对不起
+                                    </textarea>
+                        </li>
+                        <li>
+                            <label>配置要求</label>
+                            <p>
+                                ddddddddd
+                            </p>
+                            <p>
+                                四核
+                            </p>
+                            <p>
+                                双系统
+                            </p>
+                        </li>
+                        <li>
+                            <label>地区</label>
+                            <input type="text" placeholder="广州">
+                        </li>
+                        <li>
+                            <label>重要时间点</label>
+                            <input type="text" placeholder="广州">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="modulebg"></div>
+<script src="/js/jquery-2.1.1.min.js"></script>
+<script src="/js/common.js"></script>
+<!--<script src="/js/switch.js"></script>-->
+</body>
+</html>

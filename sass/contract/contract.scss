@@ -1,6 +1,9 @@
 em{
   font-style: normal;
 }
+b{
+  font-weight: normal;
+}
 .all-main {
   width: 84%;
   height: auto;
@@ -18,24 +21,22 @@ em{
      }
    }
     .article {
-      width: 90%;
+      width: 99%;
       height: auto;
       margin: 0 auto 50px;
+      //相同样式
       .all-module {
         float: left;
         width: 100%;
         height: auto;
-        li {
+        li{
           float: left;
-          width: 32%;
+          position: relative;
           background-color: #fff;
           margin-top: 36px;
           margin-right:2%;
           box-shadow: 0 6px 13px #d6d7d9;
           border-radius: 1px;
-          &:nth-of-type(3n+0){
-            margin-right: 0;
-          }
           &.cont-red{
             border-top: 1px solid #f32f4e;
           }
@@ -45,8 +46,8 @@ em{
           .cont-top{
             padding: 0 10px;
             .top-input{
-                float: left;
-                margin-top: 11px;
+              float: left;
+              margin-top: 11px;
               .checked-none[data-style="checked"] {  display: none;  }
               .checked-none[data-style="checked"]:checked + label {  background: url(/images/business/aright.png) no-repeat center; }
               .checked-none[data-style="checked"] + label {
@@ -63,17 +64,17 @@ em{
               font-size: 14px;
               display: inline-block;
               color: white;
-               width: 42px;
-               height: 21px;
+              width: 42px;
+              height: 21px;
               text-align: center;
               &.num-red{
                 background-color: #f32f4e;
               }
               &.num-blue{
                 background-color: #066dc2;
-               }
               }
-           }
+            }
+          }
           .cont-all{
             padding: 0 10px;
             margin: {
@@ -81,14 +82,13 @@ em{
             };
             .c-pic{
               float: left;
-            img{
-              width: 88px;
-              height: 88px;
-              border-radius: 50%;
-            }
+              img{
+                width: 88px;
+                height: 88px;
+                border-radius: 50%;
+              }
             }
             .all-page {
-              width: 65%;
               color: #333;
               float: left;
               margin: {
@@ -106,6 +106,12 @@ em{
               .page-2 {
                 font-size: 20px;
                 margin-top: 15px;
+                .pages-2-more{
+                  font-size: 14px;
+                  color: #066dc2;
+                  text-decoration: underline;
+                  margin-left: 10px;
+                }
               }
               .page-3 {
                 font-size: 14px;
@@ -119,8 +125,32 @@ em{
                 font-size: 14px;
                 line-height: 25px;
               }
+              .page-time{
+                height: 20px;
+                font-size: 12px;
+                color: #666;
+                margin-top: 10px;
+                span{
+                  display: inline-block;
+                  height: 20px;
+                  line-height: 20px;
+                  padding-left: 25px;
+                }
+                .times1{
+                  background: url("/images/contract/cont-time.png") no-repeat left center;
+                }
+                .user2{
+                  background: url("/images/contract/cont2.png") no-repeat left center;
+                  margin-left: 22px;
+                }
+              }
               em {
                 &:after {
+                  content: '\FF1A';
+                }
+              }
+              .page-tit{
+                &:after{
                   content: '\FF1A';
                 }
               }
@@ -146,175 +176,550 @@ em{
               &:last-child{
                 border-right: 0;
               }
+            }
+            .frozen-red{
+              &:hover{
+                color: white;
+                background-color:#f32f4e;
+              }
+            }
+          }
+        }
+      }
+      //不同样式
+      .module1{
+        li {
+          width: 32%;
+          //height: 292px;
+          .all-page{
+            width: 65%;
+          }
+          &:nth-of-type(3n+0){
+            margin-right: 0;
+          }
+        }
+      }
+      .module2{
+          li{
+            width: 49%;
+           // height: 283px;
+            .all-page{
+              width: 80%;
+            }
+            &:nth-of-type(2n+0){
+            margin-right: 0;
+          }
+            .internal-pro{
+              margin-top: 5px;
+              color: #959595;
+              font-size: 12px;
+            }
+            .company-name{
+              text-align: center;
+              font-size: 14px;
+              margin: {
+                top:20px;
+              };
+              p{
+                width: 50%;
+                float: left;
+                span{
+                  display: inline-block;
+                  width: 100%;
+                  margin-top: 10px;
+                  &.com1-tit{
+                    color:#959595;;
+                  }
+                }
+              }
+            }
+            .cont-bot2{
+              margin-top: 40px;
+              font-size: 12px;
+              color: white;
+              background-color: #666666;
+              line-height: 25px;
+              padding: 5px 33px;
+            }
+         }
+      }
+      .module3{
+         li{
+           width: 31.5%;
+           margin-right: 1.8%;
+           .page-time2{
+             display: inline-block;
+             font-size: 12px;
+             color: #666;
+             width: 100%;
+             margin-top: 10px;
+             height: 35px;
+             >p{
+               width:60px;
+               position: relative;
+               height: 35px;
+               float: left;
+               padding-left: 24px;
+               b{
+                 position: absolute;
+                 left: 50px;
+                 &.time-1{
+                   top:0;
+                 }
+                 &.time-2{
+                    bottom: 0;
+                 }
+               }
+               span{
+                 position: absolute;
+                 bottom: 2px;
+                 left: 45px;
+                 width: 45px;
+               }
+               i{
+                 position: absolute;
+                 bottom: 0;
+               }
+               &.times1{
+                 width: 110px;
+               }
              }
+           }
+           .bilateral{
+             font-size: 12px;
+             margin-top: 30px;
+             .bil-cen{
+               margin: 0 25px;
+             }
+            p{
+              float: left;
+              text-align: center;
+              span{
+                display: block;
+                &.bil-co{
+                  color: #898989;
+                }
+              }
+            }
+           }
+         }
+      }
+    }
+    .and-content {
+      min-height: 592px;
+      .tab-summary {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        .summary-input {
+          height: auto;
+          li {
+            float: left;
+            width: 30%;
+            height: 50px;
+            line-height: 50px;
+            border-bottom: 1px solid #c6c6c6;
+            padding: 0 10px;
+            margin: {
+              right: 46px;
+              bottom: 35px;
+            }
+            &:nth-of-type(3) {
+              margin-right: 0;
+            }
+            label {
+              float: left;
+              width: 30%;
+              font-size: 14px;
+              color: #666;
+            }
+            .select-number {
+              float: left;
+              width: 70%;
+              text-align: center;
+              line-height: 50px;
+              font-size: 14px;
+              color: #999;
+              padding-left: 10px;
+              background: url("/images/business/down.png") no-repeat right 10px center;
+            }
+            input {
+              float: left;
+              width: 66%;
+              text-align: center;
+              line-height: 50px;
+              font-size: 14px;
+              color: #999;
+              padding-left: 10px;
+              &.icon-calendar {
+                background: url("/images/business/calendar.png") no-repeat right 10px center;
+              }
+            }
+          }
+        }
+        .hui-btn {
+          width: 100%;
+          .and-btn {
+            float: right;
+            width: 6%;
+            height: 40px;
+            background-color: #066dc2;
+            line-height: 40px;
+            text-align: center;
+            font-size: 16px;
+            color: #fff;
+            cursor: pointer;
+          }
+        }
+      }
+      .summary-list{
+        width: 100%;
+        height: auto;
+        border: 1px solid #066dc2;
+        margin-top: 35px;
+        background-color: #fff;
+        display: none;
+        li{
+          height: 80px;
+          line-height: 80px;
+          font-size: 0;
+          &.head-list{
+            span{
+              color: #066dc2;
+            }
+          }
+          &.children-list{
+            border-top:1px solid #f0f1f4;
+          }
+          span{
+            display: inline-block;
+            width: 7%;
+            text-align: center;
+            font-size: 14px;
+            border-right:1px solid #066dc2;
+            &:last-child{
+              border-right: 0;
+            }
+          }
+
+
+        }
+
+      }
+    }
+  }
+  .all-main3{
+    display: none;
+  }
+}
+//内弹窗相同样式
+//查看附件
+.mode-all{
+  width: 84%;
+  margin-top: 110px;
+  height: auto;
+}
+.mode-annex{
+  .same-box{
+    width: 100%;
+    min-height: 590px;
+    //查看洽谈文件
+    .file-name{
+      line-height: 35px;
+      overflow: hidden;
+      span{
+        font-size: 18px;
+        color: #333;
+        padding-right: 10px;
+        float: left;
+        margin-top: 4px;
+      }
+      .name-left{
+        float: left;
+        li{
+          float: left;
+          text-align: center;
+          margin-right: 10px;
+          &.current{
+            border-bottom:2px solid #046ec4;
+            .file-pic{
+              svg{
+                fill:#066dc2 ;
+              }
+            }
+
+          }
+          .file-pic{
+            vertical-align: middle;
+            padding: 0 8px 5px;
+            text-align: center;
+            svg{
+              width: 20px;
+              height: 20px;
+              fill: #757575;
+              vertical-align: middle;
+              &.file{
+                width: 25px;
+                height: 25px;
+              }
+            }
           }
         }
       }
     }
+    .file-order{
+      width: 100%;
+      min-height:500px;
+      .file-list{
+        margin-top: 30px;
+        display: none;
+        li{
+          width: 100%;
+          height: 60px;
+          background-color: #fff;
+          box-shadow: 0 2px 6px rgba(0,0,0,.1);
+          margin-bottom: 15px;
+          &:hover{
+            box-shadow:0 0 10px 5px #d2dfec;
+          }
+          line-height: 60px;
+          span{
+            display: inline-block;
+            width: 26px;
+            height: 18px;
+            text-align: center;
+            line-height: 18px;
+            color: #fff;
+            font:{
+              size: 10px;
+              family: Arial;
+            }
+            border-radius: 5px;
+            margin-left: -10px;
+            &.first{
+              background-color: #066dc2;
+            }
+            &.second{
+              background-color: #f32f4e;
+            }
+            &.third{
+              background-color: #46dbcd;
+            }
+          }
+          .icon-text{
+            font-size: 16px;
+            color: #333;
+            padding-left: 45px;
+            .pic-file{
+              display: inline-block;
+              width: 40px;
+              height: 36px;
+              background: url("/images/business/small_file.png") no-repeat center;
+              vertical-align: middle;
+              margin-right: 15px;
+            }
+            small{
+              font-size: 16px;
+              color: #999;
+            }
+          }
+        }
+      }
+      .list-change{
+        height: auto;
+        overflow: hidden;
+        li{
+          float: left;
+          width: 185px;
+          height: 150px;
+          margin-right: 30px;
+          display: flex;
+          align-items: flex-start;
+          box-shadow: 0 4px 15px rgba(0,0,0,.15);
+          &:last-child{
+            margin-right: 0;
+          }
+          span{
+            width: 20px;
+            height: 20px;
+            margin-left: 0;
+            border-radius: 0;
+          }
+          .icon-text{
+            width: 100%;
+            display: block;
+            text-align: center;
+            padding:{
+              left: 0;
+            }
+            .icon-second{
+              display: block;
+              width: 85px;
+              height: 77px;
+              background: url("/images/business/big_file.png") no-repeat center;
+              margin: 15px auto 0;
+            }
+            text{
+              text-align: center;
+            }
+          }
+        }
+      }
+      .tab-item{
+        display: block;
+      }
+    }
   }
 }
-//内弹窗相同样式
 .module-layer{
   float: left;
   width: 100%;
   height: 100%;
   padding-left: 80px;
   margin-left: 195px;
-  //查看附件
-  .mode-all{
-    width: 84%;
-    height: auto;
+  >div{
+    display: none;
   }
-  .mode-annex{
-    .same-box{
-      width: 100%;
-      min-height: 590px;
-      //查看洽谈文件
-      .file-name{
-        line-height: 35px;
-        overflow: hidden;
-        span{
-          font-size: 18px;
-          color: #333;
-          padding-right: 10px;
-          float: left;
-          margin-top: 4px;
-        }
-        .name-left{
-          float: left;
-          li{
-            float: left;
-            text-align: center;
-            margin-right: 10px;
-            &.current{
-              border-bottom:2px solid #046ec4;
-              .file-pic{
-                svg{
-                  fill:#066dc2 ;
-                }
-              }
+}
+//导入
+.export-box{
+  width: 50%;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  margin-left: -25%;
+  z-index: 80;
+  .close{
+    width: 80px;
+    height: 80px;
+    background: url("/images/business/circle_close.png") no-repeat;
+    display: block;
+    position: absolute;
+    right: -62px;
+    top: -65px;
+    cursor: pointer;
+  }
+  .tips{
+    width: 100%;
+    background-color: #fff;
+    border: 2px solid #066dc2;
+    text-align: center;
+    h3{
+      color: #066dc2;
+      font-size: 18px;
+      height: 40px;
+      line-height: 40px;
+      margin: 20px 0 10px;
+    }
+    p{
+      font-size: 16px;
+      color: #333;
+      line-height: 30px;
+      margin-bottom: 20px;
+      span{
+        color: #999;
+        font-size: 14px;
+      }
+    }
+    .file-position{
+      width: 98%;
+      margin: 0 auto 10px;
+      height: auto;
+      overflow: hidden;
+      line-height: 78px;
+      font-size: 14px;
 
-            }
-            .file-pic{
-              vertical-align: middle;
-              padding: 0 8px 5px;
-              text-align: center;
-              svg{
-                width: 20px;
-                height: 20px;
-                fill: #757575;
-                vertical-align: middle;
-                &.file{
-                  width: 25px;
-                  height: 25px;
-                }
-              }
-            }
+      .cun{
+        width: 15%;
+        float: left;
+        color: #066dc2;
+        text-align: center;
+        border:2px solid #066dc2;
+        border-radius: 50px 0 0 50px;
+
+      }
+      .file-center{
+        width: 70%;
+        float: left;
+        padding-left: 20px;
+        overflow: hidden;
+        border: {
+          top: 2px;
+          bottom: 2px;
+          style: solid;
+          color: #066dc2;
+        }
+        line-height: 78px;
+        small{
+          float: left;
+        }
+        .bg-pic{
+          float: right;
+          width: 34px;
+          height: 35px;
+          background: url("/images/business/excel.png") no-repeat right center;
+          margin:{
+            top: 3%;
+            right: 2%;
           }
         }
       }
-      .file-order{
-        width: 100%;
-        min-height:500px;
-        .file-list{
-          margin-top: 30px;
+      .file-upload{
+        width: 10%;
+        float: left;
+        background-color: #066dc2;
+        text-align: center;
+        border-radius: 0 50px 50px 0;
+        border-left:1px solid #066dc2;
+        height: 82px;
+        input[type="file"]{
           display: none;
-          li{
-            width: 100%;
-            height: 60px;
-            background-color: #fff;
-            box-shadow: 0 2px 6px rgba(0,0,0,.1);
-            margin-bottom: 15px;
-            &:hover{
-              box-shadow:0 0 10px 5px #d2dfec;
-            }
-            line-height: 60px;
-            span{
-              display: inline-block;
-              width: 26px;
-              height: 18px;
-              text-align: center;
-              line-height: 18px;
-              color: #fff;
-              font:{
-                size: 10px;
-                family: Arial;
-              }
-              border-radius: 5px;
-              margin-left: -10px;
-              &.first{
-                background-color: #066dc2;
-              }
-              &.second{
-                background-color: #f32f4e;
-              }
-              &.third{
-                background-color: #46dbcd;
-              }
-            }
-            .icon-text{
-              font-size: 16px;
-              color: #333;
-              padding-left: 45px;
-              .pic-file{
-                display: inline-block;
-                width: 40px;
-                height: 36px;
-                background: url("/images/business/small_file.png") no-repeat center;
-                vertical-align: middle;
-                margin-right: 15px;
-              }
-              small{
-                font-size: 16px;
-                color: #999;
-              }
-            }
-          }
         }
-        .list-change{
-          height: auto;
-          overflow: hidden;
-          li{
-            float: left;
-            width: 185px;
-            height: 150px;
-            margin-right: 30px;
-            display: flex;
-            align-items: flex-start;
-            box-shadow: 0 4px 15px rgba(0,0,0,.15);
-            &:last-child{
-              margin-right: 0;
-            }
-            span{
-              width: 20px;
-              height: 20px;
-              margin-left: 0;
-              border-radius: 0;
-            }
-            .icon-text{
-              width: 100%;
-              display: block;
-              text-align: center;
-              padding:{
-                left: 0;
-              }
-              .icon-second{
-                display: block;
-                width: 85px;
-                height: 77px;
-                background: url("/images/business/big_file.png") no-repeat center;
-                margin: 15px auto 0;
-              }
-              text{
-                text-align: center;
-              }
-            }
-          }
-        }
-        .tab-item{
+        .replace{
           display: block;
+          color: #fff;
+          vertical-align: middle;
+          line-height: 30px;
+          img{
+            width: 29px;
+            height: 31px;
+            display: block;
+            margin: 10px auto 0;
+
+          }
         }
       }
+    }
+    .number-time{
+      width: 45%;
+      margin: 80px auto;
+      border-bottom: 1px solid #dfdfdf;
+      text-align: left;
+      label{
+        width: 40%;
+        display: inline-block;
+        text-align: center;
+      }
+      .select-number{
+        width: 56%;
+        padding-left: 90px;
+        line-height: 45px;
+        color: #c2bcbc;
+        font-size: 14px;
+        option{
+          color: #252525;
+        }
+      }
+
+    }
+    .sure{
+      width: 100%;
+      height: 62px;
+      font-size: 16px;
+      background-color: #066dc2;
+      color: #fff;
+      cursor: pointer;
     }
   }
 }
@@ -378,7 +783,6 @@ em{
     }
   }
 }
-
 .edit-box2{
  width: 1020px;
   position: absolute;
@@ -461,6 +865,7 @@ em{
         }
         .edit-pt{
           width: 54%;
+          height: 60px;
           background: 0;
           padding-left: 5px;
           font-size: 14px;
@@ -492,6 +897,13 @@ em{
           float: right;
         }
       }
+      .send-object4{
+        border-bottom: none;
+      }
+      .email-send{
+        line-height: 30px;
+        border-bottom: none;
+      }
     }
     .modify{
       width: 100%;
@@ -501,15 +913,126 @@ em{
         color: #fff;
         font-size: 16px;
       }
+      .modify-btn2{
+        cursor: pointer;
+        @extend .modify-btn;
+        background-color: #076dc2;
+      }
     }
   }
 }
+//汇总和邮件发送
+.send-object2{
+float: left;
+width: 20%;
+margin-left: 30px;
+}
+.send-object3{
+  width: 95px;
+  height: 38px;
+  background:none;
+  color: #066dc2;
+  border: 1px solid #066dc2;
+}
+.send-object{
+   width: 125px;
+   float: left;
+  select{
+    width: 95%;
+    border: 1px solid #dddddd;
+    background: url(/images/business/down.png) no-repeat right 10px center;
+    text-align: center;
+    padding-left: 5px;
+    font-size: 15px;
+    line-height: 45px;
+    color: #636365;
+  }
+}
+.email-send{
+  .email1{
+    width: 220px;
+    >span{
+      height: 20px;
+      display: inline-block;
+      text-align: center;
+      width: 100%;
+    }
+  }
+  .email2{
+    width: 53%;
+    height: 80px;
+    border: 1px solid #ddd;
+  }
+  >p{
+    float: left;
+  }
+}
+//更多弹窗
+.more1{
+  bottom:70px;
+}
+.more2{
+  bottom: 2px;
+}
+.more-red{
+  display: none;
+  position: absolute;
+  right: 35px;
+  background-color: white;
+  padding: 0 10px;
+  width: 45%;
+  max-width: 224px;
+  font-size: 12px;
+  border: {
+    top:1px solid red;
+    left: 1px solid #d2d2d2;
+    right: 1px solid #d2d2d2;
+    bottom: 1px solid #d2d2d2;
+  };
+  p{
+    margin-top: 10px;
+    &:last-child{
+      margin-bottom: 10px;
+    }
+    em{
+      color: #bcbcbc;
+      &:after{
+        content: '\FF1A';
+      }
+    }
+    span{
+      color: #262626;
+    }
+  }
+}
+//导出
+.export-file{
+  width: 60%;
+  margin: 35px auto;
+  border-bottom: 1px solid #ddd;
+  label{
+    display: inline-block;
+    width: 30%;
+    text-align: left;
+    font-size: 16px;
+  }
+  select{
+    width: 56%;
+    background: url(/images/business/down.png) no-repeat right 10px center;
+    text-align: center;
+    padding-left: 5px;
+    font-size: 15px;
+    line-height: 45px;
+    color: #636365;
+  }
+  input{
+    width: 56%;
+    text-align: center;
+    padding-left: 5px;
+    font-size: 15px;
+    line-height: 45px;
+    color: #636365;
+  }
+}
 
-
-
-//删除数据
-
-
-
-//项目合同基本信息管理
 

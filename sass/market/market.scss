@@ -1,0 +1,553 @@
+.top-fix {
+  background-color: #f2deba!important;
+}
+body{
+  background-color: #f2deba;
+}
+em{
+  font-style: normal;
+}
+.all-main {
+  width: 84%;
+  height: auto;
+  margin-top: 115px;
+  .tab-content {
+    width: 100%;
+    .soso {
+      .so-search {
+        color: #999;
+        width: 195px;
+        height: 40px;
+        padding-left: 15px;
+        border-bottom: 1px solid #d2d2d2;
+        background: url(/images/customer/search.png) no-repeat right 6px center;
+      }
+    }
+    .article {
+      width: 99%;
+      height: auto;
+      margin: 0 auto 50px;
+      .all-module {
+        float: left;
+        width: 100%;
+        height: auto;
+        li{
+          width: 23.5%;
+          float: left;
+          position: relative;
+          margin-top: 26px;
+          margin-right:2%;
+          .examine-top{
+            background-color: #3f5262;
+            padding:16px 0;
+            border-top-left-radius:15px;
+            border-top-right-radius:15px;
+            box-shadow:0 0 10px rgba(0, 0, 0, .5);
+            >p{
+              padding: {
+                right: 16px;
+                left:15px
+              };
+            }
+            .head-tit{
+              font-size: 14px;
+              color: white;
+              >span{
+                text-align: center;
+              }
+              .tit-region{
+                display: inline-block;
+                width: 44px;
+                line-height: 42px;
+
+                background: url("/images/market/ellipse.png") no-repeat;
+              }
+              .tit-name{
+                margin-left: 9px;
+              }
+              .tit-user{
+                font-size: 18px;
+                width: 103px;
+                line-height: 59px;
+                margin-right: -25px;
+                margin-top: -8px;
+                float: right;
+
+              }
+}
+            .suggestion{
+              margin-top: 17px;
+              height: 30px;
+              font-size: 14px;
+              color: #999;
+              padding-left: 0;
+              margin: {
+                left: 15px;
+                right: 15px;
+              };
+            }
+              .exam-cont{
+                font-size: 12px;
+                color: white;
+                line-height: 23px;
+              margin: {
+                top: 10px;
+              };
+            }
+          }
+          .examine-bot{
+              font-size: 14px;
+              color: white;
+              padding: 10px 15px;
+            .explain{
+              margin: {
+                top: 15px;
+                bottom: 15px;
+              };
+            }
+          }
+          &.blue-frame{
+            .exam-blue{
+              background-color: #066dc2;
+            }
+            .tit-user{
+              background: url("/images/market/blue-arrow.png") no-repeat;
+            }
+            .tit-region{
+              color: #066dc2;
+            }
+            .suggestion{
+              border-bottom: 1px solid #066dc2;
+            }
+          }
+          &.red-frame{
+            .exam-blue{
+              background-color: #f32f4e;
+            }
+            .tit-user{
+              background: url("/images/market/red-arrow.png") no-repeat;
+            }
+            .tit-region{
+              color: #f32f4e;
+            }
+            .suggestion{
+              border-bottom: 1px solid #f32f4e;
+            }
+          }
+          &.green-frame{
+            .exam-blue{
+              background-color: #46dbcd;
+            }
+            .tit-user{
+              background: url("/images/market/green-arrow.png") no-repeat;
+            }
+            .tit-region{
+              color: #46dbcd;
+            }
+            .suggestion{
+              border-bottom: 1px solid #46dbcd;
+            }
+          }
+          &.yellow-frame{
+            .exam-blue{
+              background-color: #f7db57;
+            }
+            .tit-user{
+              background: url("/images/market/yellow-arrow.png") no-repeat;
+            }
+            .tit-region{
+              color: #f7db57;
+            }
+            .suggestion{
+              border-bottom: 1px solid #f7db57;
+            }
+          }
+          &:nth-of-type(4n+0){
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+//弹窗
+.edit-box2{
+  width: 1114px;
+  position: absolute;
+  z-index: 100;
+  min-height: 850px;
+  top: 20%;
+  left: 50%;
+  margin-left: -500px;
+  .close{
+    width: 80px;
+    height: 80px;
+    background: url("/images/business/circle_close.png") no-repeat;
+    display: block;
+    position: absolute;
+    right: -102px;
+    top: -65px;
+    cursor: pointer;
+  }
+  .edit-pop{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -500px;
+    width: 100%;
+    border: 2px solid #066dc2;
+    background-color: #fff;
+    .edit-start{
+      width: 196px;
+      height: 100%;
+      font-size: 14px;
+      margin: {
+        top: 30px;
+        left: 20px;
+        right: 1.5%;
+      };
+      float: left;
+      .ed-start1{
+         color: #636267;
+       }
+      .ed-start2{
+         color: #252525;
+         padding: 8px 10px;
+        margin: {
+          top: 13px;
+          bottom: 17px;
+        };
+         background-color: #eeeeee;
+      }
+      .ed-start3{
+        width: 99px;
+        line-height: 30px;
+        text-align: center;
+        color: white;
+        background-color: #066dc2;
+      }
+    }
+   ul{
+     float: left;
+     width: 24%;
+     margin-right: 2%;
+           li{
+             font-size: 12px;
+             border-bottom: 1px solid #ddd;
+             margin-top:20px;
+             label{
+               display: inline-block;
+                padding: 3px 12px;
+               line-height: 20px;
+               text-align: center;
+               color: #636267;
+               background-color: #eeeeee;
+             }
+             input{
+               font-size: 13px;
+               width: 100%;
+              line-height: 40px;
+               color: #066dc2;
+               padding: {
+                 left: 15px;
+                 right: 10px;
+               };
+             }
+             textarea{
+               color: #066dc2;
+               width: 100%;
+               height: 100%;
+               min-height: 120px;
+               border: none;
+               resize: none;
+               overflow-y:visible;
+               padding: {
+                 left: 5px;
+                 right: 10px;
+               };
+             }
+             p{
+               color: #066dc2;
+               padding: {
+                 left: 15px;
+                 right: 10px;
+               };
+               line-height: 25px;
+              &:last-child{
+                padding-bottom: 10px;
+              }
+             }
+          }
+       }
+  }
+}
+//弹窗2
+.all-other{
+  width: 1020px;
+  position: absolute;
+  z-index: 100;
+  height: 800px;
+  top: 20%;
+  left: 55%;
+  margin-left: -500px;
+  .close{
+    width: 80px;
+    height: 80px;
+    background: url(/images/business/circle_close.png) no-repeat;
+    display: block;
+    position: absolute;
+    right: -62px;
+    top: -65px;
+    cursor: pointer;
+  }
+  .tab-other{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -500px;
+    width: 100%;
+    height: auto;
+    border: 2px solid #066dc2;
+    background-color: #fff;
+    li{
+      width: 47%;
+      float: left;
+      line-height: 60px;
+      border-bottom: 1px solid #ddd;
+      margin-top: 10px;
+      &:nth-of-type(odd){
+        margin-right: 60px;
+      }
+      label {
+        display: inline-block;
+        margin-left: 30px;
+        width: 35%;
+        font-size: 16px;
+      }
+      .selected-same{
+        width: 56%;
+        background: url(/images/business/down.png) no-repeat right 10px center;
+        text-align: center;
+        padding-left: 5px;
+        font-size: 15px;
+        line-height: 45px;
+        color: #636365;
+      }
+      .icon-time {
+        height: 25px;
+        background: url(/images/business/calendar.png) no-repeat right center;
+      }
+      input{
+        width: 54%;
+        height: 60px;
+        background: 0;
+        padding-left: 5px;
+        font-size: 14px;
+        color: #333;
+      }
+      .position1 {
+        width: 56%;
+        line-height: 34px;
+        float: right;
+      }
+    }
+    .modify{
+      width: 100%;
+      margin-top: 30px;
+      .modify-btn{
+        font-size: 16px;
+        color: white;
+        width: 100%;
+        height: 58px;
+        cursor: pointer;
+      }
+      .modify-btn2{
+        cursor: pointer;
+        background-color: #076dc2;
+      }
+    }
+  }
+}
+//汇总
+.market-summary{
+  width: 94%;
+  height: auto;
+  .summ-top{
+    width: 100%;
+    border: 1px solid #bbc7d2;
+    background-color: white;
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius:15px;
+    padding: 20px 42px;
+    ul{
+      li{
+        width: 26%;
+        float: left;
+        margin-right:11%;
+        select {
+          color: #252525;
+          width: 90%;
+          height: 40px;
+          padding: 0 5px;
+          background: url(/images/customer/select.png) no-repeat right;
+        }
+        .sele-close{
+          img{
+            vertical-align: middle;
+          }
+          margin: {
+           left: 3px;
+          };
+        }
+        &:nth-of-type(3){
+          margin-right: 0;
+        }
+        &.object-all{
+           width: 100%;
+           margin-top: 30px;
+          >p{
+            float: left;
+            margin-right: 2%;
+            border: 1px solid #bbc7d2;
+            &:nth-of-type(3){
+              margin-right: 0;
+            }
+          }
+          .obj1{
+            width: 17%;
+            select{
+              width: 85%;
+            }
+          }
+          .obj4{
+            width: 21%;
+            select{
+              width: 99%;
+            }
+            input{
+              width:90%;
+              height: 40px;
+              padding: {
+                left: 5px;
+              };
+            }
+          }
+          .sum-but{
+            float: right;
+            width: 7%;
+            height: 40px;
+            background-color: #066dc2;
+            line-height: 40px;
+            text-align: center;
+            font-size: 16px;
+            color: #fff;
+            cursor: pointer;
+          }
+        }
+        label{
+          display: inline-block;
+          width: 100%;
+          font-size: 12px;
+          color: #636367;
+          margin-bottom: 12px;
+        }
+        .select-all {
+          width: 100%;
+          height: 40px;
+          border: 1px solid #bbc7d2;
+          input{
+            width: 91%;
+            line-height: 40px;
+            background: url(/images/business/calendar.png) no-repeat right center;
+          }
+
+        }
+      }
+    }
+  }
+  .summ-bot{
+      .summ-bot1{
+        width: 25%;
+        margin-top: 35px;
+        position: relative;
+          .summ-tit{
+              position: absolute;
+              top: -13px;
+              left: 15%;
+              width: 45%;
+              line-height: 40px;
+              padding: {
+                left: 10px;
+                right: 30px;
+              };
+              background-color: #066dc2;
+              box-shadow:-5px -1px 7px rgba(3, 33, 58, .3);
+             span{
+              color: white;
+              &.tit1{
+                font-size: 12px;
+              }
+              &.tit2{
+                font-size: 14px;
+                float: right;
+              }
+            }
+          }
+          ul{
+            width: 69%;
+            height: auto;
+            background-color: white;
+            padding: {
+              top: 50px;
+              bottom: 29px;
+              left: 8%;
+              right: 8%;
+            };
+            li{
+              min-height:50px;
+              float: left;
+              .sum-text{
+                position: relative;
+                font-size: 14px;
+                color: #636267;
+                //padding: 9px 20px 0 0;
+                line-height: 18px;
+                border-right: 1px solid #bbc7d2;
+                span{
+                  display: inline-block;
+                  width: 95%;
+                  max-width: 180px;
+                  padding: 7px 5px;
+                  border: 1px solid #bbc7d2;
+                  margin-right: 20px;
+                }
+                .first-icon{
+                  position: absolute;
+                  top:-5px;
+                  right: -3px;
+                  display: inline-block;
+                  width: 5px;
+                  height: 5px;
+                  background-color: #bbc7d2;
+                }
+                .one-icon{
+                  position: absolute;
+                  display: inline-block;
+                  width: 7px;
+                  height: 3px;
+                  right: -4px;
+                  background-color: #bbc7d2;
+                }
+              }
+              .sum-number{
+                 font-size: 13px;
+                 color: #252525;
+                 margin-left: 20px;
+              }
+            }
+         }
+      }
+  }
+}
